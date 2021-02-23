@@ -1,1 +1,13 @@
-{"response":[{"datetime":1613883426,"filename":"DerpFest-11-Official-Alpha-dumpling-20210221.zip","id":"e286ab70e4a1e76488fb3e78f8ed34a96545c2c1e434042d81a1f5ece218e761","romtype":"Official","size":1686527728,"url":"https://downloads.sourceforge.net/project/derpfest/dumpling/DerpFest-11-Official-Alpha-dumpling-20210221.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fderpfest%2Ffiles%2Fdumpling%2FDerpFest-11-Official-Alpha-dumpling-20210221.zip%2Fdownload%3Fuse_mirror%3Diweb&ts=1611257719&use_mirror=iweb","version":"11"}]}
+{
+  "response": [
+    {
+     "datetime": 1614113628,
+     "filename": "DerpFest-11-Official-Beta-dumpling-20210223.zip",
+     "id": "c0135d8f2f922b556d6738035d68b9f5c116f1a7d6aa7bee0bc9f68dcbf0d4e3",
+     "romtype": "Official",
+     "size": 1687004399,
+     "url": "https://sourceforge.net/projects/derpfest/files//DerpFest-11-Official-Beta-dumpling-20210223.zip/download",
+     "version": "11"
+    }
+  ]
+}
