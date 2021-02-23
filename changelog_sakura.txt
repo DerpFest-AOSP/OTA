@@ -1,0 +1,94 @@
+* Device Changelogs:
+Switched back to Q audio hal
+Switched to qcom wlan hal, wpa3 enterprise should be fixed
+Sleepy is now the default kernel
+Fixed ok google
+Nuked some more gapps like photos
+Other small fixes and improvements...
+
+* Source Changelogs:
+* Merged February Security Patch (android-11.0.0_r29) 
+* Updated redfin fingerprint to February
+* Imported SetupWizard/CarrierSetup props from RQ1A.210105.003
+* Updated CarrierSettings from RQ1A.210205.004
+* PixelPropsUtils: Add pixel wallpaper packages
+* PixelPropsUtils: Add turboadapter to packages list
+* Updated permissions whitelist for PackageInstaller
+* Added back some brightness slider options
+* Added Face Unlock animation
+* Added Screen off animation options
+* Added Ambient Now Playing container from Pixel
+* KeyguardSliceProvider: Hide song name if TypeClock is in use
+* Added toggle to completely hide status bar on lockscreen
+* Fixed proximity sensor not turning off AOD when is covered
+* Fixed PermissionBar Chart
+* Fixed black screen issue due to wallpaper decoding exceptions
+* Fixed NPE on global actions dialog
+* Fixed black borders in legacy apps on 18:9 screens
+* Improved touch width of volume panel
+* LockscreenCharging: Calculate power from voltage and current
+* Smoother Upload and Download Animation
+* Increased default max password length to 64
+* Switched back to aosp qs flashlight icon drawable
+* Changed screenshot action chip to have correct primary colors in dark mode
+* Set the correct position on the navbar size seekbar by default
+* Settings: Show full default name in customization preferences
+* Settings: Add icon beside customization preferences
+* Settings: Linked search bar profile picture with multiuser settings again
+* DerpQuest: Improved navbar preferences
+* ThemePicker: Make naming page look the same as the other ones
+* ThemePicker: Back to horizontal scrollview on clock faces
+* Fixed Themes reset after reboot
+* Updated SQLite to 3.34.1
+* PixelPropsUtils: Brought back Gboard
+* Decreased Gboard ime height
+* Switched to Google Documents UI and enabled Launcher/Downloads intent handling for it
+* Added FOD Animations and FOD icon picker
+* SystemUI: Added some Derp FOD icons
+* SystemUI: FODAnimation: Removed debugging
+* Added Gvisual mod
+* Implemented Gvisual mod navbar colors
+* Added option for Gesture bar Radius
+* Updated telephony stack to QSSI tag
+* Added Phone ringtone setting for Multi SIM devices
+* Added SIM On/off toggle for some devices
+* Settings: Added missing hotspot setting to allow VPN upstreams
+* SystemUI: Added padding before QS header battery icon for the privacy chip
+* Added QS status bar header image options
+* Added QS panel opacity slider
+* Added QS status bar opacity slider
+* QuickStatusBarHeader: Long-press header clock to access settings
+* SystemUI: Open Sound settings on long click at the panel button
+* VolumeDialog: Improved long press code
+* Introduced user interface for Alert Sliders dialogs
+* DerpQuest: Moved up screen off animation
+* Ambient music: Added back option for changing the music ticker position
+* Added Pulse navbar customizations to hwkey devices (includes cheeseburger)
+* base: Allow hiding the lock icon on lockscreen
+* Added Reboot/Recovery/PowerOff QS Tile
+* Powermenu: Added screenshot toggle and made it optional
+* Powermenu: Added Screen Record toggle and made it optional
+* Switched to MD2 icons for power menu and improved layout
+* Converted global actions to translucent overlay with blur
+* Fixed 0.8 font scale setting crashing after r29 merge
+* Added option to unlock keystore with fingerprint after reboot
+* QuickStatusBarHeader: spawn blur if qs has been force expanded
+* ScreenRecord: Improve low quality screen record
+* Allowed to limit the max framerate of built-in screen recorder
+* Fixed "navbar" being drawn in random places on the screen when activity resumed from recents on landscape
+* QS Panel: Added the ability to hide/show Edit icon
+* Replaced the standard toast with a material card containing the app icon
+* Added support for enforcing a minimum delay between notification sounds of an app
+* StatubarIconList: Fix Network traffic visibility on overlayChange()
+* StatusBarIconController: Avoid cast exceptions
+* Switched to different drawables for notification volume
+* Switched to 0-100% values for Media art blur
+* LockSettingsService: Implemented clearing moto face unlock biometrics
+* AmbientPulse: Code clean up
+* Replaced brightness thumb drawable in all SystemUI overlays
+* Made the kill app qs tile icon prettier
+* SystemUI: Dismiss keyguard on boot if disabled by current profile
+* Limited direct share targets to reduce lag
+* Display menu: Moved lockscreen/ambient preference on top
+* Settings: Don't change nouns in summaries to lower case for German
+* Settings: Updated some icons to MD2
