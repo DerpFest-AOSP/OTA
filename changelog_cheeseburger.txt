@@ -1,4 +1,0 @@
-Hotfix build
-
-Device:
-* Updated qti-telephony-commmon.jar and ims from LA.QSSI.11.0.r1-09400-qssi.0
