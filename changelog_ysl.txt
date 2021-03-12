@@ -1,0 +1,21 @@
+# Build Date - 11/3/2021
+
+* Merged March security patch (r32)
+* Enforcing Build
+* Fixed Wifi
+* Fixed Hotspot
+* Update Fp to March
+* Updated GApps from RQ2A.210305.006
+* Updated CarrierSettings from RQ2A.210305.006
+* Updated apex from RQ2A.210305.006
+* Updated rro_overlays from RQ2A.210305.006q
+* Switched to TurboAdapter without Google Battery
+* Added support for DiracSound and MiSound
+* Added support for SBC as HD audio codec in Bluetooth device configuration
+* Improved asus long screenshot implementation
+* Added Custom Carrier Label & Carrier Label Placement options
+* Added Custom logo customizations
+* Made INTERNET and SENSORS toggable permissions in the permission controller
+* SoundSearchTile: Extended with shazam and soundhound support and added a toast informing the user about how the tile isn't working
+* Forward-ported notification counters
+* AOD: Sleep when proximity is covered for 3 secs (Saves more juice when kept in pocket)
