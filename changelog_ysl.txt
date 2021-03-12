@@ -3,6 +3,8 @@
 * Merged March security patch (r32)
 * Enforcing Build
 * Fixed Wifi
+* Switch to perf + kernel
+* Upstream kernel to latest tag
 * Fixed Hotspot
 * Update Fp to March
 * Updated GApps from RQ2A.210305.006
