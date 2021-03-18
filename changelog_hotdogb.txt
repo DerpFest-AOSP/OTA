@@ -1,45 +1,7 @@
-  ***************** NOTE *********************
-  CLEAN FLASH IS NECESSARY, IF YOU DON'T DO IT, IT WILL BOOTLOOP!
 
-  Device Changelog:
-* None, I was lazy the past days
+*************HOTFIX BUILD**********************
 
-  ROM Changelog:
-* Switched to new face unlock implementation from PE
-* Added Option to use face unlock as authentication method for apps
-* Removed Google network stack and switched to aosp apn conf and carrier settings
-* Enabled junk card and share tab in files app
-* Introduced dynamic VoLTE & VoWiFi icons and removed VoLTE/VoWiFi icon preferences in DerpQuest
-* SystemUI: Redesigned QS Panel layout and icons like OOS11 and removed QS panel layout and footer customizations in DerpQuest
-* Implemented OOS-style statusbar icons from Wave project
-* Added Data usage view to QS Footer when expanded
-* Introduced OOS style notification clear all button and updated drawable from 404 project
-* Added Omni weather and removed Google Smart space
-* DerpQuest: Weather: Added switches to show city/temp on lockscreen
-* Added Weather QS tile
-* Added Adaptive Playback options
-* Added IDE Lockscreen clock from 404 project
-* Added Fluid lockscreen clock
-* Improved SFUNY Clock preview
-* PixelPropsUtils: Added Recorder, Duo and Fitness to get March Pixel drop goodies
-* Refactored screenshot shutter sound logic
-* Allowed camera to use power key as shutter
-* Changed sound tile to only configure ringer modes
-* Fixed navigation bar button hit testing
-* VolumeDialogImpl: Launch bluetooth settings on media output icon to avoid crash
-* VolumeDialogControllerImpl: Stop log spam with no caption service
-* Reduced right pull down region
-* Improved strings for bluetooth dual channel
-* Pixel Navbar: Changed to only stop animation and not entire functionality
-* Pixel Navbar: Hide opa when not pressed
-* Pixel Navbar: Removed halo, white cutout
-* Ensured keyguardstatusbar is hidden if not on keyguard
-* Added camera, location and microphone icons to system icon switches
-* Added FloatingRotationButton for hw-key devices
-* Improved pixel charger animation
-* SimpleDeviceConfig: Updated configs from proton AOSP
-* Settings: Added missing icons in Network and Internet
-* Settings: Updated icons in Sound settings to match oos style changes
-* PowerUsageSummary: Removed obsolete call to update the battery header
-* Settings: Fixed NPE in NetworkModePreferenceController
-* Settings: Switched to correct icon to reset battery stats
+ - Device Changelog:
+
+ * Fixed the bug where system.ui crashes when trying to add a google account with FP on.
+ * Upstreamed kernel t .225
