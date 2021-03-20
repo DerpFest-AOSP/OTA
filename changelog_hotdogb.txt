@@ -1,7 +1,0 @@
-
-*************HOTFIX BUILD**********************
-
- - Device Changelog:
-
- * Fixed the bug where system.ui crashes when trying to add a google account with FP on.
- * Upstreamed kernel t .225
