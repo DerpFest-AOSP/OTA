@@ -1,0 +1,5 @@
+* Trees completely rebased (THX guys!!!)
+* Kernel optimized and upstreamed
+* Minor fixes and improvements
+
+-Reporting bugs only with proper logs!
