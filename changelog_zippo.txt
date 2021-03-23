@@ -1,5 +1,4 @@
-* Trees completely rebased (THX guys!!!)
-* Kernel optimized and upstreamed
-* Minor fixes and improvements
+*** JUST A HOTFIX ***
 
--Reporting bugs only with proper logs!
+- PERF FIXED
+- DENiALS FIXED
