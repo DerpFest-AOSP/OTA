@@ -1,3 +1,23 @@
+# Build Date - 26/3/2021
+
+* Enforcing Build
+* Switched to OSS Camera HAL
+* Fixed all camera related bugs.
+* Nuked Xiaomi Parts
+* Fixed Google Assistant.
+* Fixed Random Freezes
+* Introduced Applock from AOSPA
+* Added Switch styles
+* Added AOD scheduling
+* Added QS Header size customizations
+* Added option to replace media notification background with artwork
+* Added option to show and edit Ambient Icons on Lockscreen
+* Added touch sensitivity switch from GoogleSettings for supported devices
+* Exposed system icon area weight
+* NavigationBarView: Fixed up IME arrows
+* MediaOutputPanel: Handle the case of missing packageName
+
+
 # Build Date - 11/3/2021
 
 * Merged March security patch (r32)
