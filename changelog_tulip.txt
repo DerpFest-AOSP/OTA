@@ -1,0 +1,39 @@
+• Source Changelog
+
+* Implemented Volume panel styles
+* Kanged dotOS volume panel for default style
+* Reworked additional power menu actions
+* Moved Edge lighting to it's own preference
+* Moved custom vib pattern to it's own preference
+* Improved link ring & notification volume switch behavior
+* Added Gaming mode
+* HeadsUp: Added blacklists
+* HeadsUp: Added snooze function
+* HeadsUp: Added timeout option
+* Added Sensor block options
+* Added increasing ring feature
+* Added Statusbar brightness control
+* Added alternative derp status bar logo
+* Migrated statusbar manual brightness to float
+* Fixed Biometric Auth for Applock
+* Keyguard: Do not trigger a wake up when hiding lockscreen
+* Fixed black screen after DOZE on devices without aod brightness sensor
+* Fixed Volume panel not following rounded corners partially
+* Added support for AIDL Lineage power HAL service
+* Device picker: Added title to fix offset in progressbar
+* ProgressCategory: Updated title style for consistency
+* Improved TextClock translations
+
+
+• Device changelog (07-04-2021)
+
+- Mystic Kernel upstreamed to 4.4.264
+- Compiled using proton clang
+- Security Patch updated to April
+- Redfin fp update to April
+- Source sync
+- Mystic Kernel upstreamed to 4.4.264
+- Compiled using proton clang
+- Security Patch updated to April
+- Redfin fp update to April
+- Source sync
