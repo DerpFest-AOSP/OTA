@@ -1,0 +1,29 @@
+Device:
+* Synced with latest LOS18.1 changes
+
+ROM:
+* Merged April Security Patch (r34)
+* Updated GApps from RQ2A.210405.005
+* Updated CarrierSettings from RQ2A.210405.005
+* Implemented Volume panel styles
+* Kanged dotOS volume panel for default volume style
+* Reworked additional power menu actions preference
+* Moved Edge lighting to it's own preference
+* Moved custom vib pattern to it's own preference
+* Improved link ring & notification volume switch behavior
+* Added Gaming mode
+* HeadsUp: Added blacklists
+* HeadsUp: Added snooze function
+* HeadsUp: Added timeout option
+* Added Sensor block options
+* Added Increasing ring feature
+* Keyguard: Do not trigger a wake up when hiding lockscreen
+* Fixed black screen after DOZE on devices without aod brightness sensor
+* Fixed Volume panel not following rounded corners partially
+* Added support for AIDL Lineage power HAL service
+* Set LDAC codec to higher priority
+* Enabled iorap tracing and readahead
+* Enabled dex2oat64 on 64-bit targets
+* Device picker: Added title to fix offset in progressbar
+* ProgressCategory: Updated title style for consistency
+* Improved TextClock translations
