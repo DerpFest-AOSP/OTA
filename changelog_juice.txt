@@ -1,0 +1,25 @@
+Device:
+* Added Power Service
+* Set minimum brightness
+* Updated redfin fingerprint to April
+* Added new audio configs
+
+ROM:
+* Added OOS11 lockscreen clock
+* Added new Bootleggers clocks
+* Added font support to more lockscreen clocks
+* Back to old default Volume Panel Style and fixed invisible view issued
+* Added MIUI volume panel style
+* Added option to enable Pulse edge light for all doze triggers
+* Added Edge light reverse animation direction Option
+* Added option for Edge light solid/faded style
+* Added alternative derp status bar logo
+* NavigationHandle: Don't show on keyguard or doze
+* FaceUnlock: Fixed face removal when disabling security
+* AppLock: Fixed 15 second auto-lock timer, when app is stopped while moving to recents
+* AppLock: Added option to instantly lock app on closing
+* OOS11 Footer: Switch OP footerview to new parent when switching tile layout
+* AODSchedule: Properly support all locales and time formats and improved some code
+* Moved Volume panel position toggle to DerpQuest
+* Improved Edge light and gaming mode master switch code
+* Moved app compatibility preference to apps and notifications
