@@ -24,9 +24,9 @@
 * ProgressCategory: Updated title style for consistency
 * Improved TextClock translations
 
-• Device changelog (07-04-2021)
+* Fixed Themer Icons
 
-* Trees completely reworked (THX @ThE_MarD)
-* Kernel upstream v4.14.229
-* Many minor optimizations 
+• Device changelog (18-04-2021)
 
+* Added FoD/DC Dimming
+* Kernel Upstream 4.14.231
