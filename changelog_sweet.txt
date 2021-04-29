@@ -1,0 +1,35 @@
+Source changelog:
+* Added LiveDisplay from Lineage
+* Added Anti flicker mode in LiveDisplay
+* Added LiveDisplay, reading mode, anti flicker and power share qs tile
+* Added Double tap to trigger doze
+* Synced FOD code with latest Yaap changes
+* Fixed theming of derpquest dashboard Icon for all prebuilt themes
+* IDEClock: Made it larger
+* Show disabled signal icon when SIM is disabled
+* Display wifi data usage in QS footer when connected
+* Reduced padding between clock and notification area
+* Fixed possible incorrect position of QS page indicator
+* QSPanel: Misc code cleanup
+* Updated CAF telephony to LA.QSSI.11.0.r1-11100-qssi.0
+* Made default SIM preferences independent of QTI telephony
+* Do not show roaming icon when data disabled
+* Switched applock timeout to DropDownPreference
+* SettingsProvider: Resolved package name that requires permission
+* Fixed NPE in AutofillManager when feature autofill is disabled
+* Fixed bug on High Contrast Text where DarkTheme is enabled and ForceDarkAllowed is true
+* BrightnessController: Fixed thread exception
+* LightsService: Muted an annoying error message
+* GpsNetInitiatedHandler: Disabled  more debugging
+* ActivityThread: Removed Fa iled to find provider info logspam
+* SoundTile: Hide if alert slider is present
+* Granted storage permission to ThemePicker
+* Added Anaheim, Arbutus Slab, Noto Serif & Roboto Slab Font
+* Added iOS blue accent color
+* Added time refresh capabilities for clock controllers where needed
+* TypeClockController: Set shouldShowStatusArea to true
+* Fixed multiple issues with typographic clock
+* TypeClock: Improved English and Polish strings
+
+Device Changelog:
+* Initial official build
