@@ -1,35 +1,46 @@
 Changelog (11-03-2021)
 ROM source side:
-* Merged March security patch (r32)
-* Updated GApps from RQ2A.210305.006
-* Updated CarrierSettings from RQ2A.210305.006
-* Updated apex from RQ2A.210305.006
-* Updated rro_overlays from RQ2A.210305.006q
-* Switched to TurboAdapter without Google Battery
-* Added support for DiracSound and MiSound
-* Added support for SBC as HD audio codec in Bluetooth device configuration
-* Improved asus long screenshot implementation
-* Added Custom Carrier Label & Carrier Label Placement options
-* Added Custom logo customizations
-* Made INTERNET and SENSORS toggable permissions in the permission controller
-* SoundSearchTile: Extended with shazam and soundhound support and added a toast informing the user about how the tile isn't working
-* Forward-ported notification counters
-* AOD: Sleep when proximity is covered for 3 secs (Saves more juice when kept in pocket)
+* Added LiveDisplay from Lineage
+* Added Anti flicker mode in LiveDisplay
+* Added LiveDisplay, reading mode, anti flicker and power share qs tile
+* Added Double tap to trigger doze
+* Synced FOD code with latest Yaap changes
+* Fixed theming of derpquest dashboard Icon for all prebuilt themes
+* IDEClock: Made it larger
+* Show disabled signal icon when SIM is disabled
+* Display wifi data usage in QS footer when connected
+* Reduced padding between clock and notification area
+* Fixed possible incorrect position of QS page indicator
+* QSPanel: Misc code cleanup
+* Updated CAF telephony to LA.QSSI.11.0.r1-11100-qssi.0
+* Made default SIM preferences independent of QTI telephony
+* Do not show roaming icon when data disabled
+* Switched applock timeout to DropDownPreference
+* SettingsProvider: Resolved package name that requires permission
+* Fixed NPE in AutofillManager when feature autofill is disabled
+* Fixed bug on High Contrast Text where DarkTheme is enabled and ForceDarkAllowed is true
+* BrightnessController: Fixed thread exception
+* LightsService: Muted an annoying error message
+* GpsNetInitiatedHandler: Disabled  more debugging
+* ActivityThread: Removed Fa iled to find provider info logspam
+* SoundTile: Hide if alert slider is present
+* Granted storage permission to ThemePicker
+* Added Anaheim, Arbutus Slab, Noto Serif & Roboto Slab Font
+* Added iOS blue accent color
+* Added time refresh capabilities for clock controllers where needed
+* TypeClockController: Set shouldShowStatusArea to true
+* Fixed multiple issues with typographic clock
+* TypeClock: Improved English and Polish strings
 
 Device side:
 * fix more sepolicy denials
-* daisy: Make fastrpc_shell_3 publicly available
-* Revert "msm8953-common: Convert lights HAL into a native binderized HAL" 
-* daisy: Remove more deprecated display flags 
-* daisy: Add vintf_fragments to android.hardware.usb@1.0-service
-* daisy: updating to redfin march fp
-* daisy: disable native R blur 
-* daisy: build android.hardware.camera.device@3.4.so 
-* Revert "daisy: nuke telephony-ext" 
-*  daisy: sepolicy: Label USB HAL 1.0
-* daisy: Import basic USB HAL 1.0 
-* daisy: use panda kernel
-* daisy: use proton clang
-* daisy: Update CarrierConfig from LA.UM.9.6.2.r1-03300-89xx.0 
-* daisy: Add FP cleanup overlay
+* daisy: use aosp compiler
+* Revert "daisy: vndk: Enable FULL Support" 
+* mido: audio: Update missing SPKR and HP combo device usecase path 
+* mido: configs: allocate dedicated pcm node for in call recording 
+* daisy: configs: msm8953: Add speaker and headphones paths
+* daisy: audio: apply mixer_paths_mtp fixes 
+* daisy: Set voice call volume steps to 6 
+* daisy: Update redfin fingerprint to April 
+* daisy: Enable freeform windows
 * and many more...
