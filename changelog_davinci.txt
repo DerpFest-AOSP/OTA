@@ -1,32 +1,42 @@
 Device Changelog:
-Updated vendor blobs from 21.4.7
-Upstreamed kernel to 4.14.229
-Added cool icons into doze and motor camera menus
-Update vendor security patch to april
-Restored pickup and wave options to doze
+Update miui blobs to 21.4.28
+Update vendor security patch to may
+Update some blobs from LA.UM.9.1.r1-09200-SMxxx0.0
+Some gps improvements
+Update soter,sound trigger from mojito(Redmi Note 10)
+Upstream kernel to 4.14.232
+Some tree cleanup
+Rebased kernel from latest pig sources
+Fixed bad ram management
+Update lz4 compressor for zram in kranel
+Disable mobile plan menu in settngs
 
 Rom Changelog:
-* Implemented Volume panel styles
-* Kanged dotOS volume panel for default style
-* Reworked additional power menu actions
-* Moved Edge lighting to it's own preference
-* Moved custom vib pattern to it's own preference
-* Improved link ring & notification volume switch behavior
-* Added Gaming mode
-* HeadsUp: Added blacklists
-* HeadsUp: Added snooze function
-* HeadsUp: Added timeout option
-* Added Sensor block options
-* Added increasing ring feature
-* Added Statusbar brightness control
-* Added alternative derp status bar logo
-* Migrated statusbar manual brightness to float
-* Fixed Biometric Auth for Applock
-* Keyguard: Do not trigger a wake up when hiding lockscreen
-* Fixed black screen after DOZE on devices without aod brightness sensor
-* Fixed Volume panel not following rounded corners partially
-* Added support for AIDL Lineage power HAL service
-* Device picker: Added title to fix offset in progressbar
-* ProgressCategory: Updated title style for consistency
-* Improved TextClock translations
-* Merged April security patch
+* Added Volume key cursor control (Thanks to Klozz)
+* Removed option for media notification background with artwork
+* Added QS media player allowed apps setting
+* Added CPUInfo qs tile
+* Added FPS Info qs tile
+* Added switch to select SBC HD by default
+* Added slider for Notifications background opacity
+* Aligned volte and vowifi icon sizes with signal icon
+* Lockscreen Weather: Various improvements
+* Fixed the location of volume panel on devices with display cutouts
+* Fixed Internet permission toggle for secondary users
+* Some code improvements for bluetooth timeout feature
+* ToastUI: Show app icon on system text toasts as well
+* Settings: Allow devices to provide their own color mode strings
+* Settings: Exposed radio info (*#*#4636#*#*)
+* Screenrecord: Save and load set preferences
+* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
+* Imported lock/unlock and keypress sounds from OOS 11
+* Added Derp Noir theme
+* Added thumbnails for mmnl clocks
+* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
+* IDEClock: Layout updates
+* Divided Lines Clock: Fill lines with accent color
+* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
+* Added missing device config permissions for settings
+* Bluetooth updates
+* Added Spanish translations (Thanks to Klozz)
+* Updated German translations
