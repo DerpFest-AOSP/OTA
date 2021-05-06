@@ -8,6 +8,15 @@
      "size": 1537002743,
      "url": "https://sourceforge.net/projects/derpfest/files/dumpling/DerpFest-11-Official-Beta-dumpling-20210503.zip/download",
      "version": "11"
+    },
+    {
+     "datetime": 1620083283,
+     "filename": "DerpFest-11-CI-Beta-dumpling-20210504.zip",
+     "id": "effce6b08bab4a8c690adca616a3df456023da3f2aff520cde5f04598ad4e8b4",
+     "romtype": "CI",
+     "size": 1538183926,
+     "url": "https://sourceforge.net/projects/derpfest/files/dumpling/DerpFest-11-CI-Beta-dumpling-20210504.zip/download",
+     "version": "11"
     }
   ]
 }
