@@ -1,3 +1,78 @@
+May 7 2021:
+
+** Device Changelog **
+
+• Added lineage LiveDisplay
+• Fixed up issues with led light
+• Decreased swappiness to 75
+• Switched to source built perf hal
+• Fixed up some sepolicies
+• Other small fixes and improvements
+
+** Source Changelog **
+
+* Added LiveDisplay from Lineage
+* Added Anti flicker mode in LiveDisplay
+* May security patch
+* Added LiveDisplay, reading mode, anti flicker and power share qs tile
+* Added Double tap to trigger doze
+* Synced FOD code with latest Yaap changes
+* Fixed theming of derpquest dashboard Icon for all prebuilt themes
+* IDEClock: Made it larger
+* Show disabled signal icon when SIM is disabled
+* Display wifi data usage in QS footer when connected
+* Reduced padding between clock and notification area
+* Fixed possible incorrect position of QS page indicator
+* QSPanel: Misc code cleanup
+* Updated CAF telephony to LA.QSSI.11.0.r1-11100-qssi.0
+* Made default SIM preferences independent of QTI telephony
+* Do not show roaming icon when data disabled
+* Switched applock timeout to DropDownPreference
+* SettingsProvider: Resolved package name that requires permission
+* Fixed NPE in AutofillManager when feature autofill is disabled
+* Fixed bug on High Contrast Text where DarkTheme is enabled and ForceDarkAllowed is true
+* BrightnessController: Fixed thread exception
+* LightsService: Muted an annoying error message
+* GpsNetInitiatedHandler: Disabled  more debugging
+* ActivityThread: Removed Fa iled to find provider info logspam
+* SoundTile: Hide if alert slider is present
+* Granted storage permission to ThemePicker
+* Added Anaheim, Arbutus Slab, Noto Serif & Roboto Slab Font
+* Added iOS blue accent color
+* Added time refresh capabilities for clock controllers where needed
+* TypeClockController: Set shouldShowStatusArea to true
+* Fixed multiple issues with typographic clock
+* TypeClock: Improved English and Polish strings
+* Fixed lag in qs media player in landscape 
+* Added Volume key cursor control (Thanks to Klozz)
+* Removed option for media notification background with artwork
+* Added QS media player allowed apps setting
+* Added CPUInfo qs tile
+* Added FPS Info qs tile
+* Added switch to select SBC HD by default
+* Added slider for Notifications background opacity
+* Aligned volte and vowifi icon sizes with signal icon
+* Lockscreen Weather: Various improvements
+* Fixed the location of volume panel on devices with display cutouts
+* Fixed Internet permission toggle for secondary users
+* Some code improvements for bluetooth timeout feature
+* ToastUI: Show app icon on system text toasts as well
+* Settings: Allow devices to provide their own color mode strings
+ Settings: Exposed radio info (##4636##*)
+* Screenrecord: Save and load set preferences
+* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
+* Imported lock/unlock and keypress sounds from OOS 11
+* Added Derp Noir theme
+* Added thumbnails for mmnl clocks
+* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
+* IDEClock: Layout updates
+* Divided Lines Clock: Fill lines with accent color
+* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
+* Added missing device config permissions for settings
+* Bluetooth updates
+* Added Spanish translations (Thanks to Klozz)
+* Updated German translations
+
 April 13 2021:
 
 ** Device Changelogs **
