@@ -1,10 +1,45 @@
-Device:
-* added support for dt2w - flash 188 kernel
-*added health
-* added xiaomidoze
-* added support for google recorder
-* added new power hals again
-* added seperate a2dp config
+# Device Changelog
+* User / Production Build
+* Lowered volume steps
+* Lowered Brightness levels
+* Disabled R blurs by default
+* Disabled HW Overlays (if pornhub is still not fixed on chrome, head on to developer settings and Disable HW Overlays)
+* Fixed up audio rules (removed unused rules)
+* Lowered volume
+* Now using QTI BT Stack
+* Added memory optimizations
+* Added Battery Optimizations
+* Added ZRAM improvements
+* Added sqlite improvements
+* Added libvolumelistener for distorted sounds
+* Fixed up Audio configurations (fixed up chipmunk on some online games when you use mic)
 
-ROM:
-* source upstream
+Source Changelog
+* Added Volume key cursor control (Thanks to Klozz)
+* Removed option for media notification background with artwork
+* Added QS media player allowed apps setting
+* Added CPUInfo qs tile
+* Added FPS Info qs tile
+* Added switch to select SBC HD by default
+* Added slider for Notifications background opacity
+* Aligned volte and vowifi icon sizes with signal icon
+* Lockscreen Weather: Various improvements
+* Fixed the location of volume panel on devices with display cutouts
+* Fixed Internet permission toggle for secondary users
+* Some code improvements for bluetooth timeout feature
+* ToastUI: Show app icon on system text toasts as well
+* Settings: Allow devices to provide their own color mode strings
+* Settings: Exposed radio info (##4636##*)
+* Screenrecord: Save and load set preferences
+* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
+* Imported lock/unlock and keypress sounds from OOS 11
+* Added Derp Noir theme
+* Added thumbnails for mmnl clocks
+* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
+* IDEClock: Layout updates
+* Divided Lines Clock: Fill lines with accent color
+* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
+* Added missing device config permissions for settings
+* Bluetooth updates
+* Added Spanish translations (Thanks to Klozz)
+* Updated German translations
