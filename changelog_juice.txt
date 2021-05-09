@@ -1,3 +1,9 @@
+# Update 2021-05-09
+* Switched to new AIDL Power Hal
+* Fixed Bluetooth Audio
+* Fixed Fingerprint login for Banking Apps
+* Added more Ram management stuff
+
 # Hotfix Update 2021-05-08-1
 * Removed raw output for audio as it continually causes stutters.
 * Fixed old phone call no sound introduced by audio fixes
