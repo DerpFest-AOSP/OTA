@@ -1,41 +1,25 @@
 Device Changelog:
-* Full VNDK (thanks to @SebaUbuntu)
-* April security patch
-* AIDL qti power HAL
-* Update Audio, BT, Radio and almost all other blobs from LA.UM.9.6.2.r1-03600-89xx.0
-* Drop sound trigger hal
-* Fixed 'Hey Google'
-* And lots of changes since last update (can't write them all)
+* Update GPS configs from LA.UM.9.6.2.r1-2500-89xx.0
+* Import some missing GPS blobs
+* Fixed GPS
+* Upstream DA kernel to 4.9.268
+* Fixed voice call distortion on receiver side
 
-ROM Changelog (20/04/2021):
-* Added LiveDisplay from Lineage
-* Added Anti flicker mode in LiveDisplay
-* Added LiveDisplay, reading mode, anti flicker and power share qs tile
-* Added Double tap to trigger doze
-* Synced FOD code with latest Yaap changes
-* Fixed theming of derpquest dashboard Icon for all prebuilt themes
-* IDEClock: Made it larger
-* Show disabled signal icon when SIM is disabled
-* Display wifi data usage in QS footer when connected
-* Reduced padding between clock and notification area
-* Fixed possible incorrect position of QS page indicator
-* QSPanel: Misc code cleanup
-* Updated CAF telephony to LA.QSSI.11.0.r1-11100-qssi.0
-* Made default SIM preferences independent of QTI telephony
-* Do not show roaming icon when data disabled
-* Switched applock timeout to DropDownPreference
-* SettingsProvider: Resolved package name that requires permission
-* Fixed NPE in AutofillManager when feature autofill is disabled
-* Fixed bug on High Contrast Text where DarkTheme is enabled and ForceDarkAllowed is true
-* BrightnessController: Fixed thread exception
-* LightsService: Muted an annoying error message
-* GpsNetInitiatedHandler: Disabled  more debugging
-* ActivityThread: Removed Fa iled to find provider info logspam
-* SoundTile: Hide if alert slider is present
-* Granted storage permission to ThemePicker
-* Added Anaheim, Arbutus Slab, Noto Serif & Roboto Slab Font
-* Added iOS blue accent color
-* Added time refresh capabilities for clock controllers where needed
-* TypeClockController: Set shouldShowStatusArea to true
-* Fixed multiple issues with typographic clock
-* TypeClock: Improved English and Polish strings
+ROM Changelog (13/05/2021):
+* Added support to set volume for app
+* Added App volume row toggle
+* Added style options for settings dashboard icons
+* Added Octavi's lockscreen clock
+* Fixed media art with enabled face unlock
+* Fixed Gaming mode master switch
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Removed now playing preference (was force disabled anyway)
+* Allowed selected camera apps to skip unconfigure
+* Fixed notification opacity for smart replies
+* Fixed moving home stack to front in freeform mode
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Fixed NPE in PowerShare qs tile
+* Switched to min/max screen refresh rate preferences from Wave project
