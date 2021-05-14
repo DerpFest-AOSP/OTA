@@ -1,42 +1,26 @@
 Device Changelog:
-Update miui blobs to 21.4.28
-Update vendor security patch to may
-Update some blobs from LA.UM.9.1.r1-09200-SMxxx0.0
-Some gps improvements
-Update soter,sound trigger from mojito(Redmi Note 10)
-Upstream kernel to 4.14.232
-Some tree cleanup
-Rebased kernel from latest pig sources
-Fixed bad ram management
-Update lz4 compressor for zram in kranel
-Disable mobile plan menu in settngs
+Update adsp modules LA.UM.9.1.r1-09200-SMxxx0.0
+Fix color modes overlay
+Update dpm system stack and few telephony blobs from LA.QSSI.11.0.r1-11600-qssi.0
+re-enable zram writeback feature
+Remove useless soundtrigger sepolicy label
+Address permissioncontroller_app denials
+Enable freeform windows
 
 Rom Changelog:
-* Added Volume key cursor control (Thanks to Klozz)
-* Removed option for media notification background with artwork
-* Added QS media player allowed apps setting
-* Added CPUInfo qs tile
-* Added FPS Info qs tile
-* Added switch to select SBC HD by default
-* Added slider for Notifications background opacity
-* Aligned volte and vowifi icon sizes with signal icon
-* Lockscreen Weather: Various improvements
-* Fixed the location of volume panel on devices with display cutouts
-* Fixed Internet permission toggle for secondary users
-* Some code improvements for bluetooth timeout feature
-* ToastUI: Show app icon on system text toasts as well
-* Settings: Allow devices to provide their own color mode strings
-* Settings: Exposed radio info (*#*#4636#*#*)
-* Screenrecord: Save and load set preferences
-* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
-* Imported lock/unlock and keypress sounds from OOS 11
-* Added Derp Noir theme
-* Added thumbnails for mmnl clocks
-* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
-* IDEClock: Layout updates
-* Divided Lines Clock: Fill lines with accent color
-* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
-* Added missing device config permissions for settings
-* Bluetooth updates
-* Added Spanish translations (Thanks to Klozz)
-* Updated German translations
+* Added support to set volume for app
+* Added App volume row toggle
+* Added style options for settings dashboard icons
+* Added Octavi's lockscreen clock
+* Fixed media art with enabled face unlock
+* Fixed Gaming mode master switch
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Removed now playing preference (was force disabled anyway)
+* Allowed selected camera apps to skip unconfigure
+* Fixed notification opacity for smart replies
+* Fixed moving home stack to front in freeform mode
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed NPE in PowerShare qs tile
+* Switched to min/max screen refresh rate preferences from Wave project
