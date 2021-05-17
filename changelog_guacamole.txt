@@ -1,0 +1,23 @@
+Date: 17/05/2021
+
+Source side changes
+* Added support to set volume for app
+* Added App volume row toggle
+* Fixed media art with enabled face unlock
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Fixed NPE in PowerShare qs tile
+
+Device side changes
+* Fix issues with fp on forced 60hz
+* Fix oos camera crash
+* Enable HDR for netflix
+* Call dash charging warp
+* Add mixer control for call screening 
+* Improve fod when used with livedisplay
+* Enable option to set min/max refresh rate from Wave project
+* Introduce raise to wake and raise to pulse
+
