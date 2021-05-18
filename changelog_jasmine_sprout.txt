@@ -1,0 +1,35 @@
+Device Changelog:
+-
+Rom Changelog:
+* Merged March security patch (r32)
+* Updated GApps from RQ2A.210305.006
+* Updated CarrierSettings from RQ2A.210305.006
+* Updated apex from RQ2A.210305.006
+* Updated rro_overlays from RQ2A.210305.006q
+* Switched to TurboAdapter without Google Battery
+* Added support for DiracSound and MiSound
+* Added support for SBC as HD audio codec in Bluetooth device configuration
+* Improved asus long screenshot implementation
+* Added Custom Carrier Label & Carrier Label Placement options
+* Added Custom logo customizations
+* Made INTERNET and SENSORS toggable permissions in the permission controller
+* SoundSearchTile: Extended with shazam and soundhound support and added a toast informing the user about how the tile isn't working
+* Forward-ported notification counters
+* AOD: Sleep when proximity is covered for 3 secs (Saves more juice when kept in pocket)
+* Added support to set volume for app
+* Added App volume row toggle
+* Added style options for settings dashboard icons
+* Added Octavi's lockscreen clock
+* Fixed media art with enabled face unlock
+* Fixed Gaming mode master switch
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Removed now playing preference (was force disabled anyway)
+* Allowed selected camera apps to skip unconfigure
+* Fixed notification opacity for smart replies
+* Fixed moving home stack to front in freeform mode
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Fixed NPE in PowerShare qs tile
+* Switched to min/max screen refresh rate preferences from Wave project
