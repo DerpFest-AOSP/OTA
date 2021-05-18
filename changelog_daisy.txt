@@ -1,5 +1,22 @@
 Changelog (14-05-2021)
 ROM source side:
+* same as 14-05-2021
+
+Device side:
+* daisy: post-boot.sh: Set swappiness to 75 instead of 100
+* daisy: address some denials
+* daisy: add missing entries for vendor.qti.data.factory
+* daisy: sepolicy: fix neverallows
+* daisy: roodir: remove creation of /data/misc/seemp 
+* daisy: sepolicy: Switch back to Qualcomm Sepolicy
+* daisy: go go enforce
+* User build
+* daisy: Enable Power save functionality for modem
+* media : copy c2 google codecs to vendor/etc
+* much more....
+
+Changelog (14-05-2021)
+ROM source side:
 * Added support to set volume for app
 * Added App volume row toggle
 * Added style options for settings dashboard icons
