@@ -1,0 +1,12 @@
+-Device side changes
+* Fix issues with fp on forced 60hz
+* Fix oos camera crash
+* Call dash charging warp
+* Add mixer control for call screening 
+* Improve fod when used with livedisplay
+* Enable option to set min/max refresh rate from Wave project
+* Introduce raise to wake and raise to pulse
+* Synced Overlays with Lineage
+* Introduced a new FOD scheme
+* Optimized native executables for Cortex-A76 CPU
+* Updated aapt configs for our dpi
