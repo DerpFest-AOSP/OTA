@@ -1,63 +1,30 @@
 Source changelog:
 
-* Introduced Applock from AOSPA
-* Switched to new face unlock implementation from PE
-* Added Option to use face unlock as authentication method for apps
-* Introduced dynamic VoLTE & VoWiFi icons and removed VoLTE/VoWiFi icon preferences in DerpQuest
-* SystemUI: Redesigned QS Panel layout and icons like OOS11 and removed QS panel layout and footer customizations in DerpQuest
-* Implemented OOS-style statusbar icons from Wave project
-* Added Data usage view to QS Footer when expanded
-* Introduced OOS style notification clear all button and updated drawable from 404 project
-* Added Omni weather and removed Google Smart space
-* DerpQuest: Weather: Added switches to show city/temp on lockscreen
-* Added Weather QS tile
-* Added Adaptive Playback options
-* Added IDE Lockscreen clock from 404 project
-* Added Fluid lockscreen clock
-* Improved SFUNY Clock preview
-* Added Switch styles
-* Added AOD scheduling
-* Added QS Header size customizations
-* Added option to replace media notification background with artwork
-* Added option to show and edit Ambient Icons on Lockscreen
-* Added touch sensitivity switch from GoogleSettings for supported devices
-* Exposed system icon area weight
-* NavigationBarView: Fixed up IME arrows
-* MediaOutputPanel: Handle the case of missing packageName
-* Enabled junk card and share tab in files app
-* PixelPropsUtils: Added Recorder, Duo and Fitness to get March Pixel drop goodies
-* Refactored screenshot shutter sound logic
-* Allowed camera to use power key as shutter
-* Changed sound tile to only configure ringer modes
-* Fixed navigation bar button hit testing
-* VolumeDialogImpl: Launch bluetooth settings on media output icon to avoid crash
-* VolumeDialogControllerImpl: Stop log spam with no caption service
-* Reduced right pull down region
-* Improved strings for bluetooth dual channel
-* Pixel Navbar: Changed to only stop animation and not entire functionality
-* Pixel Navbar: Hide opa when not pressed
-* Pixel Navbar: Removed halo, white cutout
-* Ensured keyguardstatusbar is hidden if not on keyguard
-* Added camera, location and microphone icons to system icon switches
-* Added option to cycle through ringer modes
-* Added FloatingRotationButton for hw-key devices
-* Improved pixel charger animation
-* SimpleDeviceConfig: Updated configs from proton AOSP
-* Settings: Added missing icons in Network and Internet
-* Settings: Updated icons in Sound settings to match oos style changes
-* PowerUsageSummary: Removed obsolete call to update the battery header
-* Settings: Fixed NPE in NetworkModePreferenceController
-* Settings: Switched to correct icon to reset battery stats
+* Added support to set volume for app
+* Added App volume row toggle
+* Added style options for settings dashboard icons
+* Added Octavi's lockscreen clock
+* Fixed media art with enabled face unlock
+* Fixed Gaming mode master switch
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Removed now playing preference (was force disabled anyway)
+* Allowed selected camera apps to skip unconfigure
+* Fixed notification opacity for smart replies
+* Fixed moving home stack to front in freeform mode
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Fixed NPE in PowerShare qs tile
+* Switched to min/max screen refresh rate preferences from Wave project
+* Added custom doze brightness and pulse brightness
+* Implemented cutout force full screen options
 
-Device Changelog:
+Device changelog:
 
-* Latest DerpFest source upstream
-* Kernel Upstream to 4.9.263
-* Added Touch Gestures back & moved it to DerpQuest gestures category.
-* Fixed Google Play system update. Now it will update to March.
-* WiFi power saving optimizations.
-* Removed NFC log spam
-* Removed some gapps
-* Addressed more denials
-* OTA update pushed.
-* More improvements & fixes.
+* Updated ims.apk, qcrilhook.jar and qcrilmsgtunnel.apk from LA.QSSI.11.0.r1-11600-qssi.0
+* Limited screen recorder framerate to 60 fps for smooth recording
+* Removed mobile plan from Network settings
+* Fixed 2% battery drop
+* Enabled block I/O tracing for Android 11 IORap in kernel
+* More improvements & fixes
