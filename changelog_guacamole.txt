@@ -1,3 +1,30 @@
+Date: 24/05/2021
+
+Source side changes
+* Introduce fluid v2 clock
+* Add compass tile
+* Remove AOSP style switch and introduce Fluid one
+* Add reticker
+* Add notch city
+* Improve Alt type clock
+* Try fixing incorrect wellbeing, gms and oneplus settings icons on various themes
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Add an option for FOD in FP location overlay.
+* Add icons for Google and Wellbeing preference
+
+Device side changes
+* Improve fod
+* Add wake device action to device settings
+* Add drawable icon for AOD
+* Update model detection
+* Update blobs from 11.0.1.1 
+* Update telephony blobs
+* Improve auto refresh rate
+* Fix d2w not working after long deep sleep
+
+
+
+
 Date: 17/05/2021
 
 Source side changes
