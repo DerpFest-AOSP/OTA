@@ -1,17 +1,26 @@
-* Added support to set volume for app
-* Added App volume row toggle
-* Added style options for settings dashboard icons
-* Added Octavi's lockscreen clock
-* Fixed media art with enabled face unlock
-* Fixed Gaming mode master switch
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed existing and added missing drawables for theming section in Display settings
-* Removed now playing preference (was force disabled anyway)
-* Allowed selected camera apps to skip unconfigure
-* Fixed notification opacity for smart replies
-* Fixed moving home stack to front in freeform mode
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Fixed wrong VoLTE/VoWiFi slot detection
-* Fixed NPE in PowerShare qs tile
-* Switched to min/max screen refresh rate preferences from Wave project
+* Added Status bar rounded corner size preference
+* Added reTicker from Descendant
+* Added option to force custom doze brightness and pulse brightness configs
+* Added Fluid lock clock V2
+* Type (Alt) Clock: Fixed wrong salute messages and improved it further
+* Added Fluid Style Switches and removed AOSP style (can't figure out)
+* Added Compass QS tile
+* Screenrecord: Added an option to record for longer
+* Implemented cutout force full screen
+* Added 3 mode display cutout handler
+* Added preference for min/max screen refresh rate
+* Added support for global cleartext penalties
+* Added machine learning back gesture and TensorFlow Lite model from kdrag0n
+* Themes: Added themed icons for Google, Wellbeing and OP settings preference
+* Themes: Let about logo follow gradients in themes
+* Removed background tint from emergency tile
+* Allowed screen unpinning on devices without navbar
+* Fixed silent notification if screenshot is dismissed
+* VolumeDialogImpl: Don't show captions info tooltip (Until layout gets fixed)
+* VolumePluginManager: More fixes toggling panel
+* Fixed unreadable OOS 11 clock thumbnail
+* Made qs weather page follow system font setting
+* LiveDisplaySettings: Unlock Reading Mode whenever is possible
+* Fixed Device Config check for Ramping ringer
+* Settings: Added an option for FOD in FP location overlay
+* Fixes for SBC Dual Channel (SBC HD Audio) support from Lineage
