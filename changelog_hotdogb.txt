@@ -1,12 +1,34 @@
--Device side changes
-* Fix issues with fp on forced 60hz
-* Fix oos camera crash
-* Call dash charging warp
-* Add mixer control for call screening 
-* Improve fod when used with livedisplay
-* Enable option to set min/max refresh rate from Wave project
-* Introduce raise to wake and raise to pulse
-* Synced Overlays with Lineage
-* Introduced a new FOD scheme
-* Optimized native executables for Cortex-A76 CPU
-* Updated aapt configs for our dpi
+Source Changes:
+* Added Status bar rounded corner size preference
+* Added reTicker from Descendant
+* Added option to force custom doze brightness and pulse brightness configs
+* Added Fluid lock clock V2
+* Type (Alt) Clock: Fixed wrong salute messages and improved it further
+* Added Fluid Style Switches and removed AOSP style (can't figure out)
+* Added Compass QS tile
+* Screenrecord: Added an option to record for longer
+* Implemented cutout force full screen
+* Added 3 mode display cutout handler
+* Added preference for min/max screen refresh rate
+* Added support for global cleartext penalties
+* Added machine learning back gesture and TensorFlow Lite model from kdrag0n
+* Themes: Added themed icons for Google, Wellbeing and OP settings preference
+* Themes: Let about logo follow gradients in themes
+* Removed background tint from emergency tile
+* Allowed screen unpinning on devices without navbar
+* Fixed silent notification if screenshot is dismissed
+* VolumeDialogImpl: Don't show captions info tooltip (Until layout gets fixed)
+* VolumePluginManager: More fixes toggling panel
+* Fixed unreadable OOS 11 clock thumbnail
+* Made qs weather page follow system font setting
+* LiveDisplaySettings: Unlock Reading Mode whenever is possible
+* Fixed Device Config check for Ramping ringer
+* Settings: Added an option for FOD in FP location overlay
+* Fixes for SBC Dual Channel (SBC HD Audio) support from Lineage
+
+Device Changes:
+* Changed FOD color to green
+* Set default Settings.Global.DEVICE_NAME according to OOS
+* Updated blobs from OOS 11.0.1.1
+* Update QTI-Telephony from LA.QSSI.11.0.r1-11600 
+* Merged Latest kernel changes from GulchR
