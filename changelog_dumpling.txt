@@ -1,5 +1,4 @@
-* Merged May Security patch (r37)
-* Changed QS columns to 5
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed drawable for switch styles
-* Removed now playing preference (was force disabled anyway)
+- Face unlock fixed
+- Made unlocking faster
+- Added Russian translations
+- JIO/Airtel SMS issue fixed
