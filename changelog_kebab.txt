@@ -1,0 +1,138 @@
+Changelog (05-30-2021)
+ROM source side:
+* Added Status bar rounded corner size preference
+* Added reTicker from Descendant
+* Added option to force custom doze brightness and pulse brightness configs
+* Added Fluid lock clock V2
+* Type (Alt) Clock: Fixed wrong salute messages and improved it further
+* Added Fluid Style Switches and removed AOSP style (can't figure out)
+* Added Compass QS tile
+* Screenrecord: Added an option to record for longer
+* Implemented cutout force full screen
+* Added 3 mode display cutout handler
+* Added preference for min/max screen refresh rate
+* Added support for global cleartext penalties
+* Added machine learning back gesture and TensorFlow Lite model from kdrag0n
+* Themes: Added themed icons for Google, Wellbeing and OP settings preference
+* Themes: Let about logo follow gradients in themes
+* Removed background tint from emergency tile
+* Allowed screen unpinning on devices without navbar
+* Fixed silent notification if screenshot is dismissed
+* VolumeDialogImpl: Don't show captions info tooltip (Until layout gets fixed)
+* VolumePluginManager: More fixes toggling panel
+* Fixed unreadable OOS 11 clock thumbnail
+* Made qs weather page follow system font setting
+* LiveDisplaySettings: Unlock Reading Mode whenever is possible
+* Fixed Device Config check for Ramping ringer
+* Settings: Added an option for FOD in FP location overlay
+* Fixes for SBC Dual Channel (SBC HD Audio) support from Lineage
+* Added support to set volume for app
+* Added App volume row toggle
+* Added style options for settings dashboard icons
+* Added Octavi's lockscreen clock
+* Fixed media art with enabled face unlock
+* Fixed Gaming mode master switch
+* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
+* Settings: Fixed existing and added missing drawables for theming section in Display settings
+* Removed now playing preference (was force disabled anyway)
+* Allowed selected camera apps to skip unconfigure
+* Fixed notification opacity for smart replies
+* Fixed moving home stack to front in freeform mode
+* Added kdrag0n's new blur improvements
+* Added support for blocking background data on all interfaces
+* Fixed wrong VoLTE/VoWiFi slot detection
+* Fixed NPE in PowerShare qs tile
+* Switched to min/max screen refresh rate preferences from Wave project
+Added LiveDisplay from Lineage
+* Added Anti flicker mode in LiveDisplay
+* Added LiveDisplay, reading mode, anti flicker and power share qs tile
+* Added Double tap to trigger doze
+* Synced FOD code with latest Yaap changes
+* Fixed theming of derpquest dashboard Icon for all prebuilt themes
+* IDEClock: Made it larger
+* Show disabled signal icon when SIM is disabled
+* Display wifi data usage in QS footer when connected
+* Reduced padding between clock and notification area
+* Fixed possible incorrect position of QS page indicator
+* QSPanel: Misc code cleanup
+* Updated CAF telephony to LA.QSSI.11.0.r1-11100-qssi.0
+* Made default SIM preferences independent of QTI telephony
+* Do not show roaming icon when data disabled
+* Switched applock timeout to DropDownPreference
+* SettingsProvider: Resolved package name that requires permission
+* Fixed NPE in AutofillManager when feature autofill is disabled
+* Fixed bug on High Contrast Text where DarkTheme is enabled and ForceDarkAllowed is true
+* BrightnessController: Fixed thread exception
+* LightsService: Muted an annoying error message
+* GpsNetInitiatedHandler: Disabled  more debugging
+* ActivityThread: Removed Fa iled to find provider info logspam
+* SoundTile: Hide if alert slider is present
+* Granted storage permission to ThemePicker
+* Added Anaheim, Arbutus Slab, Noto Serif & Roboto Slab Font
+* Added iOS blue accent color
+* Added time refresh capabilities for clock controllers where needed
+* TypeClockController: Set shouldShowStatusArea to true
+* Fixed multiple issues with typographic clock
+* TypeClock: Improved English and Polish strings
+
+Changelog (05-30-2021)
+Device side:
+kebab: Add Maintainer string and also change to Official status
+kebab: Use May fingerprint from Redfin
+kebab: overlay: Set dimensions for Slider UI
+kebab: Update LCD density
+kebab: Set default Settings.Global.DEVICE_NAME according to OOS
+kebab: overlay: Update brightness values
+kebab: Derp-ify
+kebab: fix overlay duplicate
+kebab: Revert "Revert "kebab: bluetooth: Move bdroid header to sm8250-common""
+kebab: Overlay FOD color from stock.
+kebab: Revert "kebab: overlay: Set center clock paddingEnd"
+kebab: instantnoodle: Fix Dimensions
+kebab: update statusbar padding and corners
+kebab: Alert slider positioning
+kebab: Revert "kebab: bluetooth: Move bdroid header to sm8250-common"
+kebab: Revert "kebab: Pull auto-brightness values from OOS"
+kebab: overlay: Default to 120hz refresh rate..
+kebab: bluetooth: Move bdroid header to sm8250-common
+kebab: manifest: relax vintf level requirements
+kebab: overlay: Adjust Max visible notification icons
+kebab: overlay: Set center clock paddingEnd
+kebab: overlay: Improve status bar padding and alignment
+kebab: rro_overlays: Set default hotspot ssid by RRO
+kebab: overlay: Use a mask for rounded corners
+
+sm8250-common: remove from common and move to kebab
+sm8250-common: overlay: Tune vibrator pattern
+sm8250-common: Include stock vibrator HAL
+sm8250-common: Revert "Revert "sm8250-common: Drop QTI vibrator HAL"
+sm8250-common: overlay: Decommonize tri-state switch UI
+sm8250-common: common.mk: Build TouchGestures
+sm8250-common: add TouchscreenGestureSettings in AndroidManifest
+sm8250-common: Revert "sm8250-common: overlay: Enable SmartCharging"
+sm8250-common: Revert "sm8250-common: overlay: Add missing burnInProtection overlays"
+sm8250-common: sepolicy: Allow system_server getpgid access to app_zy…
+sm8250-common: Move DPM feature property to /system_ext
+sm8250-common: Tone down CamX and CHIUSECASE logging
+sm8250-common: Remove virtual framebuffer.
+sm8250-common: Only include bitness of hal impls that is used.
+sm8250-common: Derp-ify
+sm8250-common: Enable IORap
+sm8250-common: Kill off IMS logspam with fire
+sm8250-common: Remove init.qcom.factory
+sm8250-common: DeviceSettings: Update HBM tile & switch on screen off
+sm8250-common: DeviceSettings: Add back HBM and HBM Tile
+sm8250-common: wifi: Relax WiFi re-association RSSI thresholds
+sm8250-common: wifi: Enable DFS channel scanning in P2P search
+sm8250-common: vibrator: update effects from Q vibrator HAL
+sm8250-common: Revert "sm8250-common: Drop QTI vibrator HAL"
+sm8250-common: Revert "sm8250-common: Include stock vibrator HAL"
+sm8250-common: Revert "sm8250-common: Add alipay fingerprint payment support"
+sm8250-common: sepolicy: Address some sepolicy denials
+sm8250-common: DeviceSettings: KeyHandler: Use mode specific vibratio…
+sm8250-common: Include stock vibrator HAL
+sm8250-common: Drop QTI vibrator HAL
+sm8250-common: props: Enable Seamless Transfer
+sm8250-common: prop: Enable pre-rendering
+sm8250-common: overlay: Enable refresh rate controls
+sm8250-common: ueventd: Don't modify permissions of /dev/hw_random
