@@ -1,26 +1,19 @@
 Device Changelog:
-Update adsp modules LA.UM.9.1.r1-09200-SMxxx0.0
-Fix color modes overlay
-Update dpm system stack and few telephony blobs from LA.QSSI.11.0.r1-11600-qssi.0
-re-enable zram writeback feature
-Remove useless soundtrigger sepolicy label
-Address permissioncontroller_app denials
-Enable freeform windows
+* Update blobs from LA.UM.9.1.r1-09600-SMxxx0.0
+* Drop few useless blobs
+* Cleanup device tree(remove dead flags and build packages)
+* drop duplicated drm prop
+* remove fp hal logspam about perfd
+* Add Russian translation into XiaomiParts
 
 Rom Changelog:
-* Added support to set volume for app
-* Added App volume row toggle
-* Added style options for settings dashboard icons
-* Added Octavi's lockscreen clock
-* Fixed media art with enabled face unlock
-* Fixed Gaming mode master switch
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed existing and added missing drawables for theming section in Display settings
-* Removed now playing preference (was force disabled anyway)
-* Allowed selected camera apps to skip unconfigure
-* Fixed notification opacity for smart replies
-* Fixed moving home stack to front in freeform mode
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Fixed NPE in PowerShare qs tile
-* Switched to min/max screen refresh rate preferences from Wave project
+* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
+* NetworkTraffic: Further minor refinements
+* AutoBrightness: Added toggle for one shot auto-brightness
+* Added SeamlessClockSwitch from Descendant
+* Added slider for Power menu background opacity
+* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
+* GlobalActionsDialog: Added a one minute timeout
+* Tweaked some QQS dimens (this fixes the overlay issues we were having while using custom header images)
+* Once again catched up SBC Dual Channel support with Lineage's code
+* Updated German and Russian translations
