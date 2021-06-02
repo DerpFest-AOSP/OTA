@@ -27,3 +27,16 @@ Rom Changelog:
 * Fixed Device Config check for Ramping ringer
 * Settings: Added an option for FOD in FP location overlay
 * Fixes for SBC Dual Channel (SBC HD Audio) support from Lineage
+* Systemui crash fixed
+* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
+* NetworkTraffic: Minor refinements
+* AutoBrightness: Added toggle for one shot auto-brightness
+* Added SeamlessClockSwitch from Descendant
+* Added slider for Power menu background opacity
+* Added Volume Rocker Wake
+* DerpQuest: Fixed dark theme and colored bottom navigation
+* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
+* GlobalActionsDialog: Added a one minute timeout
+* ThemePicker: Improved background color to match theme
+* Once again catched up SBC Dual Channel support with Lineage's code
+* Updated German and Russian translations
