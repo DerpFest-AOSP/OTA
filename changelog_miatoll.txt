@@ -1,15 +1,13 @@
 Rom
-* Volume rocker wake
-* Use EFFECT_HEAVY_CLICK for back swipe gestures 
-* NetworkTrafficSB: Reduce font size a bit
-* DescendantSeamlessClockSwitch: import
-* Power menu background opacity 
+[*] fwb: Fingerprint authentication vibration
+[*] ThemePicker: Improve background color
+[*] Themes: Add icons for OP Device settings
 
 Device
-* Disablel compress voip
-* Define some audio features
-* optimize everithing on preopt
-* build minijail from source
-* Adjust paddings
-* minor bugfixes
-
+[*] sm6250-common:add missing exclde file for Vibrator 
+[*] Miatoll: Improve haptic and vibration patterns
+[*] Miatoll: Fix sepolicy build
+[*] Miatoll: Set Doze wakeup debounce
+[*] Miatoll: Add vibrator feature
+[*] miatoll: fix vibrator hal in properties file
+[*] miatoll: add dummy hidl base to fix wfd issues
