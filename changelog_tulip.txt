@@ -1,37 +1,26 @@
 • Source Changelog
 
-* Added Volume key cursor control (Thanks to Klozz)
-* Removed option for media notification background with artwork
-* Added QS media player allowed apps setting
-* Added CPUInfo qs tile
-* Added FPS Info qs tile
-* Added switch to select SBC HD by default
-* Added slider for Notifications background opacity
-* Aligned volte and vowifi icon sizes with signal icon
-* Lockscreen Weather: Various improvements
-* Fixed the location of volume panel on devices with display cutouts
-* Fixed Internet permission toggle for secondary users
-* Some code improvements for bluetooth timeout feature
-* ToastUI: Show app icon on system text toasts as well
-* Settings: Allow devices to provide their own color mode strings Settings: Exposed radio info (##4636##*)
-* Screenrecord: Save and load set preferences
-* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
-* Imported lock/unlock and keypress sounds from OOS 11
-* Added Derp Noir theme
-* Added thumbnails for mmnl clocks
-* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
-* IDEClock: Layout updates
-* Divided Lines Clock: Fill lines with accent color
-* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
-* Added missing device config permissions for settings
-* Bluetooth updates
-* Added Spanish translations (Thanks to Klozz)
-* Updated German translations
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
 
-• Device changelog (07-05-2021)
+• Device changelog (09-06-2021)
 
 - Default Oneplus Launcher (thanks to Mr Sluffy)
-- Mystic Kernel upstreamed to 4.4.268
+- Mystic Kernel upstreamed to 4.4.271
 - Compiled using proton clang
-- Redfin fp update to May
+- Redfin fp update to June
 - Source sync
