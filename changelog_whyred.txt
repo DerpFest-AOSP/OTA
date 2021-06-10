@@ -1,0 +1,27 @@
+# Build Date - 10/6/2021
+
+Device Changelog : 
+- Updated Several Blobs
+- Several Performance Updates
+- Fixed Statusbar Padding (Issue in Last Build)
+- Nuked Some Unnessasary Packages
+- WFD (Works on Some TV's, probably doesn't work on Laptops yet) 
+- Kernel Upstreamed by Sreekanth!
+
+Rom Changelog :
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
