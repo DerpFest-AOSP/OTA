@@ -1,32 +1,28 @@
-# Build Date - 7/5/2021
+# Build Date - 10/6/2021
 
 Device Changelog : 
-• Add Smart pixel's support
-• Enable burning protection
-• Added GCam 
-• Added DC Dimming
-• Better RAM management
-• Set Default Refresh Rate to 120hz
-• Misc Stuff & Cleanup
+Update blobs from Miui V12.5.1.0
+Adjusted the brightness in AOD
+Audio improvements
+Yuki Kernel
   
   Thanks to Klozz and Grewal
 
 
 Rom Changelog :
-* Added support to set volume for app
-* Added App volume row toggle
-* Added style options for settings dashboard icons
-* Added Octavi's lockscreen clock
-* Fixed media art with enabled face unlock
-* Fixed Gaming mode master switch
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed existing and added missing drawables for theming section in Display settings
-* Removed now playing preference (was force disabled anyway)
-* Allowed selected camera apps to skip unconfigure
-* Fixed notification opacity for smart replies
-* Fixed moving home stack to front in freeform mode
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Fixed wrong VoLTE/VoWiFi slot detection
-* Fixed NPE in PowerShare qs tile
-* Switched to min/max screen refresh rate preferences from Wave project
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
