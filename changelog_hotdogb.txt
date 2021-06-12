@@ -1,19 +1,24 @@
 Source Changes:
-* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
-* NetworkTraffic: Minor refinements
-* AutoBrightness: Added toggle for one shot auto-brightness
-* Added SeamlessClockSwitch from Descendant
-* Added slider for Power menu background opacity
-* Added Volume Rocker Wake
-* DerpQuest: Fixed dark theme and colored bottom navigation
-* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
-* GlobalActionsDialog: Added a one minute timeout
-* ThemePicker: Improved background color to match theme
-* Once again catched up SBC Dual Channel support with Lineage's code
-* Updated German and Russian translations
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
 
 Device Changes:
-* Added dolby atmos
-* Applied ALS correction to the RAW sensor value
-* Implement OnePlus IFAA support
-* Imported boot-time FS tuning from Google Pixels
+* Decommonised vibrator firmware
+* Copied default volume table from tree
+* Enabled QC framework value-Add
+* Removed obsolete TARGET_BOARD_PLATFORM_GPU
+* Enabled warp charger
