@@ -1,3 +1,49 @@
+# Build Date - 12/06/2021
+
+Device Changelog:
+
+* Switch To User Build
+* Update To June Redfin FP
+* Enabled iorapd
+* Update blobs from daisy V11.0.19.0.QDLMIXM
+* Disabled Blur By Default
+* Removed Bunch Of Default Apps
+* Fixed Random Crashes Of Some Apps
+* Disabled WLAN firmware loggings
+* Fixed headphone volume buttons in call
+* More Underhood Changes
+
+Source Changelog:
+
+* Merged June Security Patch (11.0.0_r38)
+* Synced with latest Lineage FOD source
+* Reapplied and improved fingerprint animations
+* DerpQuest: Separated FOD to a own category
+* Implemented animated FOD icon picker
+* LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+* Reworked Statusbar clock customization
+* Reapplied Multi SIM ringtone settings
+* Added lock pattern grid size settings
+* Added pattern visibility settings
+* Added Fingerprint authentication vibration toggle
+* Updated notification count icons
+* Introduced Custom Statusbar Signal & Wi-Fi icons
+* Settings: Switched to ListPreference instead of DropDownPreference
+* Settings: Switched to MD2 icon for Playstore
+* LiveDisplay: Added color mode preview from AOSP Settings
+* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
+* NetworkTraffic: Minor refinements
+* AutoBrightness: Added toggle for one shot auto-brightness
+* Added SeamlessClockSwitch from Descendant
+* Added slider for Power menu background opacity
+* Added Volume Rocker Wake
+* DerpQuest: Fixed dark theme and colored bottom navigation
+* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
+* GlobalActionsDialog: Added a one minute timeout
+* ThemePicker: Improved background color to match theme
+* Once again catched up SBC Dual Channel support with Lineage's code
+* Updated German and Russian translations
+
 # Build Date - 6/5/2021
 
 Device Changelog : 
