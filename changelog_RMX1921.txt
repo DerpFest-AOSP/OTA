@@ -1,30 +1,34 @@
-Source changelog:
-
-* Added support to set volume for app
-* Added App volume row toggle
-* Added style options for settings dashboard icons
-* Added Octavi's lockscreen clock
-* Fixed media art with enabled face unlock
-* Fixed Gaming mode master switch
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed existing and added missing drawables for theming section in Display settings
-* Removed now playing preference (was force disabled anyway)
-* Allowed selected camera apps to skip unconfigure
-* Fixed notification opacity for smart replies
-* Fixed moving home stack to front in freeform mode
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Fixed wrong VoLTE/VoWiFi slot detection
-* Fixed NPE in PowerShare qs tile
-* Switched to min/max screen refresh rate preferences from Wave project
-* Added custom doze brightness and pulse brightness
-* Implemented cutout force full screen options
-
-Device changelog:
-
-* Updated ims.apk, qcrilhook.jar and qcrilmsgtunnel.apk from LA.QSSI.11.0.r1-11600-qssi.0
-* Limited screen recorder framerate to 60 fps for smooth recording
-* Removed mobile plan from Network settings
-* Fixed 2% battery drop
-* Enabled block I/O tracing for Android 11 IORap in kernel
+Device changes:
+========================
+* June security patch
+* Kernel Upstream to 4.9.272
+* Merged latest caf tag LA.UM.9.3.r1-02100-sdm845.0 into kernel.
+* Kernel compiled with latest proton Clang 13.0.0
+* Updated Redfin's june fp
+* Added Notch city
+* Fixed Fod in Notch city
+* Added Descendant’s Seamless Clock Switch feature
+* Added Animated fod icons
+* Introduced Custom Statusbar Signal & Wi-Fi icons
+* Added Custom FOD icon(User can choose png files as fod icon)
+* SafteyNet Pass without root as usual
 * More improvements & fixes
+
+Rom Changes:
+========================
+
+* Merged June Security Patch (11.0.0_r38)
+* Synced with latest Lineage FOD source
+* Reapplied and improved FOD animations
+* Added New FOD Animations from realme
+* DerpQuest: Separated FOD to a own category
+* Implemented animated FOD icon picker
+* Added FOD icon pressed colors
+* Added Custom FOD icon(User can choose png files as fod icon)
+* Statusbar clock customization
+* Added Fingerprint authentication vibration toggle
+* Added Volume Rocker Wake
+* Added quick unlock(after reboot)
+* Disable PIN entry after successful quick unlock
+* NetworkTraffic: Minor refinements
+* More
