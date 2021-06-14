@@ -1,3 +1,89 @@
+Date: 14/06/2021
+
+Source Side changes
+* Merged June Security Patch (11.0.0_r38)
+* Synced with latest Lineage FOD source
+* Reapplied and improved fingerprint animations
+* DerpQuest: Separated FOD to a own category
+* Implemented animated FOD icon picker
+* LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+* Reworked Statusbar clock customization
+* Reapplied Multi SIM ringtone settings
+* Added lock pattern grid size settings
+* Added pattern visibility settings
+* Added Fingerprint authentication vibration toggle
+* Updated notification count icons
+* Introduced Custom Statusbar Signal & Wi-Fi icons
+* Settings: Switched to ListPreference instead of DropDownPreference
+* Settings: Switched to MD2 icon for Playstore
+* LiveDisplay: Added color mode preview from AOSP Settings
+* Reduced size of alternative derp logo
+* Fixed time refresh capabilities of custom clocks
+* Sorted QS tiles in alphabetical order
+* Improved PowerShare QS tile
+* Added Language toggle QS tile
+* Added QS tile to show power menu
+* Added QS tile to show volume panel
+* Reticker: Removed some logging
+* reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+* Let legacy apps scale fully to the display's aspect ratio
+* Changed heads up ticker text style to match clock
+* BatteryMeterView: Fixed logcat warning spam
+* Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+* Made scramble PIN layout Multi-User friendly
+* Added Lockscreen quick unlock
+* Removed Pin dividers layout entirely
+* QSconfig: Re-distribute tiles on changing orientation
+* Hide keyguard when SIM transitions to READY
+* Fod: Aod content should move only in Y
+* Added Screen off fod
+* FODCircleView: Hide FOD while going to sleep and make it conditionally
+* Add lockscreen background blur
+* Fixed Lockscreen media art switch
+* Made center clock layout safe insets aware
+* Added Status bar notification ticker
+* Brought back music ticker
+* Added StatusBar Lyric toggle
+* Fixed order of custom clock and Carrier label
+* Added back accessibility setting in system
+* Added video to power button flashlight gesture
+* Fixed up the check if we have any color modes declared in overlay
+* Reduced size a little of some custom WiFi/Signal icons
+* VolumePanelStyles: Added upstream changes
+* Fixed AOSPExpanded plugin crash with Swift Installer
+* Fixed infinite expanding and apply unlinking to MIUI panel
+* Switched to sha256 checksum
+
+Device side changes
+* Switch to derp kernel
+* Implement oneplus IFAA support
+* Import boot-time FS tuning from google Pixel
+* Decommanise vibrator hal and use device specific ones
+* Decommanise volume policies. This should improve overall device volume
+* Remove some prebuilt apps
+* Fix charging text on ambient overlapping with FOD icon
+* Move the ambient music info slightly down
+* Improve vibrations
+
+Date: 02/06/2021
+
+Source Side changes
+* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
+* NetworkTraffic: Further minor refinements
+* AutoBrightness: Added toggle for one shot auto-brightness
+* Added SeamlessClockSwitch from Descendant
+* Added slider for Power menu background opacity
+* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
+* GlobalActionsDialog: Added a one minute timeout
+* Tweaked some QQS dimens (this fixes the overlay issues we were having while using custom header images)
+* Once again catched up SBC Dual Channel support with Lineage's code
+* Updated German and Russian translations
+
+Device side changes
+* Add moto dolby
+* Switch to dora
+* Improve auto brightness
+
 Date: 24/05/2021
 
 Source side changes
