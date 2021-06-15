@@ -1,23 +1,40 @@
 Rom Changes:
 ========================
 
-* Merged June Security Patch (11.0.0_r38)
-* Synced with latest Lineage FOD source
-* Reapplied and improved FOD animations
-* Added New FOD Animations from realme
-* DerpQuest: Separated FOD to a own category
-* Implemented animated FOD icon picker
-* Added FOD icon pressed colors
-* Added Custom FOD icon(User can choose png files as fod icon)
-* Statusbar clock customization
-* Added Fingerprint authentication vibration toggle
-* Added Volume Rocker Wake
-* Added quick unlock(after reboot)
-* Disable PIN entry after successful quick unlock
-* NetworkTraffic: Minor refinements
-* Keyguard: Forward port lockscreen quick unlock
-* Make Quick Unlock compatible with long PIN/Password
-* Introduce Custom Statusbar Signal & Wi-Fi icons
+* Sorted QS tiles in alphabetical order
+* Improved PowerShare QS tile
+* Added Language toggle QS tile
+* Added QS tile to show power menu
+* Added QS tile to show volume panel
+* Reticker: Removed some logging
+* reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+* Let legacy apps scale fully to the display's aspect ratio
+* Changed heads up ticker text style to match clock
+* BatteryMeterView: Fixed logcat warning spam
+* Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+* Made scramble PIN layout Multi-User friendly
+* Added Lockscreen quick unlock
+* Removed Pin dividers layout entirely
+* QSconfig: Re-distribute tiles on changing orientation
+* Hide keyguard when SIM transitions to READY
+* Fod: Aod content should move only in Y
+* Added Screen off fod
+* FODCircleView: Hide FOD while going to sleep and make it conditionally
+* Add lockscreen background blur
+* Fixed Lockscreen media art switch
+* Made center clock layout safe insets aware
+* Added Status bar notification ticker
+* Brought back music ticker
+* Added StatusBar Lyric toggle
+* Fixed order of custom clock and Carrier label
+* Added back accessibility setting in system
+* Added video to power button flashlight gesture
+* Fixed up the check if we have any color modes declared in overlay
+* Reduced size a little of some custom WiFi/Signal icons
+* VolumePanelStyles: Added upstream changes
+* Fixed AOSPExpanded plugin crash with Swift Installer
+* Fixed infinite expanding and apply unlinking to MIUI panel
+* Switched to sha256 checksum
 
 Device changes:
 ========================
