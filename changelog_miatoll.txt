@@ -1,13 +1,63 @@
 Rom
-[*] fwb: Fingerprint authentication vibration
-[*] ThemePicker: Improve background color
-[*] Themes: Add icons for OP Device settings
+[*] Merged June Security Patch (11.0.0_r38)
+[*] Synced with latest Lineage FOD source
+[*] Reapplied and improved fingerprint animations
+[*] DerpQuest: Separated FOD to a own category
+[*] Implemented animated FOD icon picker
+[*] LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+[*] Reworked Statusbar clock customization
+[*] Reapplied Multi SIM ringtone settings
+[*] Added lock pattern grid size settings
+[*] Added pattern visibility settings
+[*] Added Fingerprint authentication vibration toggle
+[*] Updated notification count icons
+[*] Introduced Custom Statusbar Signal & Wi-Fi icons
+[*] Settings: Switched to ListPreference instead of DropDownPreference
+[*] Settings: Switched to MD2 icon for Playstore
+[*] LiveDisplay: Added color mode preview from AOSP Settings
+[*] Reduced size of alternative derp logo
+[*] Fixed time refresh capabilities of custom clocks
+[*] Sorted QS tiles in alphabetical order
+[*] Improved PowerShare QS tile
+[*] Added Language toggle QS tile
+[*] Added QS tile to show power menu
+[*] Added QS tile to show volume panel
+[*] Reticker: Removed some logging
+[*] reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+[*] Let legacy apps scale fully to the display's aspect ratio
+[*] Changed heads up ticker text style to match clock
+[*] BatteryMeterView: Fixed logcat warning spam
+[*] Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+[*] Made scramble PIN layout Multi-User friendly
+[*] Added Lockscreen quick unlock
+[*] Removed Pin dividers layout entirely
+[*] QSconfig: Re-distribute tiles on changing orientation
+[*] Hide keyguard when SIM transitions to READY
+[*] Fod: Aod content should move only in Y
+[*] Added Screen off fod
+[*] FODCircleView: Hide FOD while going to sleep and make it conditionally
+[*] Add lockscreen background blur
+[*] Fixed Lockscreen media art switch
+[*] Made center clock layout safe insets aware
+[*] Added Status bar notification ticker
+[*] Brought back music ticker
+[*] Added StatusBar Lyric toggle
+[*] Fixed order of custom clock and Carrier label
+[*] Added back accessibility setting in system
+[*] Added video to power button flashlight gesture
+[*] Fixed up the check if we have any color modes declared in overlay
+[*] Reduced size a little of some custom WiFi/Signal icons
+[*] VolumePanelStyles: Added upstream changes
+[*] Fixed AOSPExpanded plugin crash with Swift Installer
+[*] Fixed infinite expanding and apply unlinking to MIUI panel
+[*] Switched to sha256 checksum
 
 Device
-[*] sm6250-common:add missing exclde file for Vibrator 
-[*] Miatoll: Improve haptic and vibration patterns
-[*] Miatoll: Fix sepolicy build
-[*] Miatoll: Set Doze wakeup debounce
-[*] Miatoll: Add vibrator feature
-[*] miatoll: fix vibrator hal in properties file
-[*] miatoll: add dummy hidl base to fix wfd issues
+[*] Miatoll: Add June redfin FP
+[*] Miatoll: Don't force setup ZRAM as LZ4 (et the user to decide it)
+[*] Miatoll: Update drm widevine from Joyeuse RKQ1.200826.002 V12.0.1.0.RJZ
+[*] Miatoll: Switch to prebuilt audio hal (echo issue fixed on curtana???)
+[*] miatoll: Use ARMV8-2a our device supports ARMV8-2A instructions
+[*] miatoll: Yuki kernel updated
+
+Note: If u want more PERF change to the separated Yuki kernel
