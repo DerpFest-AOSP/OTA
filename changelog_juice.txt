@@ -1,58 +1,65 @@
-# Update 2021-05-09
-* Switched to new AIDL Power Hal
-* Fixed Bluetooth Audio
-* Fixed Fingerprint login for Banking Apps
-* Added more Ram management stuff
+Device Changelog:
+- Fixed ingame mic (Mobile Legends, etc)
+- Added a new tweak to fix that pesky lag when opening apps
+- Dropped prebuilt kernel :P
+- Used Stormbreaker as default (Thanks Starlight!)
+- Imported my overlays from OSS Tree :P
+- Compiled with Proton Clang v. 13.0.0
+- Added a2dp compatibilities
+- Built Lineage LiveDisplay and fixed it for good.
+- Used qti Power Hal (same with my changes on OSS Tree)
+- Built NFC libs (untested)
 
-# Hotfix Update 2021-05-08-1
-* Removed raw output for audio as it continually causes stutters.
-* Fixed old phone call no sound introduced by audio fixes
-* Fixed old no head phone jack introduced by audio fixes
-* Based the volume to stock miui (as users reported audio being too loud)
-* Added more RAM management stuff
-
-# Device Changelog
-* User / Production Build
-* Lowered volume steps
-* Lowered Brightness levels
-* Disabled R blurs by default
-* Disabled HW Overlays (if pornhub is still not fixed on chrome, head on to developer settings and Disable HW Overlays)
-* Fixed up audio rules (removed unused rules)
-* Lowered volume
-* Now using QTI BT Stack
-* Added memory optimizations
-* Added Battery Optimizations
-* Added ZRAM improvements
-* Added sqlite improvements
-* Added libvolumelistener for distorted sounds
-* Fixed up Audio configurations (fixed up chipmunk on some online games when you use mic)
-
-Source Changelog
-* Added Volume key cursor control (Thanks to Klozz)
-* Removed option for media notification background with artwork
-* Added QS media player allowed apps setting
-* Added CPUInfo qs tile
-* Added FPS Info qs tile
-* Added switch to select SBC HD by default
-* Added slider for Notifications background opacity
-* Aligned volte and vowifi icon sizes with signal icon
-* Lockscreen Weather: Various improvements
-* Fixed the location of volume panel on devices with display cutouts
-* Fixed Internet permission toggle for secondary users
-* Some code improvements for bluetooth timeout feature
-* ToastUI: Show app icon on system text toasts as well
-* Settings: Allow devices to provide their own color mode strings
-* Settings: Exposed radio info (##4636##*)
-* Screenrecord: Save and load set preferences
-* Updater: Fixed lately fading out title of the expanded bar when collapsing (parallax)
-* Imported lock/unlock and keypress sounds from OOS 11
-* Added Derp Noir theme
-* Added thumbnails for mmnl clocks
-* Analog clock: Updated positioning to prevent overlapping with mediaplayer indication
-* IDEClock: Layout updates
-* Divided Lines Clock: Fill lines with accent color
-* Updated QCom opensource stacks and sepolicy to 'LA.QSSI.11.0.r1-11400-qssi.0' and 'LA.UM.9.12.r1-11000-SMxx50.0'
-* Added missing device config permissions for settings
-* Bluetooth updates
-* Added Spanish translations (Thanks to Klozz)
-* Updated German translations
+ROM Source Changelog:
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
+- Reduced size of alternative derp logo
+- Fixed time refresh capabilities of custom clocks
+- Sorted QS tiles in alphabetical order
+- Improved PowerShare QS tile
+- Added Language toggle QS tile
+- Added QS tile to show power menu
+- Added QS tile to show volume panel
+- Reticker: Removed some logging
+- reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+- Let legacy apps scale fully to the display's aspect ratio
+- Changed heads up ticker text style to match clock
+- BatteryMeterView: Fixed logcat warning spam
+- Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+- Made scramble PIN layout Multi-User friendly
+- Added Lockscreen quick unlock
+- Removed Pin dividers layout entirely
+- QSconfig: Re-distribute tiles on changing orientation
+- Hide keyguard when SIM transitions to READY
+- Fod: Aod content should move only in Y
+- Added Screen off fod
+- FODCircleView: Hide FOD while going to sleep and make it conditionally
+- Add lockscreen background blur
+- Fixed Lockscreen media art switch
+- Made center clock layout safe insets aware
+- Added Status bar notification ticker
+- Brought back music ticker
+- Added StatusBar Lyric toggle
+- Fixed order of custom clock and Carrier label
+- Added back accessibility setting in system
+- Added video to power button flashlight gesture
+- Fixed up the check if we have any color modes declared in overlay
+- Reduced size a little of some custom WiFi/Signal icons
+- VolumePanelStyles: Added upstream changes
+- Fixed AOSPExpanded plugin crash with Swift Installer
+- Fixed infinite expanding and apply unlinking to MIUI panel
+- Switched to sha256 checksum
