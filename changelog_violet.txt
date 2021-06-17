@@ -1,0 +1,41 @@
+Device Changelogs
+==========================
+
+* Updated build fingerprint to Redfin June
+* Added Co-maintainer name
+* Added GcamGO
+* Added Violet parts
+(Which include Xiaomi doze, fps info, KCAL, Selinux Mode, Dirac, USB Fast charging
+* Safetynet Passes Without Magisk
+* change "charging Repidly" to "Turbo charging" 
+* Dropped Stereo channel support for voip over audio path 
+(Probably fixed voip echo , Tested Whatsapp and telegram voip calls)
+* Added wired headset mic to voip_tx sources
+* Corrected routing order for voip output
+* Fixed 24bit audio playback (Enforced 24 bit as primary output)
+* Switch to TaskStackListener
+* Updated home page Lottie animation of Violet parts
+* Redesigned dashboard icon of Violet Parts
+* enabled Freeform window
+* Added OTA support
+* Removed Mobile Plan From Network Settings (not working anyway)
+
+
+Rom Changes:
+========================
+
+* Merged June Security Patch (11.0.0_r38)
+* Synced with latest Lineage FOD source
+* Reapplied and improved FOD animations
+* Added New FOD Animations from realme
+* DerpQuest: Separated FOD to a own category
+* Implemented animated FOD icon picker
+* Added FOD icon pressed colors
+* Added Custom FOD icon(User can choose png files as fod icon)
+* Statusbar clock customization
+* Added Fingerprint authentication vibration toggle
+* Added Volume Rocker Wake
+* Added quick unlock(after reboot)
+* Disable PIN entry after successful quick unlock
+* NetworkTraffic: Minor refinements
+* More
