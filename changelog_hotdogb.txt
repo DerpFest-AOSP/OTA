@@ -1,24 +1,34 @@
 Source Changes:
-- Merged June Security Patch (11.0.0_r38)
-- Synced with latest Lineage FOD source
-- Reapplied and improved fingerprint animations
-- DerpQuest: Separated FOD to a own category
-- Implemented animated FOD icon picker
-- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
-- Reworked Statusbar clock customization
-- Reapplied Multi SIM ringtone settings
-- Added lock pattern grid size settings
-- Added pattern visibility settings
-- Added Fingerprint authentication vibration toggle
-- Updated notification count icons
-- Introduced Custom Statusbar Signal & Wi-Fi icons
-- Settings: Switched to ListPreference instead of DropDownPreference
-- Settings: Switched to MD2 icon for Playstore
-- LiveDisplay: Added color mode preview from AOSP Settings
+- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+- Kanged Battery progress card animation from Fluid project
+- Switched to Vivo VoLTE/VoWifi icons from SSOS
+- Improved AppLock implementation
+- Added preference for changing face unlock method when locked
+- Disallowed certain power menu items while in lock task mode
+- Added VPN QS tile
+- Fixed GamingModeTile long press
+- ScreenshotTile: Use secondary label to indicate mode
+- Added Wakelock Blocker to dev settings
+- Added Alarms Blocker to dev settings
+- Made Volume Panel divider transparent
+- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+- FODCircleView: Fixed up AOD fingerprint support
+- Fixed crash caused by Heads-Up timeout
+- Improved ScreenRecord Dialog layout
+- Cleaned up start service calls of some lineage services
+- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+- Added spacing above emergency call button
+- DerpQuest: Explain to the user why LsBlur is disabled
 
 Device Changes:
-* Decommonised vibrator firmware
-* Copied default volume table from tree
-* Enabled QC framework value-Add
-* Removed obsolete TARGET_BOARD_PLATFORM_GPU
-* Enabled warp charger
+- Moved lockscreen charging text down
+- Moved the ambient music indication down
+- Few improvements to vibration effects
+- doze: Enabled proximity sensor check for raise to wake
+- New ALS correction algorithm from AOSPA
+- Decreased auto-brightness ramp rates
+- Added QVA static overlay configs for BT
+- Switched to armv8-2a in TARGET_2ND_ARCH_VARIANT
+- Fixed SELinux denials for a2dp and adsprpc-smd-secure
+- Improved default volume table to fix low call volume
+- Merged all the latest GulchR kernel changes
