@@ -1,62 +1,90 @@
 Device Side Changelog
 
-* Updated MIUI Blobs from 21.5.27
-* Upstreamed Surge Kernel 3.4 to 4.14.234
+* SafetyNet passes without Magisk
+* Merged Pie Libs for better camera quality
+* Dropped MIUI Camera (get flashable zip from group)
+* Updated MIUI Blobs from 21.6.16
+* Upstreamed SurgeX 3.5 Kernel to 4.14.237
 
 ------------------------------------------
 
 This week's Source side Changelog
 
-* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
-* NetworkTraffic: Minor refinements
-* AutoBrightness: Added toggle for one shot auto-brightness
-* Added SeamlessClockSwitch from Descendant
-* Added slider for Power menu background opacity
-* Added Volume Rocker Wake
-* DerpQuest: Fixed dark theme and colored bottom navigation
-* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
-* GlobalActionsDialog: Added a one minute timeout
-* ThemePicker: Improved background color to match theme
-* Once again catched up SBC Dual Channel support with Lineage's code
-* Updated German and Russian translations
+- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+- Kanged Battery progress card animation from Fluid project 
+- Switched to Vivo VoLTE/VoWifi icons from SSOS
+- Improved AppLock implementation
+- Added preference for changing face unlock method when locked
+- Disallowed certain power menu items while in lock task mode
+- Added VPN QS tile
+- Fixed GamingModeTile long press
+- ScreenshotTile: Use secondary label to indicate mode
+- Added Wakelock Blocker to dev settings
+- Added Alarms Blocker to dev settings
+- Made Volume Panel divider transparent
+- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+- FODCircleView: Fixed up AOD fingerprint support
+- Fixed crash caused by Heads-Up timeout
+- Improved ScreenRecord Dialog layout
+- Cleaned up start service calls of some lineage services
+- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+- Added spacing above emergency call button
+- DerpQuest: Explain to the user why LsBlur is disabled 
 
-Last week's Changelog
+Last week's Source side Changelog
 
-* Added Status bar rounded corner size preference
-* Added reTicker from Descendant
-* Added option to force custom doze brightness and pulse brightness configs
-* Added Fluid lock clock V2
-* Type (Alt) Clock: Fixed wrong salute messages and improved it further
-* Added Fluid Style Switches and removed AOSP style (can't figure out)
-* Added Compass QS tile
-* Screenrecord: Added an option to record for longer
-* Implemented cutout force full screen
-* Added 3 mode display cutout handler
-* Added preference for min/max screen refresh rate
-* Added support for global cleartext penalties
-* Added machine learning back gesture and TensorFlow Lite model from kdrag0n
-* Themes: Added themed icons for Google, Wellbeing and OP settings preference
-* Themes: Let about logo follow gradients in themes
-* Removed background tint from emergency tile
-* Allowed screen unpinning on devices without navbar
-* Fixed silent notification if screenshot is dismissed
-* VolumeDialogImpl: Don't show captions info tooltip (Until layout gets fixed)
-* VolumePluginManager: More fixes toggling panel
-* Fixed unreadable OOS 11 clock thumbnail
-* Made qs weather page follow system font setting
-* LiveDisplaySettings: Unlock Reading Mode whenever is possible
-* Fixed Device Config check for Ramping ringer
-* Settings: Added an option for FOD in FP location overlay
-* Fixes for SBC Dual Channel (SBC HD Audio) support from Lineage
+- Merged June Security Patch (11.0.0_r38)
+- Synced with latest Lineage FOD source
+- Reapplied and improved fingerprint animations
+- DerpQuest: Separated FOD to a own category
+- Implemented animated FOD icon picker
+- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
+- Reworked Statusbar clock customization
+- Reapplied Multi SIM ringtone settings
+- Added lock pattern grid size settings
+- Added pattern visibility settings
+- Added Fingerprint authentication vibration toggle
+- Updated notification count icons
+- Introduced Custom Statusbar Signal & Wi-Fi icons
+- Settings: Switched to ListPreference instead of DropDownPreference
+- Settings: Switched to MD2 icon for Playstore
+- LiveDisplay: Added color mode preview from AOSP Settings
+- Reduced size of alternative derp logo
+- Fixed time refresh capabilities of custom clocks
 
-* June 14 Changelog
+If you have already released with June sec patch:
 
-* Added support to set volume for app
-* Added App volume row toggle
-* Fixed media art with enabled face unlock
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed existing and added missing drawables for theming section in Display settings
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Fixed wrong VoLTE/VoWiFi slot detection
-* Fixed NPE in PowerShare qs tile
+- Sorted QS tiles in alphabetical order
+- Improved PowerShare QS tile
+- Added Language toggle QS tile
+- Added QS tile to show power menu
+- Added QS tile to show volume panel
+- Reticker: Removed some logging
+- reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+- Let legacy apps scale fully to the display's aspect ratio
+- Changed heads up ticker text style to match clock
+- BatteryMeterView: Fixed logcat warning spam
+- Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+- Made scramble PIN layout Multi-User friendly
+- Added Lockscreen quick unlock
+- Removed Pin dividers layout entirely
+- QSconfig: Re-distribute tiles on changing orientation
+- Hide keyguard when SIM transitions to READY
+- Fod: Aod content should move only in Y
+- Added Screen off fod
+- FODCircleView: Hide FOD while going to sleep and make it conditionally
+- Add lockscreen background blur
+- Fixed Lockscreen media art switch
+- Made center clock layout safe insets aware
+- Added Status bar notification ticker
+- Brought back music ticker
+- Added StatusBar Lyric toggle
+- Fixed order of custom clock and Carrier label
+- Added back accessibility setting in system
+- Added video to power button flashlight gesture
+- Fixed up the check if we have any color modes declared in overlay
+- Reduced size a little of some custom WiFi/Signal icons
+- VolumePanelStyles: Added upstream changes
+- Fixed AOSPExpanded plugin crash with Swift Installer
+- Fixed infinite expanding and apply unlinking to MIUI panel
+- Switched to sha256 checksum
