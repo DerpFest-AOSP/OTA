@@ -1,2 +1,3 @@
-20210415:
-* Fixed video playback
+20210625:
+* Initial OSS Vendor build
+(Notes: Don't upgrade via OTA for this build!)
