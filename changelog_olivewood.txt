@@ -1,0 +1,30 @@
+Device Changelog:
+* Fixed live wallpaper lag
+* Fixed mix distortion
+* Added XiaomiParts
+* Fixed XiaomiParts: thermal profiles
+* Improved battery backup
+* Rendered system ui
+* Improved ram management and ram tweaks
+
+Rom changelogs:
+- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+- Kanged Battery progress card animation from Fluid project 
+- Switched to Vivo VoLTE/VoWifi icons from SSOS
+- Improved AppLock implementation
+- Added preference for changing face unlock method when locked
+- Disallowed certain power menu items while in lock task mode
+- Added VPN QS tile
+- Fixed GamingModeTile long press
+- ScreenshotTile: Use secondary label to indicate mode
+- Added Wakelock Blocker to dev settings
+- Added Alarms Blocker to dev settings
+- Made Volume Panel divider transparent
+- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+- FODCircleView: Fixed up AOD fingerprint support
+- Fixed crash caused by Heads-Up timeout
+- Improved ScreenRecord Dialog layout
+- Cleaned up start service calls of some lineage services
+- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+- Added spacing above emergency call button
+- DerpQuest: Explain to the user why LsBlur is disabled
