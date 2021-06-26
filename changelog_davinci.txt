@@ -1,19 +1,28 @@
 Device Changelog:
-* Update blobs from LA.UM.9.1.r1-09600-SMxxx0.0
-* Drop few useless blobs
-* Cleanup device tree(remove dead flags and build packages)
-* drop duplicated drm prop
-* remove fp hal logspam about perfd
-* Add Russian translation into XiaomiParts
+* Update blobs from miui 21.6.23
+* Upstream latest google f2fs-stable into kranel
+* Upstream kernel to 4.14.237
+* little cleanups in tree
+* switch to newer yaap hals
 
 Rom Changelog:
-* Separated out toggles for statusbar network traffic (this allows to enable/disable network traffic on statusbar and expanded statusbar individually)
-* NetworkTraffic: Further minor refinements
-* AutoBrightness: Added toggle for one shot auto-brightness
-* Added SeamlessClockSwitch from Descendant
-* Added slider for Power menu background opacity
-* GlobalActionsDialog: Removed broken PhoneStateListener for airplane mode toggle
-* GlobalActionsDialog: Added a one minute timeout
-* Tweaked some QQS dimens (this fixes the overlay issues we were having while using custom header images)
-* Once again catched up SBC Dual Channel support with Lineage's code
-* Updated German and Russian translations
+- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+- Kanged Battery progress card animation from Fluid project 
+- Switched to Vivo VoLTE/VoWifi icons from SSOS
+- Improved AppLock implementation
+- Added preference for changing face unlock method when locked
+- Disallowed certain power menu items while in lock task mode
+- Added VPN QS tile
+- Fixed GamingModeTile long press
+- ScreenshotTile: Use secondary label to indicate mode
+- Added Wakelock Blocker to dev settings
+- Added Alarms Blocker to dev settings
+- Made Volume Panel divider transparent
+- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+- FODCircleView: Fixed up AOD fingerprint support
+- Fixed crash caused by Heads-Up timeout
+- Improved ScreenRecord Dialog layout
+- Cleaned up start service calls of some lineage services
+- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+- Added spacing above emergency call button
+- DerpQuest: Explain to the user why LsBlur is disabled
