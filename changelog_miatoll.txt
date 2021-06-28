@@ -1,30 +1,29 @@
-Rom
-[*] Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
-[*] Kanged Battery progress card animation from Fluid project 
-[*] Switched to Vivo VoLTE/VoWifi icons from SSOS
-[*] Improved AppLock implementation
-[*] Added preference for changing face unlock method when locked
-[*] Disallowed certain power menu items while in lock task mode
-[*] Added VPN QS tile
-[*] Fixed GamingModeTile long press
-[*] ScreenshotTile: Use secondary label to indicate mode
-[*] Added Wakelock Blocker to dev settings
-[*] Added Alarms Blocker to dev settings
-[*] Made Volume Panel divider transparent
-[*] AmbientDisplay: Unregister proximity when Screen Off FOD  is active
-[*] FODCircleView: Fixed up AOD fingerprint support
-[*] Fixed crash caused by Heads-Up timeout
-[*] Improved ScreenRecord Dialog layout
-[*] Cleaned up start service calls of some lineage services
-[*] VolumeDialog: Fixed touch area on captions and ringer button when on landscape
-[*] Added spacing above emergency call button
-[*] DerpQuest: Explain to the user why LsBlur is disabled
-[*] add StatusBar Lyric
+ROM
+[*] Added Android S Style Switches from SynthOS
+[*] PixelPropsUtils: Made build property spoofing more reliable
+[*] Added a toggle for using LTE icon instead of 4G
+[*] Fine-tuned Quick Settings layout
+[*] Fixed QS brightness slider in landscape
+[*] Added option to switch between Daily/monthly wifi & mobile data usage on QS
+[*] QSCustomizer: Properly apply changes with header image enabled
+[*] Properly aligned owner info to the 3 left aligned clocks
+[*] Fixed Lock screen pulse being always enabled
+[*] Fixed FloatingRotationButton margin
+[*] Fixed height of the bottom navigation bar when hidden
+[*] Made center clock follow paddingTop
+[*] Fixed signal icon alignment when data is on
+[*] FODCircleView: Improved position update
+[*] Allow Seamless rotation while PIP is active
+[*] DozeTriggers: Added provision to pulse without proximity check
+[*] Removed downgrade check in recovery
+[*] Removed captions info tooltip for all volume panel styles
+[*] Updated vibration patterns from AOSPA
+[*] Updater: Nuked Lineage's website on installation blocked dialog
+[*] Updater: Added network speed into some parts
+[*] Updater: Added ability to install updates from local files and external sd cards
+[*] Enabled Enhanced session detection for Wavelet by default
 
 Device
-[*] Miatoll: Performance improvemenst
-[*] Miatoll: Switch to vibrator hal 1.2
-[*] Miatoll: Fixup! enforcing issues
-[*] miatoll: Yuki kernel updated
+[*] Miatoll: Switch from userdebug to user
 
 Note: If u want more PERF change to the separated Yuki kernel
