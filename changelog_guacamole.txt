@@ -1,3 +1,60 @@
+Date: 28/06/2021
+
+Source Side changes
+* Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+* Kanged Battery progress card animation from Fluid project 
+* Switched to Vivo VoLTE/VoWifi icons from SSOS
+* Improved AppLock implementation
+* Added preference for changing face unlock method when locked
+* Disallowed certain power menu items while in lock task mode
+* Added VPN QS tile
+* Fixed GamingModeTile long press
+* ScreenshotTile: Use secondary label to indicate mode
+* Added Wakelock Blocker to dev settings
+* Added Alarms Blocker to dev settings
+* Made Volume Panel divider transparent
+* AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+* FODCircleView: Fixed up AOD fingerprint support
+* Fixed crash caused by Heads-Up timeout
+* Improved ScreenRecord Dialog layout
+* Cleaned up start service calls of some lineage services
+* VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+* Added spacing above emergency call button
+* DerpQuest: Explain to the user why LsBlur is disabled
+* Added Android S Style Switches from SynthOS
+* PixelPropsUtils: Made build property spoofing more reliable
+* Added a toggle for using LTE icon instead of 4G
+* Fine-tuned Quick Settings layout
+* Fixed QS brightness slider in landscape
+* Added option to switch between Daily/monthly wifi & mobile data usage on QS
+* QSCustomizer: Properly apply changes with header image enabled
+* Properly aligned owner info to the 3 left aligned clocks
+* Fixed Lock screen pulse being always enabled
+* Fixed FloatingRotationButton margin
+* Fixed height of the bottom navigation bar when hidden
+* Made center clock follow paddingTop
+* Fixed signal icon alignment when data is on
+* FODCircleView: Improved position update
+* Allow Seamless rotation while PIP is active
+* DozeTriggers: Added provision to pulse without proximity check
+* Removed downgrade check in recovery
+* Removed captions info tooltip for all volume panel styles
+* Updated vibration patterns from AOSPA
+* Updater: Nuked Lineage's website on installation blocked dialog
+* Updater: Added network speed into some parts
+* Updater: Added ability to install updates from local files and external sd cards
+* Enabled Enhanced session detection for Wavelet by default
+* Fix date fonts
+* Fix left side for miui panel
+
+Device Side changes
+* Switch to AOSP telephony and fic the issue where preffered calling account would reset on reboot
+* Add logic to detect QTI devices
+* Enable proximity check on wake
+* Add the newer auto brightness algo
+* Address some sepolicy
+* Strip out unnecessary SKU customisation
+
 Date: 14/06/2021
 
 Source Side changes
