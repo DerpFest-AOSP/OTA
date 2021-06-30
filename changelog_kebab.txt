@@ -1,59 +1,84 @@
 Rom Changes:
 ========================
-
-* Sorted QS tiles in alphabetical order
-* Improved PowerShare QS tile
-* Added Language toggle QS tile
-* Added QS tile to show power menu
-* Added QS tile to show volume panel
-* Reticker: Removed some logging
-* reTicker: Add youtube to blacklisted apps to avoid getting a null notification
-* Let legacy apps scale fully to the display's aspect ratio
-* Changed heads up ticker text style to match clock
-* BatteryMeterView: Fixed logcat warning spam
-* Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
-* Made scramble PIN layout Multi-User friendly
-* Added Lockscreen quick unlock
-* Removed Pin dividers layout entirely
-* QSconfig: Re-distribute tiles on changing orientation
-* Hide keyguard when SIM transitions to READY
-* Fod: Aod content should move only in Y
-* Added Screen off fod
-* FODCircleView: Hide FOD while going to sleep and make it conditionally
-* Add lockscreen background blur
-* Fixed Lockscreen media art switch
-* Made center clock layout safe insets aware
-* Added Status bar notification ticker
-* Brought back music ticker
-* Added StatusBar Lyric toggle
-* Fixed order of custom clock and Carrier label
-* Added back accessibility setting in system
-* Added video to power button flashlight gesture
-* Fixed up the check if we have any color modes declared in overlay
-* Reduced size a little of some custom WiFi/Signal icons
-* VolumePanelStyles: Added upstream changes
-* Fixed AOSPExpanded plugin crash with Swift Installer
-* Fixed infinite expanding and apply unlinking to MIUI panel
-* Switched to sha256 checksum
+* Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+* Kanged Battery progress card animation from Fluid project 
+* Switched to Vivo VoLTE/VoWifi icons from SSOS
+* Improved AppLock implementation
+* Added preference for changing face unlock method when locked
+* Disallowed certain power menu items while in lock task mode
+* Added VPN QS tile
+* Fixed GamingModeTile long press
+* ScreenshotTile: Use secondary label to indicate mode
+* Added Wakelock Blocker to dev settings
+* Added Alarms Blocker to dev settings
+* Made Volume Panel divider transparent
+* AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+* FODCircleView: Fixed up AOD fingerprint support
+* Fixed crash caused by Heads-Up timeout
+* Improved ScreenRecord Dialog layout
+* Cleaned up start service calls of some lineage services
+* VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+* Added spacing above emergency call button
+* DerpQuest: Explain to the user why LsBlur is disabled
+* Added Android S Style Switches from SynthOS
+* PixelPropsUtils: Made build property spoofing more reliable
+* Added a toggle for using LTE icon instead of 4G
+* Fine-tuned Quick Settings layout
+* Fixed QS brightness slider in landscape
+* Added option to switch between Daily/monthly wifi & mobile data usage on QS
+* QSCustomizer: Properly apply changes with header image enabled
+* Properly aligned owner info to the 3 left aligned clocks
+* Fixed Lock screen pulse being always enabled
+* Fixed FloatingRotationButton margin
+* Fixed height of the bottom navigation bar when hidden
+* Made center clock follow paddingTop
+* Fixed signal icon alignment when data is on
+* FODCircleView: Improved position update
+* Allow Seamless rotation while PIP is active
+* DozeTriggers: Added provision to pulse without proximity check
+* Removed downgrade check in recovery
+* Removed captions info tooltip for all volume panel styles
+* Updated vibration patterns from AOSPA
+* Updater: Nuked Lineage's website on installation blocked dialog
+* Updater: Added network speed into some parts
+* Updater: Added ability to install updates from local files and external sd cards
+* Enabled Enhanced session detection for Wavelet by default
+* Fix date fonts
+* Fix left side for miui panel
 
 Device changes:
 ========================
-
-* sm8250-common: Add init script to set properties per variant
-* sm8250-common: Prepend "system/" before paths where necessary
-* sm8250-common: Move "proprietary" seccomp policies to vendor
-* sm8250-common: sepolicy: Move tri-state-key labels to genfs_contexts
 * sm8250-common: Pull init.oem.rc changes from OOS 11.0.6.6
 * sm8250-common: Enable incremental FS feature.
-* sm8250-common: fod: Move to AOSP Soong conditionals
 * sm8250-common: Introduce DeviceExtras package!
-* sm8250-common: DeviceExtras: Limit maximum vibrator strength level
+* sm8250-common: DeviceExtras: Limit maximum vibrator strength level … …
 * sm8250-common: Add device OnePlus device specific props
 * sm8250-common: BoardConfig: Remove USE_XML_AUDIO_POLICY_CONF
-* sm8250-common: DeviceExtras: QS to set post-routing packet TTL to 64
+* sm8250-common: DeviceExtras: Add OnePlus Dolby
+* sm8250-common: update some prebuilt apps
+* sm8250-common: Update DaxUI.apk
+* sm8250-common: rootdir: Relocate system DAC rules
+* sm8250-common: overlay: Set IWLAN data service package name
+* sm8250-common: configs: input: Remove unused .kl & .idc device files
+* sm8250-common: Copy haptics exclusion config directly from QTI repo
+* sm8250-common: update some more prebuilt apps
+* sm8250-common: rootdir: Strip out unnecessary SKU customization
+* sm8250-common: fod: Return touched z-order only
+* sm8250-common: fod: Properly set dim
+* sm8250-common: fod: Remove no longer needed chown/chmod and sepolicy
+* sm8250-common: fod: Set thread to high CFS priority
+sm8250-common: overlay: update carrierconfig overlay
+sm8250-common: Add OnePlus Camera Support!
 
-* kebab: overlay: Improve status bar alignment and hole jagged
-* kebab: fix maintainer name so it will show in settings
-* kebab: change statusbar padding to my liking.
-* kebab: Init README.md
-*
+* kebab: set vendor.product.device
+* kebab: specify board-info for update asserts
+* kebab: Import camera blobs list from common
+
+* vendor: sm8250-common: Import OpDolby blobs
+* vensor: sm8250-common: Hide Dolby Atmos from launcher
+* vendor: sm8250-common: Decommonize camera blobs
+* vendor: kebab: Import camera blobs from common
+
+* common: Import CameraMDMHIDL HAL
+* common: Import camera HAL
+* common: common: Move CameraMDMHIDL to hardware
