@@ -1,3 +1,25 @@
+Date: 05/07/2021
+
+Source side
+* Switched to Derp launcher and AOSP telephony stack
+* Replaced Gallery with Camera Roll prebuilt
+* Added three Android S style Clocks
+* Moved percentage to left of battery
+* OPQSFooter: Reduced action button size
+* Forced clock to disappear when keyguard is showing
+* BrightnessController: Tuned the slider animation duration
+* BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+* BrightnessAnimator: Make ramp rate non-linear for very low values
+* Added a config for maintainers to show correct VoLTE/VoWiFi slot
+* DeskClock: Snooze: Mimic dismiss reveal
+
+Device Side
+* Add prebuilt OOS cam and OOS gallery (Portrait is broken)
+* Improve vibrations
+* Fix wfd
+* Force DSDS for selected variants
+* Overlay tethering and wifi stacks from elgoog
+
 Date: 28/06/2021
 
 Source Side changes
