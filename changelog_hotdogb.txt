@@ -1,34 +1,22 @@
 Source Changes:
-- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
-- Kanged Battery progress card animation from Fluid project
-- Switched to Vivo VoLTE/VoWifi icons from SSOS
-- Improved AppLock implementation
-- Added preference for changing face unlock method when locked
-- Disallowed certain power menu items while in lock task mode
-- Added VPN QS tile
-- Fixed GamingModeTile long press
-- ScreenshotTile: Use secondary label to indicate mode
-- Added Wakelock Blocker to dev settings
-- Added Alarms Blocker to dev settings
-- Made Volume Panel divider transparent
-- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
-- FODCircleView: Fixed up AOD fingerprint support
-- Fixed crash caused by Heads-Up timeout
-- Improved ScreenRecord Dialog layout
-- Cleaned up start service calls of some lineage services
-- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
-- Added spacing above emergency call button
-- DerpQuest: Explain to the user why LsBlur is disabled
+- Merged July Security Patch (11.0.0_r39)
+- Fixed disappearing status bar clock
+- Added Flashlight blink on incoming calls options
+- Switched to Derp launcher and AOSP telephony stack
+- Replaced Gallery with Camera Roll prebuilt
+- Added three Android S style Clocks
+- Moved percentage to left of battery
+- OPQSFooter: Reduced action button size
+- Forced clock to disappear when keyguard is showing
+- BrightnessController: Tuned the slider animation duration
+- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+- BrightnessAnimator: Make ramp rate non-linear for very low values
+- Added a config for maintainers to show correct VoLTE/VoWiFi slot
+- DeskClock: Snooze: Mimic dismiss reveal
 
 Device Changes:
-- Moved lockscreen charging text down
-- Moved the ambient music indication down
-- Few improvements to vibration effects
-- doze: Enabled proximity sensor check for raise to wake
-- New ALS correction algorithm from AOSPA
-- Decreased auto-brightness ramp rates
-- Added QVA static overlay configs for BT
-- Switched to armv8-2a in TARGET_2ND_ARCH_VARIANT
-- Fixed SELinux denials for a2dp and adsprpc-smd-secure
-- Improved default volume table to fix low call volume
-- Merged all the latest GulchR kernel changes
+- Added OP Camera and Gallery
+- Switched to prebuilt vendor libdisplayconfig.qti.so
+- Overlay tethering and wifi stack from Google
+- Added Verizon support
+- Changed from GulchR kernel for Derp Kernel
