@@ -1,34 +1,33 @@
 Device changes:
 ========================
-* June security patch
-* Kernel Upstream to 4.9.272
-* Merged latest caf tag LA.UM.9.3.r1-02100-sdm845.0 into kernel.
+* July security patch
+* Moved to User build for more safety
+* Kernel Upstream to 4.9.274
 * Kernel compiled with latest proton Clang 13.0.0
-* Updated Redfin's june fp
-* Added Notch city
-* Fixed Fod in Notch city
-* Added Descendant’s Seamless Clock Switch feature
-* Added Animated fod icons
-* Introduced Custom Statusbar Signal & Wi-Fi icons
-* Added Custom FOD icon(User can choose png files as fod icon)
+* Updated Redfin's july fp
+* Updated Moto dolby
+* Fixed clock overlapping
 * SafteyNet Pass without root as usual
-* More improvements & fixes
+* More improvements & bug fixes
 
 Rom Changes:
 ========================
 
-* Merged June Security Patch (11.0.0_r38)
-* Synced with latest Lineage FOD source
-* Reapplied and improved FOD animations
-* Added New FOD Animations from realme
-* DerpQuest: Separated FOD to a own category
-* Implemented animated FOD icon picker
-* Added FOD icon pressed colors
-* Added Custom FOD icon(User can choose png files as fod icon)
-* Statusbar clock customization
-* Added Fingerprint authentication vibration toggle
-* Added Volume Rocker Wake
-* Added quick unlock(after reboot)
-* Disable PIN entry after successful quick unlock
-* NetworkTraffic: Minor refinements
-* More
+* Switched to Derp launcher and AOSP telephony stack
+* Replaced Gallery with Camera Roll prebuilt
+* Added three Android S style Clocks
+* Moved percentage to left of battery
+* OPQSFooter: Reduced action button size
+* Forced clock to disappear when keyguard is showing
+* BrightnessController: Tuned the slider animation duration
+* BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+* BrightnessAnimator: Make ramp rate non-linear for very low values
+* Added a config for maintainers to show correct VoLTE/VoWiFi slot
+* DeskClock: Snooze: Mimic dismiss reveal
+* Kanged Battery progress card animation from Fluid project
+* Switched to Vivo VoLTE/VoWifi icons from SSOS
+* Added Android S Style Switches from SynthOS
+* Added option to switch between Daily/monthly wifi & mobile data usage on QS
+* Added a toggle for using LTE icon instead of 4G
+* FOD Improvements
+* Many more
