@@ -1,37 +1,53 @@
 Changelogs for Build -
 
 Source Side -
-- Merged June Security Patch (11.0.0_r38)
-- Synced with latest Lineage FOD source
-- Reapplied and improved fingerprint animations
-- DerpQuest: Separated FOD to a own category
-- Implemented animated FOD icon picker
-- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
-- Reworked Statusbar clock customization
-- Reapplied Multi SIM ringtone settings
-- Added lock pattern grid size settings
-- Added pattern visibility settings
-- Added Fingerprint authentication vibration toggle
-- Updated notification count icons
-- Introduced Custom Statusbar Signal & Wi-Fi icons
-- Settings: Switched to ListPreference instead of DropDownPreference
-- Settings: Switched to MD2 icon for Playstore
-- LiveDisplay: Added color mode preview from AOSP Settings
+- Merged July Security Patch (11.0.0_r39)
+- Switched to Derp launcher and AOSP telephony stack
+- Replaced Gallery with Camera Roll prebuilt
+- Added three Android S style Clocks
+- Moved percentage to left of battery
+- OPQSFooter: Reduced action button size
+- Forced clock to disappear when keyguard is showing
+- BrightnessController: Tuned the slider animation duration
+- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+- BrightnessAnimator: Make ramp rate non-linear for very low values
+- Added a config for maintainers to show correct VoLTE/VoWiFi slot
+- DeskClock: Snooze: Mimic dismiss reveal
+- Added Android S Style Switches from SynthOS
+- PixelPropsUtils: Made build property spoofing more reliable
+- Added a toggle for using LTE icon instead of 4G
+- Fine-tuned Quick Settings layout
+- Fixed QS brightness slider in landscape
+- Added option to switch between Daily/monthly wifi & mobile data usage on QS
+- QSCustomizer: Properly apply changes with header image enabled
+- Properly aligned owner info to the 3 left aligned clocks
+- Fixed Lock screen pulse being always enabled
+- Fixed FloatingRotationButton margin
+- Fixed height of the bottom navigation bar when hidden
+- Made center clock follow paddingTop
+- Fixed signal icon alignment when data is on
+- FODCircleView: Improved position update
+- Allow Seamless rotation while PIP is active
+- DozeTriggers: Added provision to pulse without proximity check
+- Removed downgrade check in recovery
+- Removed captions info tooltip for all volume panel styles
+- Updated vibration patterns from AOSPA
+- Updater: Nuked Lineage's website on installation blocked dialog
+- Updater: Added network speed into some parts
+- Updater: Added ability to install updates from local files and external sd cards
+- Enabled Enhanced session detection for Wavelet by default
 
 Device Side - 
-- Added Blurs 
-- Added KCAL ( display saturation, hue color control etc )
-- Added Vibration Control
-- Fixed Offline Charging ( charging at switched off state )
-- Added Notch cutout toggle ( pill and punch hole )
-- Updated Redfin fp to June
-- Fixed 24-bit Audio Playback
+- Update Blobs from 21.6.2
+- Fixed Telegram Camera Crash
+- Fixed Zoom glitch in MIUI camera
+- Force triple frame buffers ( lower jitter levels )
+- Imporved smoothness with Blurs on
 
 Kernel Side -
-- Upstreamed to 4.14.236
-- Fixed Battery Drain Issue
-- Switch governer back to schedutil for little cores ( No more Heating issues at normal usage )
-- Fixed Screen Flickering ( thanks to @YuanziX )
-- Nuke cpu input boost
-- Reconfigured devfreq boost
+- Upstreamed to 4.14.238
+- Fixed Random Reboots
+- Bring back old gpu drm drivers
+- Imporved UI smoothness
+- full changelog - https://github.com/redcliff-op/android_kernel_xiaomi_phoenix/commits/R
 
