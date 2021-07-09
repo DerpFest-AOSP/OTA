@@ -1,3 +1,59 @@
+# Build Date - 09/07/2021
+
+Device Changelog:
+
+• Bump Redfin fingerprint to july
+• Update blobs from daisy V11.0.20.0.QDLMIXM
+• Don't pin launcher app in memory
+• Don't pin camera app in memory
+• Nuked some more prebuilt apps
+• Increase ZRAM size to 2GB
+• Remove USE_XML_AUDIO_POLICY_CONF
+• Enable zram-writeback job
+• Nuked data migration scripts
+• Enable Smooth Streaming for secure video playback
+• Some more changes
+
+Source Changelog:
+
+
+- Merged July Security Patch
+- Switched to Derp launcher and AOSP telephony stack
+- Replaced Gallery with Camera Roll prebuilt
+- Added three Android S style Clocks
+- Moved percentage to left of battery
+- OPQSFooter: Reduced action button size
+- Forced clock to disappear when keyguard is showing
+- BrightnessController: Tuned the slider animation duration
+- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+- BrightnessAnimator: Make ramp rate non-linear for very low values
+- Added a config for maintainers to show correct VoLTE/VoWiFi slot
+- DeskClock: Snooze: Mimic dismiss reveal
+- Added Android S Style Switches from SynthOS
+- PixelPropsUtils: Made build property spoofing more reliable
+- Added a toggle for using LTE icon instead of 4G
+- Fine-tuned Quick Settings layout
+- Fixed QS brightness slider in landscape
+- Added option to switch between Daily/monthly wifi & mobile data usage on QS
+- QSCustomizer: Properly apply changes with header image enabled
+- Properly aligned owner info to the 3 left aligned clocks
+- Fixed Lock screen pulse being always enabled
+- Fixed FloatingRotationButton margin
+- Fixed height of the bottom navigation bar when hidden
+- Made center clock follow paddingTop
+- Fixed signal icon alignment when data is on
+- FODCircleView: Improved position update
+- Allow Seamless rotation while PIP is active
+- DozeTriggers: Added provision to pulse without proximity check
+- Removed downgrade check in recovery
+- Removed captions info tooltip for all volume panel styles
+- Updated vibration patterns from AOSPA
+- Updater: Nuked Lineage's website on installation blocked dialog
+- Updater: Added network speed into some parts
+- Updater: Added ability to install updates from local files and external sd cards
+- Enabled Enhanced session detection for Wavelet by default
+
+
 # Build Date - 12/06/2021
 
 Device Changelog:
