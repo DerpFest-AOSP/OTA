@@ -1,27 +1,69 @@
-# Build Date - 10/6/2021
-
-Device Changelog : 
-- Updated Several Blobs
-- Several Performance Updates
-- Fixed Statusbar Padding (Issue in Last Build)
-- Nuked Some Unnessasary Packages
-- WFD (Works on Some TV's, probably doesn't work on Laptops yet) 
-- Kernel Upstreamed by Sreekanth!
+# Build Date - 10/7/2021
 
 Rom Changelog :
-- Merged June Security Patch (11.0.0_r38)
-- Synced with latest Lineage FOD source
-- Reapplied and improved fingerprint animations
-- DerpQuest: Separated FOD to a own category
-- Implemented animated FOD icon picker
-- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
-- Reworked Statusbar clock customization
-- Reapplied Multi SIM ringtone settings
-- Added lock pattern grid size settings
-- Added pattern visibility settings
-- Added Fingerprint authentication vibration toggle
-- Updated notification count icons
-- Introduced Custom Statusbar Signal & Wi-Fi icons
-- Settings: Switched to ListPreference instead of DropDownPreference
-- Settings: Switched to MD2 icon for Playstore
-- LiveDisplay: Added color mode preview from AOSP Settings
+- Merged July Security Patch (11.0.0_r39)
+- Sorted QS tiles in alphabetical order
+- Improved PowerShare QS tile
+- Added Language toggle QS tile
+- Added QS tile to show power menu
+- Added QS tile to show volume panel
+- Reticker: Removed some logging
+- reTicker: Add youtube to blacklisted apps to avoid getting a null notification
+- Let legacy apps scale fully to the display's aspect ratio
+- Changed heads up ticker text style to match clock
+- BatteryMeterView: Fixed logcat warning spam
+- Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
+- Made scramble PIN layout Multi-User friendly
+- Added Lockscreen quick unlock
+- Removed Pin dividers layout entirely
+- QSconfig: Re-distribute tiles on changing orientation
+- Hide keyguard when SIM transitions to READY
+- Fod: Aod content should move only in Y
+- Added Screen off fod
+- FODCircleView: Hide FOD while going to sleep and make it conditionally
+- Add lockscreen background blur
+- Fixed Lockscreen media art switch
+- Made center clock layout safe insets aware
+- Added Status bar notification ticker
+- Brought back music ticker
+- Added StatusBar Lyric toggle
+- Fixed order of custom clock and Carrier label
+- Added back accessibility setting in system
+- Added video to power button flashlight gesture
+- Fixed up the check if we have any color modes declared in overlay
+- Reduced size a little of some custom WiFi/Signal icons
+- VolumePanelStyles: Added upstream changes
+- Fixed AOSPExpanded plugin crash with Swift Installer
+- Fixed infinite expanding and apply unlinking to MIUI panel
+- Switched to sha256 checksum
+- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
+- Kanged Battery progress card animation from Fluid project 
+- Switched to Vivo VoLTE/VoWifi icons from SSOS
+- Improved AppLock implementation
+- Added preference for changing face unlock method when locked
+- Disallowed certain power menu items while in lock task mode
+- Added VPN QS tile
+- Fixed GamingModeTile long press
+- ScreenshotTile: Use secondary label to indicate mode
+- Added Wakelock Blocker to dev settings
+- Added Alarms Blocker to dev settings
+- Made Volume Panel divider transparent
+- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
+- FODCircleView: Fixed up AOD fingerprint support
+- Fixed crash caused by Heads-Up timeout
+- Improved ScreenRecord Dialog layout
+- Cleaned up start service calls of some lineage services
+- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
+- Added spacing above emergency call button
+- DerpQuest: Explain to the user why LsBlur is disabled
+- Switched to Derp launcher and AOSP telephony stack
+- Replaced Gallery with Camera Roll prebuilt
+- Added three Android S style Clocks
+- Moved percentage to left of battery
+- OPQSFooter: Reduced action button size
+- Forced clock to disappear when keyguard is showing
+- BrightnessController: Tuned the slider animation duration
+- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+- BrightnessAnimator: Make ramp rate non-linear for very low values
+- Added a config for maintainers to show correct VoLTE/VoWiFi slot
+- DeskClock: Snooze: Mimic dismiss reveal
