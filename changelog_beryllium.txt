@@ -1,100 +1,23 @@
-* Updated DuckDuckGo, GCamGo & QP Gallery
-* Switched to AOSP Offline Charging
-* Updated IMS Blobs
-* Enabled In-Call Music Support
-* Rebased ReX Kernel over latest LOS Kernel
-* Merged June Security Patch (11.0.0_r38)
-* Added Android S Style Switches from SynthOS
-* PixelPropsUtils: Made build property spoofing more reliable
-* Added a toggle for using LTE icon instead of 4G
-* Fine-tuned Quick Settings layout
-* Fixed QS brightness slider in landscape
-* Added option to switch between Daily/monthly wifi & mobile data usage on QS
-* QSCustomizer: Properly apply changes with header image enabled
-* Properly aligned owner info to the 3 left aligned clocks
-* Fixed Lock screen pulse being always enabled
-* Fixed FloatingRotationButton margin
-* Fixed height of the bottom navigation bar when hidden
-* Made center clock follow paddingTop
-* Fixed signal icon alignment when data is on
-* FODCircleView: Improved position update
-* Allow Seamless rotation while PIP is active
-* DozeTriggers: Added provision to pulse without proximity check
-* Removed downgrade check in recovery
-* Removed captions info tooltip for all volume panel styles
-* Updated vibration patterns from AOSPA
-* Updater: Nuked Lineage's website on installation blocked dialog
-* Updater: Added network speed into some parts
-* Updater: Added ability to install updates from local files and external sd cards
-* Enabled Enhanced session detection for Wavelet by default
-* Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
-* Kanged Battery progress card animation from Fluid project
-* Switched to Vivo VoLTE/VoWifi icons from SSOS
-* Improved AppLock implementation
-* Added preference for changing face unlock method when locked
-* Disallowed certain power menu items while in lock task mode
-* Added VPN QS tile
-* Fixed GamingModeTile long press
-* ScreenshotTile: Use secondary label to indicate mode
-* Added Wakelock Blocker to dev settings
-* Added Alarms Blocker to dev settings
-* Made Volume Panel divider transparent
-* AmbientDisplay: Unregister proximity when Screen Off FOD  is active
-* FODCircleView: Fixed up AOD fingerprint support
-* Fixed crash caused by Heads-Up timeout
-* Improved ScreenRecord Dialog layout
-* Cleaned up start service calls of some lineage services
-* VolumeDialog: Fixed touch area on captions and ringer button when on landscape
-* Added spacing above emergency call button
-* DerpQuest: Explain to the user why LsBlur is disabled
-* Synced with latest Lineage FOD source
-* Reapplied and improved fingerprint animations
-* DerpQuest: Separated FOD to a own category
-* Implemented animated FOD icon picker
-* LockscreenCharging: Fixed up jank and brought in °F/°C toggle
-* Reworked Statusbar clock customization
-* Reapplied Multi SIM ringtone settings
-* Added lock pattern grid size settings
-* Added pattern visibility settings
-* Added Fingerprint authentication vibration toggle
-* Updated notification count icons
-* Introduced Custom Statusbar Signal & Wi-Fi icons
-* Settings: Switched to ListPreference instead of DropDownPreference
-* Settings: Switched to MD2 icon for Playstore
-* LiveDisplay: Added color mode preview from AOSP Settings
-* Reduced size of alternative derp logo
-* Fixed time refresh capabilities of custom clocks
-* Sorted QS tiles in alphabetical order
-* Improved PowerShare QS tile
-* Added Language toggle QS tile
-* Added QS tile to show power menu
-* Added QS tile to show volume panel
-* Reticker: Removed some logging
-* reTicker: Add youtube to blacklisted apps to avoid getting a null notification
-* Let legacy apps scale fully to the display's aspect ratio
-* Changed heads up ticker text style to match clock
-* BatteryMeterView: Fixed logcat warning spam
-* Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
-* Made scramble PIN layout Multi-User friendly
-* Added Lockscreen quick unlock
-* Removed Pin dividers layout entirely
-* QSconfig: Re-distribute tiles on changing orientation
-* Hide keyguard when SIM transitions to READY
-* Fod: Aod content should move only in Y
-* Added Screen off fod
-* FODCircleView: Hide FOD while going to sleep and make it conditionally
-* Add lockscreen background blur
-* Fixed Lockscreen media art switch
-* Made center clock layout safe insets aware
-* Added Status bar notification ticker
-* Brought back music ticker
-* Added StatusBar Lyric toggle
-* Fixed order of custom clock and Carrier label
-* Added back accessibility setting in system
-* Added video to power button flashlight gesture
-* Fixed up the check if we have any color modes declared in overlay
-* Reduced size a little of some custom WiFi/Signal icons
-* VolumePanelStyles: Added upstream changes
-* Fixed AOSPExpanded plugin crash with Swift Installer
-* Fixed infinite expanding and apply unlinking to MIUI panel
-* Switched to sha256 checksum
+* Merged July Security Patch (11.0.0_r39)
+* Fixed visual glitch with data usage QS footer when pulling the panel
+* Improved QS footer layout
+* Added toggle to hide QS Footer page indicator
+* Added notification header and clear all gravity customizations
+* Added animation to clear all button
+* Added Flashlight blink on incoming calls options
+* Added On-The-Go Mode to optional power menu user actions
+* Added On-The-Go QS Tile
+* Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
+* VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
+* Added per app volume row to all volume plugins
+* MiuiCompactPanel: Make the corners perfectly rounded
+* OctaviDigitalClock: Added font customization support
+* Switched to Hastebin for copying crash logs
+* Added Animated Spark FOD icon
+* BiometricPrompt: Automatically add padding to incorporate FOD
+* FODCircleView: Hide if fingerprint detection stops
+* Set clock text color based on wallpapers for Android S clock
+* Fixed some NPEs in Android S Clock
+* Attempt to align owner info on Android S clocks
+* Imported Screen lock and keypress sounds from OOS 11
+* Updated German translations
