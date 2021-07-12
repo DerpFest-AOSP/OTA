@@ -1,22 +1,24 @@
-Source Changes:
+Source Changelog:
 - Merged July Security Patch (11.0.0_r39)
-- Fixed disappearing status bar clock
+- Fixed visual glitch with data usage QS footer when pulling the panel
+- Improved QS footer layout
+- Added toggle to hide QS Footer page indicator
+- Added notification header and clear all gravity customizations
+- Added animation to clear all button
 - Added Flashlight blink on incoming calls options
-- Switched to Derp launcher and AOSP telephony stack
-- Replaced Gallery with Camera Roll prebuilt
-- Added three Android S style Clocks
-- Moved percentage to left of battery
-- OPQSFooter: Reduced action button size
-- Forced clock to disappear when keyguard is showing
-- BrightnessController: Tuned the slider animation duration
-- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
-- BrightnessAnimator: Make ramp rate non-linear for very low values
-- Added a config for maintainers to show correct VoLTE/VoWiFi slot
-- DeskClock: Snooze: Mimic dismiss reveal
-
-Device Changes:
-- Added OP Camera and Gallery
-- Switched to prebuilt vendor libdisplayconfig.qti.so
-- Overlay tethering and wifi stack from Google
-- Added Verizon support
-- Changed from GulchR kernel for Derp Kernel
+- Added On-The-Go Mode to optional power menu user actions
+- Added On-The-Go QS Tile
+- Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
+- VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
+- Added per app volume row to all volume plugins
+- MiuiCompactPanel: Make the corners perfectly rounded
+- OctaviDigitalClock: Added font customization support
+- Switched to Hastebin for copying crash logs
+- Added Animated Spark FOD icon
+- BiometricPrompt: Automatically add padding to incorporate FOD
+- FODCircleView: Hide if fingerprint detection stops
+- Set clock text color based on wallpapers for Android S clock
+- Fixed some NPEs in Android S Clock
+- Attempt to align owner info on Android S clocks
+- Imported Screen lock and keypress sounds from OOS 11
+- Updated German translations
