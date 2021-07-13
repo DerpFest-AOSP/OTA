@@ -1,28 +1,27 @@
-# Build Date - 10/6/2021
+Device changes:
+========================
+* July security patch
+* Update Yuki kernel
+* More improvements & bug fixes
+* Update source based on Grewal's
 
-Device Changelog : 
-Update blobs from Miui V12.5.1.0
-Adjusted the brightness in AOD
-Audio improvements
-Yuki Kernel
-  
-  Thanks to Klozz and Grewal
+Rom Changes:
+========================
 
-
-Rom Changelog :
-- Merged June Security Patch (11.0.0_r38)
-- Synced with latest Lineage FOD source
-- Reapplied and improved fingerprint animations
-- DerpQuest: Separated FOD to a own category
-- Implemented animated FOD icon picker
-- LockscreenCharging: Fixed up jank and brought in °F/°C toggle
-- Reworked Statusbar clock customization
-- Reapplied Multi SIM ringtone settings
-- Added lock pattern grid size settings
-- Added pattern visibility settings
-- Added Fingerprint authentication vibration toggle
-- Updated notification count icons
-- Introduced Custom Statusbar Signal & Wi-Fi icons
-- Settings: Switched to ListPreference instead of DropDownPreference
-- Settings: Switched to MD2 icon for Playstore
-- LiveDisplay: Added color mode preview from AOSP Settings
+* Switched to Derp launcher and AOSP telephony stack
+* Replaced Gallery with Camera Roll prebuilt
+* Added three Android S style Clocks
+* Moved percentage to left of battery
+* OPQSFooter: Reduced action button size
+* Forced clock to disappear when keyguard is showing
+* BrightnessController: Tuned the slider animation duration
+* BrightnessSlider: Scale animation duration with defined BrightnessRampRate
+* BrightnessAnimator: Make ramp rate non-linear for very low values
+* Added a config for maintainers to show correct VoLTE/VoWiFi slot
+* DeskClock: Snooze: Mimic dismiss reveal
+* Kanged Battery progress card animation from Fluid project
+* Switched to Vivo VoLTE/VoWifi icons from SSOS
+* Added Android S Style Switches from SynthOS
+* Added option to switch between Daily/monthly wifi & mobile data usage on QS
+* Added a toggle for using LTE icon instead of 4G
+* Many more
