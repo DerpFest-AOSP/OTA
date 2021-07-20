@@ -1,28 +1,32 @@
 Device Changelog:
-* Update blobs from miui 21.6.23
-* Upstream latest google f2fs-stable into kranel
-* Upstream kernel to 4.14.237
-* little cleanups in tree
-* switch to newer yaap hals
+- Update miui blobs from 21.7.14
+- Switch to some stock telephony blobs
+- Update most of blobs from LA.UM.9.1.r1-10200-SMxxx0.0
+- Update gps hal from LA.UM.9.1.r1-10200-SMxxx0.0
+- Upstream kernel from LA.UM.9.1.r1-10600-SMxxx0.0 caf tag
+- Upstream kernel to 4.14.239
+- Uprev livedisplay to 2.1
 
 Rom Changelog:
-- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
-- Kanged Battery progress card animation from Fluid project 
-- Switched to Vivo VoLTE/VoWifi icons from SSOS
-- Improved AppLock implementation
-- Added preference for changing face unlock method when locked
-- Disallowed certain power menu items while in lock task mode
-- Added VPN QS tile
-- Fixed GamingModeTile long press
-- ScreenshotTile: Use secondary label to indicate mode
-- Added Wakelock Blocker to dev settings
-- Added Alarms Blocker to dev settings
-- Made Volume Panel divider transparent
-- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
-- FODCircleView: Fixed up AOD fingerprint support
-- Fixed crash caused by Heads-Up timeout
-- Improved ScreenRecord Dialog layout
-- Cleaned up start service calls of some lineage services
-- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
-- Added spacing above emergency call button
-- DerpQuest: Explain to the user why LsBlur is disabled
+- Switched to new default wallpaper (thanks to @pseudo_nerd)
+- Added back "bypass lockscreen after face unlock" preference
+- Added Wake on plug switch
+- Redesigned Media Player view to Android S Style
+- Added switch to sensor block settings
+- Added FastCharge preference into Battery settings for capable devices
+- Display actual charge tech in battery settings
+- ShapeShiftPanel: Added alarm volume slider
+- ShapeShiftPanel: Redesigned output switcher UI
+- OOSPanel: Improved UI
+- Fixed volume panel permanently visible when changing the panel side while the panel is open
+- DataSwitchTile: Improved the code
+- Added Sammy 404 clock
+- ClockertinoClock: Added time refresh capabilities on AoD
+- Introduced experimental Accent color options for Custom lockscreen clocks
+- TypeClock: Added 24h format support
+- TypeClock: Added DE translations for 24h mode
+- Launcher3: Added show Date instead of Now Playing switch
+- QuickSpace: Made NowPlaying clickable
+- Quickspace: Added contextual messages/greetings event
+- Removed IORap props
+- Reversed an incorrect check in AutoRestrictionPreferenceController
