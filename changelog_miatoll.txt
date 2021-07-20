@@ -1,29 +1,51 @@
 ROM
-[*] Added Android S Style Switches from SynthOS
-[*] PixelPropsUtils: Made build property spoofing more reliable
-[*] Added a toggle for using LTE icon instead of 4G
-[*] Fine-tuned Quick Settings layout
-[*] Fixed QS brightness slider in landscape
-[*] Added option to switch between Daily/monthly wifi & mobile data usage on QS
-[*] QSCustomizer: Properly apply changes with header image enabled
-[*] Properly aligned owner info to the 3 left aligned clocks
-[*] Fixed Lock screen pulse being always enabled
-[*] Fixed FloatingRotationButton margin
-[*] Fixed height of the bottom navigation bar when hidden
-[*] Made center clock follow paddingTop
-[*] Fixed signal icon alignment when data is on
-[*] FODCircleView: Improved position update
-[*] Allow Seamless rotation while PIP is active
-[*] DozeTriggers: Added provision to pulse without proximity check
-[*] Removed downgrade check in recovery
-[*] Removed captions info tooltip for all volume panel styles
-[*] Updated vibration patterns from AOSPA
-[*] Updater: Nuked Lineage's website on installation blocked dialog
-[*] Updater: Added network speed into some parts
-[*] Updater: Added ability to install updates from local files and external sd cards
-[*] Enabled Enhanced session detection for Wavelet by default
+[*] Merged July Security Patch (11.0.0_r39)
+[*] Fixed visual glitch with data usage QS footer when pulling the panel
+[*] Improved QS footer layout
+[*] Added toggle to hide QS Footer page indicator
+[*] Added notification header and clear all gravity customizations
+[*] Added animation to clear all button
+[*] Added Flashlight blink on incoming calls options
+[*] Added On-The-Go Mode to optional power menu user actions
+[*] Added On-The-Go QS Tile
+[*] Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
+[*] VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
+[*] Added per app volume row to all volume plugins
+[*] MiuiCompactPanel: Make the corners perfectly rounded
+[*] OctaviDigitalClock: Added font customization support
+[*] Switched to Hastebin for copying crash logs
+[*] Added Animated Spark FOD icon
+[*] BiometricPrompt: Automatically add padding to incorporate FOD
+[*] FODCircleView: Hide if fingerprint detection stops
+[*] Set clock text color based on wallpapers for Android S clock
+[*] Fixed some NPEs in Android S Clock
+[*] Attempt to align owner info on Android S clocks
+[*] Imported Screen lock and keypress sounds from OOS 11
+[*] Updated German translations
+[*] Switched to new default wallpaper (thanks to @pseudo_nerd)
+[*] Added back "bypass lockscreen after face unlock" preference
+[*] Added Wake on plug switch
+[*] Redesigned Media Player view to Android S Style
+[*] Added switch to sensor block settings
+[*] Added FastCharge preference into Battery settings for capable devices
+[*] Display actual charge tech in battery settings
+[*] ShapeShiftPanel: Added alarm volume slider
+[*] ShapeShiftPanel: Redesigned output switcher UI
+[*] OOSPanel: Improved UI
+[*] Fixed volume panel permanently visible when changing the panel side while the panel is open
+[*] DataSwitchTile: Improved the code
+[*] Added Sammy 404 clock
+[*] ClockertinoClock: Added time refresh capabilities on AoD
+[*] Introduced experimental Accent color options for Custom lockscreen clocks
+[*] TypeClock: Added 24h format support
+[*] TypeClock: Added DE translations for 24h mode
+[*] Launcher3: Added show Date instead of Now Playing switch
+[*] QuickSpace: Made NowPlaying clickable
+[*] Quickspace: Added contextual messages/greetings event
+[*] Removed IORap props
+[*] Reversed an incorrect check in AutoRestrictionPreferenceController
 
 Device
-[*] Miatoll: Switch from userdebug to user
+[*] Miatoll: misc changes
 
 Note: If u want more PERF change to the separated Yuki kernel
