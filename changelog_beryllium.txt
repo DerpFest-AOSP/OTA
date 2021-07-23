@@ -1,24 +1,4 @@
-* Updated DuckDuckGo
-* Compiled Kernel with EVA GCC
-* Switched to new default wallpaper (thanks to @pseudo_nerd)
-* Added back "bypass lockscreen after face unlock" preference
-* Added Wake on plug switch
-* Redesigned Media Player view to Android S Style
-* Added switch to sensor block settings
-* Added FastCharge preference into Battery settings for capable devices
-* Display actual charge tech in battery settings
-* ShapeShiftPanel: Added alarm volume slider
-* ShapeShiftPanel: Redesigned output switcher UI
-* Removed OOS Volume Panel
-* Fixed volume panel permanently visible when changing the panel side while the panel is open
-* DataSwitchTile: Improved the code
-* Added Sammy 404 clock
-* ClockertinoClock: Added time refresh capabilities on AoD
-* Introduced experimental Accent color options for Custom lockscreen clocks
-* TypeClock: Added 24h format support
-* TypeClock: Added DE translations for 24h mode
-* Launcher3: Added show Date instead of Now Playing switch
-* QuickSpace: Made NowPlaying clickable
-* Quickspace: Added contextual messages/greetings event
-* Removed IORap props
-* Reversed an incorrect check in AutoRestrictionPreferenceController
+* Updated Kernel to 4.9.276
+* Switched to launcher3
+* Fixed bug with the OTA
+* Added back Wallpaper Zooming
