@@ -1,5 +1,6 @@
 Rom Changes:
 ========================
+07-16-21
 * Merged July Security Patch (11.0.0_r39)
 * Fixed visual glitch with data usage QS footer when pulling the panel
 * Improved QS footer layout
@@ -24,8 +25,34 @@ Rom Changes:
 * Imported Screen lock and keypress sounds from OOS 11
 * Updated German translations
 
+07-23-21
+* Switched to new default wallpaper (thanks to @pseudo_nerd)
+* Added back "bypass lockscreen after face unlock" preference
+* Added Wake on plug switch
+* Redesigned Media Player view to Android S Style
+* Added switch to sensor block settings
+* Added FastCharge preference into Battery settings for capable devices
+* Display actual charge tech in battery settings
+* ShapeShiftPanel: Added alarm volume slider
+* ShapeShiftPanel: Redesigned output switcher UI
+* OOSPanel: Improved UI
+* Fixed volume panel permanently visible when changing the panel side while the panel is open
+* DataSwitchTile: Improved the code
+* Added Sammy 404 clock
+* ClockertinoClock: Added time refresh capabilities on AoD
+* Introduced experimental Accent color options for Custom lockscreen clocks
+* TypeClock: Added 24h format support
+* TypeClock: Added DE translations for 24h mode
+* Launcher3: Added show Date instead of Now Playing switch
+* QuickSpace: Made NowPlaying clickable
+* Quickspace: Added contextual messages/greetings event
+* Removed IORap props
+* Reversed an incorrect check in AutoRestrictionPreferenceController
+* Add missing NFC icon
+
 Device changes:
 ========================
+07-16-21
 *removed dolby for now since it doesn't work the best
 *fixed ooscam so everything should be working
 *small updates to dimension's
@@ -44,3 +71,12 @@ Device changes:
 *sm8250-common: Enable config_powerDecoupleInteractiveModeFromDisplay
 *sm8250-common: overlay: update carrierconfig overlay
 *sm8250-common: Add seccomp policy
+
+07-23-21
+* fixed portrait f/c and video f/c in 12/48 mp mode
+* Define debug.stagefright.ccodec property (fixes video f/c)
+* sepolicy: Label CFR_para2_OnePlus_EF017_UW_snapshot.bin
+* Add more OnePlus bits
+* Cleanup {rootdir, sepolicy} stuff
+* updates to statusbar dimensions
+* overlay: Import brightness config from cmi
