@@ -1,4 +1,15 @@
-* Updated Kernel to 4.9.276
-* Switched to launcher3
-* Fixed bug with the OTA
-* Added back Wallpaper Zooming
+* Removed Google PSU support
+* Removed Google Network stack 
+* Switched to AOSP wallpaper picker
+* Integrated DerpWalls into wallpaper picker
+* Removed OOS volume panel style
+* Added statusbar NFC icon
+* Added Legacy WFD output video mode settings
+* Added Hotspot client manager
+* Added OnePlus Sans and Manrope font
+* Launcher3: Added option to control wallpaper zooming
+* Refresh QS page indicator layout when number of pages changes
+* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
+* Added time refresh capabilities for S clock controllers
+* FODCircleView/FODAnimation: Clean ups and improvements
+* MediaResume: Disabled it by default to avoid UI glitch
