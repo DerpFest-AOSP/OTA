@@ -1,29 +1,21 @@
 Rom Changes:
 ========================
-07-16-21
-* Merged July Security Patch (11.0.0_r39)
-* Fixed visual glitch with data usage QS footer when pulling the panel
-* Improved QS footer layout
-* Added toggle to hide QS Footer page indicator
-* Added notification header and clear all gravity customizations
-* Added animation to clear all button
-* Added Flashlight blink on incoming calls options
-* Added On-The-Go Mode to optional power menu user actions
-* Added On-The-Go QS Tile
-* Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
-* VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
-* Added per app volume row to all volume plugins
-* MiuiCompactPanel: Make the corners perfectly rounded
-* OctaviDigitalClock: Added font customization support
-* Switched to Hastebin for copying crash logs
-* Added Animated Spark FOD icon
-* BiometricPrompt: Automatically add padding to incorporate FOD
-* FODCircleView: Hide if fingerprint detection stops
-* Set clock text color based on wallpapers for Android S clock
-* Fixed some NPEs in Android S Clock
-* Attempt to align owner info on Android S clocks
-* Imported Screen lock and keypress sounds from OOS 11
-* Updated German translations
+07-30-21
+* Removed Google PSU support
+* Removed Google Network stack 
+* Switched to AOSP wallpaper picker
+* Integrated DerpWalls into wallpaper picker
+* Removed OOS volume panel style
+* Added statusbar NFC icon
+* Added Legacy WFD output video mode settings
+* Added Hotspot client manager
+* Added OnePlus Sans and Manrope font
+* Launcher3: Added option to control wallpaper zooming
+* Refresh QS page indicator layout when number of pages changes
+* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
+* Added time refresh capabilities for S clock controllers
+* FODCircleView/FODAnimation: Clean ups and improvements
+* MediaResume: Disabled it by default to avoid UI glitch
 
 07-23-21
 * Switched to new default wallpaper (thanks to @pseudo_nerd)
@@ -50,8 +42,55 @@ Rom Changes:
 * Reversed an incorrect check in AutoRestrictionPreferenceController
 * Add missing NFC icon
 
+07-16-21
+* Merged July Security Patch (11.0.0_r39)
+* Fixed visual glitch with data usage QS footer when pulling the panel
+* Improved QS footer layout
+* Added toggle to hide QS Footer page indicator
+* Added notification header and clear all gravity customizations
+* Added animation to clear all button
+* Added Flashlight blink on incoming calls options
+* Added On-The-Go Mode to optional power menu user actions
+* Added On-The-Go QS Tile
+* Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
+* VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
+* Added per app volume row to all volume plugins
+* MiuiCompactPanel: Make the corners perfectly rounded
+* OctaviDigitalClock: Added font customization support
+* Switched to Hastebin for copying crash logs
+* Added Animated Spark FOD icon
+* BiometricPrompt: Automatically add padding to incorporate FOD
+* FODCircleView: Hide if fingerprint detection stops
+* Set clock text color based on wallpapers for Android S clock
+* Fixed some NPEs in Android S Clock
+* Attempt to align owner info on Android S clocks
+* Imported Screen lock and keypress sounds from OOS 11
+* Updated German translations
+
 Device changes:
 ========================
+07/30-21
+* Switch to neturino
+* Switch to LLVM tools for kernel build
+* Fix namespace prefix in nfcee_access.xml
+* Sepolicy: Address denials for user build
+* Enable SMS authorization framework
+* Satisfy retarded drm info apps
+* Drop ozo soundfx
+* Add OnePlus specific permissions from stock
+* Match QVA static overlay configs for BT
+* Use proper device name for USB mount
+* Update Dimensions and Corners
+
+07-23-21
+* fixed portrait f/c and video f/c in 12/48 mp mode
+* Define debug.stagefright.ccodec property (fixes video f/c)
+* sepolicy: Label CFR_para2_OnePlus_EF017_UW_snapshot.bin
+* Add more OnePlus bits
+* Cleanup {rootdir, sepolicy} stuff
+* updates to statusbar dimensions
+* overlay: Import brightness config from cmi
+
 07-16-21
 *removed dolby for now since it doesn't work the best
 *fixed ooscam so everything should be working
@@ -71,12 +110,3 @@ Device changes:
 *sm8250-common: Enable config_powerDecoupleInteractiveModeFromDisplay
 *sm8250-common: overlay: update carrierconfig overlay
 *sm8250-common: Add seccomp policy
-
-07-23-21
-* fixed portrait f/c and video f/c in 12/48 mp mode
-* Define debug.stagefright.ccodec property (fixes video f/c)
-* sepolicy: Label CFR_para2_OnePlus_EF017_UW_snapshot.bin
-* Add more OnePlus bits
-* Cleanup {rootdir, sepolicy} stuff
-* updates to statusbar dimensions
-* overlay: Import brightness config from cmi
