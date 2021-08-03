@@ -1,27 +1,22 @@
 Source Changelog:
-- Switched to new default wallpaper (thanks to @pseudo_nerd)
-- Added back "bypass lockscreen after face unlock" preference
-- Added Wake on plug switch
-- Redesigned Media Player view to Android S Style
-- Added switch to sensor block settings
-- Added FastCharge preference into Battery settings for capable devices
-- Display actual charge tech in battery settings
-- ShapeShiftPanel: Added alarm volume slider
-- ShapeShiftPanel: Redesigned output switcher UI
-- OOSPanel: Improved UI
-- Fixed volume panel permanently visible when changing the panel side while the panel is open
-- DataSwitchTile: Improved the code
-- Added Sammy 404 clock
-- ClockertinoClock: Added time refresh capabilities on AoD
-- Introduced experimental Accent color options for Custom lockscreen clocks
-- TypeClock: Added 24h format support
-- TypeClock: Added DE translations for 24h mode
-- Launcher3: Added show Date instead of Now Playing switch
-- QuickSpace: Made NowPlaying clickable
-- Quickspace: Added contextual messages/greetings event
-- Removed IORap props
-- Reversed an incorrect check in AutoRestrictionPreferenceController
+- Removed all recently added fonts
+- Fixed default wall showing twice in wall picker
+- Fixed black screen crash with Divided lines clock
+- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+- Override system fonts with user-selected overlays (this makes fonts affecting apps)
+- Improved derp launcher about section
+- Updated StitchImage prebuilts and enabled dexpreopt
+- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
+- Allow overlaying max system icons
+- RebootTile: Remember last mode
+- Graphics: Fixed NPE on GradientDrawable
+- Fixed another NPE on Volume panel plugins
+- Fixed logspam on charging when displaying keyguard
+- Rounded corners: Simplified adaptation for A11
 
 Device Changelog:
-- Added a mask for statusbar (this somehow helps with lockscreen lag, but I have no idea why :) )
-- Nuked a few prebuilts apps
+- Updated a few blobs from latest OnePlus7ProOxygen_21.P.38_OTA_0380_all_2107172338_49e62
+- Latest Galts Inline
+- Update FOD overlay color
+- Vibrator service built from Source
