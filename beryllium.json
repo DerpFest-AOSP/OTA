@@ -1,12 +1,12 @@
 {
   "response": [
     {
-     "datetime": 1627442198,
-     "filename": "DerpFest-11-Official-Beta-beryllium-20210728-0849.zip",
-     "id": "055c5afcb64b9bdadc427f86262b35019d1b1540362204b0947836f2177eef94",
+     "datetime": 1627954180,
+     "filename": "DerpFest-11-Official-Beta-beryllium-20210803-0700.zip",
+     "id": "e2b2b254b52592c9a3da689810b4ce5ad7dd18ab7a4886c2aa304fccc1e750b3",
      "romtype": "Official",
-     "size": 1413558226,
-     "url": "https://builds.beryllium.workers.dev/0:/DerpFest/DerpFest-11-Official-Beta-beryllium-20210728-0849.zip",
+     "size": 1413737761,
+     "url": "https://builds.beryllium.workers.dev/0:/DerpFest/DerpFest-11-Official-Beta-beryllium-20210803-0700.zip",
      "version": "11"
     }
   ]

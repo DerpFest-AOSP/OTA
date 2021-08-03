@@ -1,15 +1,16 @@
-* Removed Google PSU support
-* Removed Google Network stack 
-* Switched to AOSP wallpaper picker
-* Integrated DerpWalls into wallpaper picker
-* Removed OOS volume panel style
-* Added statusbar NFC icon
-* Added Legacy WFD output video mode settings
-* Added Hotspot client manager
-* Added OnePlus Sans and Manrope font
-* Launcher3: Added option to control wallpaper zooming
-* Refresh QS page indicator layout when number of pages changes
-* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
-* Added time refresh capabilities for S clock controllers
-* FODCircleView/FODAnimation: Clean ups and improvements
-* MediaResume: Disabled it by default to avoid UI glitch
+* Updated DuckDuckGo & QP Gallery
+* Removed all recently added fonts
+* Fixed default wall showing twice in wall picker
+* Fixed black screen crash with Divided lines clock
+* Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+* SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+* Override system fonts with user-selected overlays (this makes fonts affecting apps)
+* Improved derp launcher about section
+* Updated StitchImage prebuilts and enabled dexpreopt
+* Integrated In-Call vibration haptics options into sound settings and synced preferences with AOSPA
+* Allow overlaying max system icons
+* RebootTile: Remember last mode
+* Graphics: Fixed NPE on GradientDrawable
+* Fixed another NPE on Volume panel plugins
+* Fixed logspam on charging when displaying keyguard
+* Rounded corners: Simplified adaptation for A11
