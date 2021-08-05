@@ -1,27 +1,18 @@
-Device changes:
-========================
-* July security patch
-* Update Yuki kernel
-* More improvements & bug fixes
-* Update source based on Grewal's
-
-Rom Changes:
-========================
-
-* Switched to Derp launcher and AOSP telephony stack
-* Replaced Gallery with Camera Roll prebuilt
-* Added three Android S style Clocks
-* Moved percentage to left of battery
-* OPQSFooter: Reduced action button size
-* Forced clock to disappear when keyguard is showing
-* BrightnessController: Tuned the slider animation duration
-* BrightnessSlider: Scale animation duration with defined BrightnessRampRate
-* BrightnessAnimator: Make ramp rate non-linear for very low values
-* Added a config for maintainers to show correct VoLTE/VoWiFi slot
-* DeskClock: Snooze: Mimic dismiss reveal
-* Kanged Battery progress card animation from Fluid project
-* Switched to Vivo VoLTE/VoWifi icons from SSOS
-* Added Android S Style Switches from SynthOS
-* Added option to switch between Daily/monthly wifi & mobile data usage on QS
-* Added a toggle for using LTE icon instead of 4G
-* Many more
+- Merged August Patch (11.0.0_r40)
+- Yuki kernel
+- Various minor changes
+- Removed all recently added fonts
+- Fixed default wall showing twice in wall picker
+- Fixed black screen crash with Divided lines clock
+- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+- Override system fonts with user-selected overlays (this makes fonts affecting apps)
+- Improved derp launcher about section
+- Updated StitchImage prebuilts and enabled dexpreopt
+- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
+- Allow overlaying max system icons
+- RebootTile: Remember last mode
+- Graphics: Fixed NPE on GradientDrawable
+- Fixed another NPE on Volume panel plugins
+- Fixed logspam on charging when displaying keyguard
+- Rounded corners: Simplified adaptation for A11
