@@ -1,0 +1,19 @@
+Rom Changelog:
+
+- Merged August Security Patch (11.0.0_r40)
+- Removed all recently added fonts
+- Fixed default wall showing twice in wall picker
+- Fixed black screen crash with Divided lines clock
+- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+- Override system fonts with user-selected overlays (this makes fonts affecting apps)
+- Improved derp launcher about section
+- Updated StitchImage prebuilts and enabled dexpreopt
+- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
+- Allow overlaying max system icons
+- RebootTile: Remember last mode
+- Graphics: Fixed NPE on GradientDrawable
+- Fixed another NPE on Volume panel plugins
+- Fixed logspam on charging when displaying keyguard
+- Rounded corners: Simplified adaptation for A11
+
