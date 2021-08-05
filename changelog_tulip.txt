@@ -1,21 +1,25 @@
 • Source Changelog
 
-- Merged July Security Patch (11.0.0_r39)
-- Switched to Derp launcher and AOSP telephony stack
-- Replaced Gallery with Camera Roll prebuilt
-- Added three Android S style Clocks
-- Moved percentage to left of battery
-- OPQSFooter: Reduced action button size
-- Forced clock to disappear when keyguard is showing
-- BrightnessController: Tuned the slider animation duration
-- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
-- BrightnessAnimator: Make ramp rate non-linear for very low values
-- Added a config for maintainers to show correct VoLTE/VoWiFi slot
-- DeskClock: Snooze: Mimic dismiss reveal
+- Merged August Security Patch (11.0.0_r40)
+- Removed all recently added fonts
+- Fixed default wall showing twice in wall picker
+- Fixed black screen crash with Divided lines clock
+- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+- Override system fonts with user-selected overlays (this makes fonts affecting apps)
+- Improved derp launcher about section
+- Updated StitchImage prebuilts and enabled dexpreopt
+- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
+- Allow overlaying max system icons
+- RebootTile: Remember last mode
+- Graphics: Fixed NPE on GradientDrawable
+- Fixed another NPE on Volume panel plugins
+- Fixed logspam on charging when displaying keyguard
+- Rounded corners: Simplified adaptation for A11
 
-• Device changelog (07-07-2021)
+• Device changelog (05-08-2021)
 
-- Mystic Kernel upstreamed to 4.4.274
+- Mystic Kernel upstreamed to 4.4.278
 - Compiled using proton clang
-- Redfin fp update to July
+- Redfin fp update to August
 - Source sync
