@@ -1,3 +1,55 @@
+Date: 06/08/2021
+
+Source side changes
+
+* Removed Google PSU support
+* Removed Google Network stack 
+* Switched to AOSP wallpaper picker
+* Integrated DerpWalls into wallpaper picker
+* Removed OOS volume panel style
+* Added statusbar NFC icon
+* Added Legacy WFD output video mode settings
+* Added Hotspot client manager
+* Added Comic sans font
+* Launcher3: Added option to control wallpaper zooming
+* Refresh QS page indicator layout when number of pages changes
+* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
+* Added time refresh capabilities for S clock controllers
+* FODCircleView/FODAnimation: Clean ups and improvements
+* MediaResume: Disabled it by default to avoid UI glitch
+* August secutiry patch
+* bring back a Artwork media background
+* Fix Lockscreen lags
+
+Device side changes
+
+* add zram support for 3rd party kernel
+* update ims blobs
+
+Date: 27/07/2021
+
+Source side
+
+* Removed Google PSU support
+* Removed Google Network stack 
+* Switched to AOSP wallpaper picker
+* Integrated DerpWalls into wallpaper picker
+* Removed OOS volume panel style
+* Added statusbar NFC icon
+* Added Legacy WFD output video mode settings
+* Added Hotspot client manager
+* Added OnePlus Sans and Manrope font
+* Launcher3: Added option to control wallpaper zooming
+* Refresh QS page indicator layout when number of pages changes
+* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
+* Added time refresh capabilities for S clock controllers
+* FODCircleView/FODAnimation: Clean ups and improvements
+* MediaResume: Disabled it by default to avoid UI glitch
+
+Device side
+* update blobs from 11.0.2.1
+* update opfeatures list
+
 Date: 18/07/2021
 
 Source Side
