@@ -1,28 +1,28 @@
 Device:
-• Upstreamed LineageOS kernel to 4.9.267
-• Fixed lags while screenrecording
-• Improved volume sound
-• Improved volume quality
-• Fixed lags
-• Fixed heating
+- Use Cartel kernel by default
+- Downrev soundtrigger to 2.1 (fix Voice Match)
+- Set some defaults
+- Nuke XiaomiDoze
+- Adjust DPI & padding
+- Disable blurs by default
+- Set BPF support level (fix data usage)
+- Add some dynamically-applied tweaks for 2GB ram phones
+- Many other minor changes
 
 
 ROM:
-* Added OOS11 lockscreen clock
-* Added new Bootleggers clocks
-* Added font support to more lockscreen clocks
-* Back to old default Volume Panel Style and fixed invisible view issued
-* Added MIUI volume panel style
-* Added option to enable Pulse edge light for all doze triggers
-* Added Edge light reverse animation direction Option
-* Added option for Edge light solid/faded style
-* Added alternative derp status bar logo
-* NavigationHandle: Don't show on keyguard or doze
-* FaceUnlock: Fixed face removal when disabling security
-* AppLock: Fixed 15 second auto-lock timer, when app is stopped while moving to recents
-* AppLock: Added option to instantly lock app on closing
-* OOS11 Footer: Switch OP footerview to new parent when switching tile layout
-* AODSchedule: Properly support all locales and time formats and improved some code
-* Moved Volume panel position toggle to DerpQuest
-* Improved Edge light and gaming mode master switch code
-* Moved app compatibility preference to apps and notifications
+- Removed all recently added fonts
+- Fixed default wall showing twice in wall picker
+- Fixed black screen crash with Divided lines clock
+- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
+- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
+- Override system fonts with user-selected overlays (this makes fonts affecting apps)
+- Improved derp launcher about section
+- Updated StitchImage prebuilts and enabled dexpreopt
+- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
+- Allow overlaying max system icons
+- RebootTile: Remember last mode
+- Graphics: Fixed NPE on GradientDrawable
+- Fixed another NPE on Volume panel plugins
+- Fixed logspam on charging when displaying keyguard
+- Rounded corners: Simplified adaptation for A11
