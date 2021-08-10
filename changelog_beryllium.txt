@@ -1,16 +1,36 @@
-* Updated DuckDuckGo & QP Gallery
-* Removed all recently added fonts
-* Fixed default wall showing twice in wall picker
-* Fixed black screen crash with Divided lines clock
-* Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
-* SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
-* Override system fonts with user-selected overlays (this makes fonts affecting apps)
-* Improved derp launcher about section
-* Updated StitchImage prebuilts and enabled dexpreopt
-* Integrated In-Call vibration haptics options into sound settings and synced preferences with AOSPA
-* Allow overlaying max system icons
-* RebootTile: Remember last mode
-* Graphics: Fixed NPE on GradientDrawable
-* Fixed another NPE on Volume panel plugins
-* Fixed logspam on charging when displaying keyguard
-* Rounded corners: Simplified adaptation for A11
+* Merge CAF tag 'LA.UM.9.3.r1-02800-sdm845.0' into ReX Kernel
+* Upstreamed ReX Kerbel to latest linux tag v4.9.278
+* Merged August security patch 
+* Added back option to replace media notification background with artwork
+* Added simple fade filter slider for media notification artwork
+* MediaCarouselController: Changes to update background when settings are changed
+* Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
+* Allowed to disable battery light when charging
+* Added Edge Music Control Gesture switch
+* AppLock: Fixed biometric prompt disapearing if app launched from resolver
+* Fixed massive requestLayout spam on lockscreen
+* Left aligned lock icon when required
+* Made sure to center align the lock icon while showing bouncer
+* Left aligned AOD notifications when required
+* Added Shapeshift A12 lockscreen clock
+* Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
+* Android S Clock: Fixed preview and some improvements
+* Android S DP3 Clock: Fixed IndexOutOfBoundsException
+* Android 12 Clock: Fixed IndexOutOfBoundsException
+* TypeClock: Fine tuned padding/margin and enabled date/weather info
+* Made user fonts affecting for more system elements
+* Fixed crash when system body font family is invalid
+* Added Comic sans font
+* Match NFC statusbar icon with QS one
+* Added optional OnePlus Camera support for maintainers
+* Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
+* Updated Security Settings drawables from Android 12
+* Compressed default wallpaper to avoid lag on low specs devices
+* FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael*user*11*RKQ1.200826.002
+* telephony: Show ICCID by default for all
+* telephony: Removed dead code from Telephony which uses wakelock
+* Launcher3: Retrieve the searchbar padding from device profile
+* Updater: Fixed OTA install problem on F2FS format type
+* display*intf: Silenced deprecation warnings
+* bluetooth_ext/jni: Resolved unused parameter warnings
+* bluetooth_ext/jni: Removed excess arguments not used by format strings
