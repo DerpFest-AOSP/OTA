@@ -1,5 +1,9 @@
-Rom Changelog:
+Device changelog:
+-Add Moto Dolby
+-Updated Blobs to 12.5.5.0
+-Add kpti=off to vendor boot command line
 
+Latest Source Changelog:
 - Merged August security patch 
 - Added back option to replace media notification background with artwork
 - Added simple fade filter slider for media notification artwork
@@ -34,3 +38,7 @@ Rom Changelog:
 - display-intf: Silenced deprecation warnings
 - bluetooth_ext/jni: Resolved unused parameter warnings
 - bluetooth_ext/jni: Removed excess arguments not used by format strings
+- add ability to change font style for new clocks
+- Update clear-all notification button layout only when needed
+- Refresh QS page indicator layout when number of pages changes
+
