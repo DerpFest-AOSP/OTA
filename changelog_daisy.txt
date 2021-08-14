@@ -1,3 +1,76 @@
+Changelog (13-07-2021)
+ROM source side:
+- Merged August security patch
+- Added back option to replace media notification background with artwork
+- Added simple fade filter slider for media notification artwork
+- MediaCarouselController: Changes to update background when settings are changed
+- Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
+- Allowed to disable battery light when charging
+- Added Edge Music Control Gesture switch
+- AppLock: Fixed biometric prompt disapearing if app launched from resolver
+- Fixed massive requestLayout spam on lockscreen
+- Left aligned lock icon when required
+- Made sure to center align the lock icon while showing bouncer
+- Left aligned AOD notifications when required
+- Added Shapeshift A12 lockscreen clock
+- Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
+- Android S Clock: Fixed preview and some improvements
+- Android S DP3 Clock: Fixed IndexOutOfBoundsException
+- Android 12 Clock: Fixed IndexOutOfBoundsException
+- TypeClock: Fine tuned padding/margin and enabled date/weather info
+- Made user fonts affecting for more system elements
+- Fixed crash when system body font family is invalid
+- Added Comic sans font
+- Match NFC statusbar icon with QS one
+- Added optional OnePlus Camera support for maintainers
+- Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
+- Updated Security Settings drawables from Android 12
+- Compressed default wallpaper to avoid lag on low specs devices
+- FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael-user-11-RKQ1.200826.002
+- telephony: Show ICCID by default for all
+- telephony: Removed dead code from Telephony which uses wakelock
+- Launcher3: Retrieve the searchbar padding from device profile
+- Updater: Fixed OTA install problem on F2FS format type
+- display-intf: Silenced deprecation warnings
+- bluetooth_ext/jni: Resolved unused parameter warnings
+- bluetooth_ext/jni: Removed excess arguments not used by format strings
+
+Device side:
+- daisy: settings: Show memory usage in app info
+- daisy: overlay: adjust qqs for notch 
+- daisy: Remove odex/oat files from pinner list 
+- daisy: overlay: Disable Link Probing 
+- daisy: overlay: Update auto/screen brightness 
+- msm8953-common: Update copyright headers 
+- daisy: import uinput-goodix.kl 
+- daisy: sepolicy: Fixup qcril rule 
+- msm8953-common: Bluetooth: Increase number of SEPs to support SHO/Mcast
+- daisy: Add battery LED overlays
+- Revert "daisy: camera: Inherit legacy camera stack headers"
+- daisy: shift to panda kernel and use proton clang
+- daisy: Update redfin fingerprint to August
+- daisy: update removed package list (files prebuilt)
+- daisy: Add AOSP RCS Packages
+- daisy: Replace audio@2.0-service with audio.service
+- daisy: Enable ipsec_tunnel feature 
+- daisy: Remove unnecessary android.hardware.radio entries 
+- sakura: overlay: Exclude CarrierConfig overlays from RRO
+- sakura: overlay: Exclude Snap overlays from RRO
+- sakura: overlay: Enforce RRO for all resource overlays
+- sakura: rro_overlays: Move all rro overlays to vendor 
+- daisy: init: update audio hal service override as per latest base service definition
+- daisy: Nuke data migration scripts
+- daisy: Bump vendor.qti.data.factory::IFactory version to 2.1
+- daisy: add manifest entry for dsp HAL service
+- daisy: power: Use log.h from VNDK
+- daisy: power: Compile with -Wall -Wextra
+- daisy: Add overlay for FPS Info
+- daisy: init: remove restart vendor.audio-hal-2-0 on decrypt
+- Switched to OSS Camera HAL for snappier camera operation (Credits to @anorton and @GiovanniRN5)
+- Revert "daisy: use Q hals as of now"
+- and much more things you can't read,.....
+
+
 Changelog (12-07-2021)
 ROM source side:
 - Merged August patch
