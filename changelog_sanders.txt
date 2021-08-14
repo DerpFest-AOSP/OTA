@@ -1,69 +1,37 @@
-# Build Date - 20/7/2021
+# Build Date - 14/08/2021
 
 Rom Changelog :
-- Merged July Security Patch (11.0.0_r39)
-- Sorted QS tiles in alphabetical order
-- Improved PowerShare QS tile
-- Added Language toggle QS tile
-- Added QS tile to show power menu
-- Added QS tile to show volume panel
-- Reticker: Removed some logging
-- reTicker: Add youtube to blacklisted apps to avoid getting a null notification
-- Let legacy apps scale fully to the display's aspect ratio
-- Changed heads up ticker text style to match clock
-- BatteryMeterView: Fixed logcat warning spam
-- Keyguard: Fixed mapping mismatch between KeyEvent and NumPadKey
-- Made scramble PIN layout Multi-User friendly
-- Added Lockscreen quick unlock
-- Removed Pin dividers layout entirely
-- QSconfig: Re-distribute tiles on changing orientation
-- Hide keyguard when SIM transitions to READY
-- Fod: Aod content should move only in Y
-- Added Screen off fod
-- FODCircleView: Hide FOD while going to sleep and make it conditionally
-- Add lockscreen background blur
-- Fixed Lockscreen media art switch
-- Made center clock layout safe insets aware
-- Added Status bar notification ticker
-- Brought back music ticker
-- Added StatusBar Lyric toggle
-- Fixed order of custom clock and Carrier label
-- Added back accessibility setting in system
-- Added video to power button flashlight gesture
-- Fixed up the check if we have any color modes declared in overlay
-- Reduced size a little of some custom WiFi/Signal icons
-- VolumePanelStyles: Added upstream changes
-- Fixed AOSPExpanded plugin crash with Swift Installer
-- Fixed infinite expanding and apply unlinking to MIUI panel
-- Switched to sha256 checksum
-- Updated QTI Bluetooth stack to LA.QSSI.11.0.r1-12300-qssi.0
-- Kanged Battery progress card animation from Fluid project 
-- Switched to Vivo VoLTE/VoWifi icons from SSOS
-- Improved AppLock implementation
-- Added preference for changing face unlock method when locked
-- Disallowed certain power menu items while in lock task mode
-- Added VPN QS tile
-- Fixed GamingModeTile long press
-- ScreenshotTile: Use secondary label to indicate mode
-- Added Wakelock Blocker to dev settings
-- Added Alarms Blocker to dev settings
-- Made Volume Panel divider transparent
-- AmbientDisplay: Unregister proximity when Screen Off FOD  is active
-- FODCircleView: Fixed up AOD fingerprint support
-- Fixed crash caused by Heads-Up timeout
-- Improved ScreenRecord Dialog layout
-- Cleaned up start service calls of some lineage services
-- VolumeDialog: Fixed touch area on captions and ringer button when on landscape
-- Added spacing above emergency call button
-- DerpQuest: Explain to the user why LsBlur is disabled
-- Switched to Derp launcher and AOSP telephony stack
-- Replaced Gallery with Camera Roll prebuilt
-- Added three Android S style Clocks
-- Moved percentage to left of battery
-- OPQSFooter: Reduced action button size
-- Forced clock to disappear when keyguard is showing
-- BrightnessController: Tuned the slider animation duration
-- BrightnessSlider: Scale animation duration with defined BrightnessRampRate
-- BrightnessAnimator: Make ramp rate non-linear for very low values
-- Added a config for maintainers to show correct VoLTE/VoWiFi slot
-- DeskClock: Snooze: Mimic dismiss reveal
+- Merged August security patch 
+- Added back option to replace media notification background with artwork
+- Added simple fade filter slider for media notification artwork
+- MediaCarouselController: Changes to update background when settings are changed
+- Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
+- Allowed to disable battery light when charging
+- Added Edge Music Control Gesture switch
+- AppLock: Fixed biometric prompt disapearing if app launched from resolver
+- Fixed massive requestLayout spam on lockscreen
+- Left aligned lock icon when required
+- Made sure to center align the lock icon while showing bouncer
+- Left aligned AOD notifications when required
+- Added Shapeshift A12 lockscreen clock
+- Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
+- Android S Clock: Fixed preview and some improvements
+- Android S DP3 Clock: Fixed IndexOutOfBoundsException
+- Android 12 Clock: Fixed IndexOutOfBoundsException
+- TypeClock: Fine tuned padding/margin and enabled date/weather info
+- Made user fonts affecting for more system elements
+- Fixed crash when system body font family is invalid
+- Added Comic sans font
+- Match NFC statusbar icon with QS one
+- Added optional OnePlus Camera support for maintainers
+- Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
+- Updated Security Settings drawables from Android 12
+- Compressed default wallpaper to avoid lag on low specs devices
+- FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael-user-11-RKQ1.200826.002
+- telephony: Show ICCID by default for all
+- telephony: Removed dead code from Telephony which uses wakelock
+- Launcher3: Retrieve the searchbar padding from device profile
+- Updater: Fixed OTA install problem on F2FS format type
+- display-intf: Silenced deprecation warnings
+- bluetooth_ext/jni: Resolved unused parameter warnings
+- bluetooth_ext/jni: Removed excess arguments not used by format strings
