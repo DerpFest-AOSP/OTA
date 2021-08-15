@@ -1,0 +1,36 @@
+Device:
+- Enabled burn-in protection and tuned for AOD
+- Enabled Refresh Rate options in Display settings
+- DeviceSettings: Added Refresh Rate QS tile
+- FOD: Set thread to high CFS priority
+- manifest: Labeled missed entry for vendor.oneplus.fingerprint.extension
+- Don't pin camera app in memory
+- Enabled face unlock option for swiping
+- Inverted SIMs for VoLTE/VoWifi icon
+- Updated odm_feature_list
+- Increased number of max system icons allowed to 9
+- Switched back to Google CarrierSettings (fixes VoWifi on my carrier)
+
+ROM:
+- Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from exTHmUI
+- GamingMode: Added option for customizing menu opacity
+- GamingMode: A lot of visual improvements and fixes here and there
+- Removed one of the S clocks (the broken A12 one)
+- Improved S and DP3 clocks again and made DP3 following wall colors
+- Fixed null text on 12 clock after dismissing media
+- Added initial support for OmniWeather to S clocks
+- Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+- Hide lock icon while dozing
+- Don't centre lock icon on bouncer to avoid janky animation
+- Added screenshot quality setting
+- Added automated Sleep Mode to battery menu
+- Added DerpQuest QS tile
+- Added option to allow hiding FOD on doze
+- FOD: Miscellaneous small fixes here and there
+- Pulse: Code improvements from Ido forward ported from derp 10
+- Fixed pulse showing vertical on keyguard in some cases
+- Allowed round corner styles to affect more system elements
+- Introduced new preview for dark theme in display settings
+- Added back Oneplus Sans font overlay
+- ThemePicker: Fixed derped constraint layout setup on clock picker
+- Some more things maybe I can't remember more
