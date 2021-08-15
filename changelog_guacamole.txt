@@ -1,25 +1,50 @@
+Date: 16/08/2021
+
+Source side changes
+
+* Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
+* GamingMode: Added option for customizing menu opacity 
+* GamingMode: A lot of visual improvements and fixes here and there
+* Removed one of the S clocks (the broken A12 one)
+* Improved S and DP3 clocks again and made DP3 following wall colors
+* Fixed null text on 12 clock after dismissing media
+* Added initial support for OmniWeather to S clocks
+* Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+* Hide lock icon while dozing
+* Don't centre lock icon on bouncer to avoid janky animation
+* Added screenshot quality setting
+* Added automated Sleep Mode to battery menu
+* Added DerpQuest QS tile
+* Pulse: Code improvements from Ido forward ported from derp 10
+* Fixed pulse showing vertical on keyguard in some cases
+* Allowed round corner styles to affect more system elements
+* Introduced new preview for dark theme in display settings
+* Added back Oneplus Sans font overlay
+* ThemePicker: Fixed derped constraint layout setup on clock picker
+* Add option to hide FOD on doze
+* Some more things maybe I can't remember more :P
+
+Device side changes
+
+* Add constraints for AOD burn-in
+* Set thread to high CFS priority for FOD
+* improve refresh rate
+* manifest: Labeled missed entry for vendor.oneplus.fingerprint.extension
+* Don't pin camera app in memory
+
 Date: 06/08/2021
 
 Source side changes
 
-* Removed Google PSU support
-* Removed Google Network stack 
-* Switched to AOSP wallpaper picker
-* Integrated DerpWalls into wallpaper picker
-* Removed OOS volume panel style
-* Added statusbar NFC icon
-* Added Legacy WFD output video mode settings
-* Added Hotspot client manager
-* Added Comic sans font
-* Launcher3: Added option to control wallpaper zooming
-* Refresh QS page indicator layout when number of pages changes
-* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
-* Added time refresh capabilities for S clock controllers
-* FODCircleView/FODAnimation: Clean ups and improvements
-* MediaResume: Disabled it by default to avoid UI glitch
-* August secutiry patch
-* bring back a Artwork media background
-* Fix Lockscreen lags
+* Merged August security patch 
+* Added back option to replace media notification background with artwork
+* AppLock: Fixed biometric prompt disapearing if app launched from resolver
+* keyguard: Left align lock icon when required
+* Replaced S clocks with Shapeshift A12 clock
+* Match NFC statusbar icon with QS one
+* Add option to change media alpha
+* Fix issues with pin unlock on sim
+* Remove A12 style pin and password layout
 
 Device side changes
 
