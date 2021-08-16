@@ -1,5 +1,40 @@
 Changelogs for Build -
 
+
+==== 16-08-21 ====
+
+Device Side -
+
+- Upstreamed Kernel to 4.14.244
+
+Source Side -
+
+- Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
+- GamingMode: Added option for customizing menu opacity 
+- GamingMode: A lot of visual improvements and fixes here and there
+- Removed one of the S clocks (the broken A12 one)
+- Improved S and DP3 clocks again and made DP3 following wall colors
+- Fixed null text on 12 clock after dismissing media
+- Added initial support for OmniWeather to S clocks
+- Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+- Hide lock icon while dozing
+- Don't centre lock icon on bouncer to avoid janky animation
+- Added screenshot quality setting
+- Added automated Sleep Mode to battery menu
+- Added DerpQuest QS tile
+- Pulse: Code improvements from Ido forward ported from derp 10
+- Fixed pulse showing vertical on keyguard in some cases
+- Allowed round corner styles to affect more system elements
+- Introduced new preview for dark theme in display settings
+- Added back Oneplus Sans font overlay
+- ThemePicker: Fixed derped constraint layout setup on clock picker
+- Some more things maybe I can't remember more :P
+
+
+
+
+==== 13-08-21 ====
+
 Device Side - 
 
 - Back to Old Tree ( No Mic Issue now )
