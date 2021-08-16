@@ -1,36 +1,27 @@
-* Merge CAF tag 'LA.UM.9.3.r1-02800-sdm845.0' into ReX Kernel
-* Upstreamed ReX Kerbel to latest linux tag v4.9.278
-* Merged August security patch 
-* Added back option to replace media notification background with artwork
-* Added simple fade filter slider for media notification artwork
-* MediaCarouselController: Changes to update background when settings are changed
-* Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
-* Allowed to disable battery light when charging
-* Added Edge Music Control Gesture switch
-* AppLock: Fixed biometric prompt disapearing if app launched from resolver
-* Fixed massive requestLayout spam on lockscreen
-* Left aligned lock icon when required
-* Made sure to center align the lock icon while showing bouncer
-* Left aligned AOD notifications when required
-* Added Shapeshift A12 lockscreen clock
-* Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
-* Android S Clock: Fixed preview and some improvements
-* Android S DP3 Clock: Fixed IndexOutOfBoundsException
-* Android 12 Clock: Fixed IndexOutOfBoundsException
-* TypeClock: Fine tuned padding/margin and enabled date/weather info
-* Made user fonts affecting for more system elements
-* Fixed crash when system body font family is invalid
-* Added Comic sans font
-* Match NFC statusbar icon with QS one
-* Added optional OnePlus Camera support for maintainers
-* Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
-* Updated Security Settings drawables from Android 12
-* Compressed default wallpaper to avoid lag on low specs devices
-* FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael*user*11*RKQ1.200826.002
-* telephony: Show ICCID by default for all
-* telephony: Removed dead code from Telephony which uses wakelock
-* Launcher3: Retrieve the searchbar padding from device profile
-* Updater: Fixed OTA install problem on F2FS format type
-* display*intf: Silenced deprecation warnings
-* bluetooth_ext/jni: Resolved unused parameter warnings
-* bluetooth_ext/jni: Removed excess arguments not used by format strings
+* Upstreamed ReX Kernel to latest linux tag v4.9.280
+* Updated display and adreno blobs from OnePlus6 R
+* Updated WFD blobs from OnePlus6 R
+* Updated OMX codecs and VPP from OnePlus6 R
+* Updated Configstore blobs from OnePlus6 R
+* Updated Power-Off alarm blobs from OnePlus6 R
+* Updated ESE, PerMgr and Time services blobs from OnePlus6 R
+* Updated IRQ balance blobs from OnePlus6 R
+* Removed crDroid's Gaming Mode in favor of new Gaming Mode from exTHmUI
+* GamingMode: Added option for customizing menu opacity 
+* GamingMode: A lot of visual improvements and fixes here and there
+* Removed one of the S clocks (the broken A12 one)
+* Improved S and DP3 clocks again and made DP3 following wall colors
+* Fixed null text on 12 clock after dismissing media
+* Added initial support for OmniWeather to S clocks
+* Removed Yaap's toggle to hide lock icon on lockscreen in favor of crDroid's implementation
+* Hide lock icon while dozing
+* Don't centre lock icon on bouncer to avoid janky animation
+* Added screenshot quality setting
+* Added automated Sleep Mode to battery menu
+* Added DerpQuest QS tile
+* Pulse: Code improvements from Ido forward ported from derp 10
+* Fixed pulse showing vertical on keyguard in some cases
+* Allowed round corner styles to affect more system elements
+* Introduced new preview for dark theme in display settings
+* Added back Oneplus Sans font overlay
+* ThemePicker: Fixed derped constraint layout setup on clock picker
