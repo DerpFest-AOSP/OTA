@@ -41,4 +41,7 @@ Latest Source Changelog:
 - add ability to change font style for new clocks
 - Update clear-all notification button layout only when needed
 - Refresh QS page indicator layout when number of pages changes
-
+- add GamingMode 
+- Make popup menus more rounded 	
+- Add DerpQuest QS tile
+- Improve OmniWeather on S clocks 
