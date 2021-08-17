@@ -1,5 +1,28 @@
 Rom Changes:
 ========================
+08-17-21
+* Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
+* GamingMode: Added option for customizing menu opacity 
+* GamingMode: A lot of visual improvements and fixes here and there
+* Removed one of the S clocks (the broken A12 one)
+* Improved S and DP3 clocks again and made DP3 following wall colors
+* Fixed null text on 12 clock after dismissing media
+* Added initial support for OmniWeather to S clocks
+* Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+* Hide lock icon while dozing
+* Don't centre lock icon on bouncer to avoid janky animation
+* Added screenshot quality setting
+* Added automated Sleep Mode to battery menu
+* Added DerpQuest QS tile
+* Pulse: Code improvements from Ido forward ported from derp 10
+* Fixed pulse showing vertical on keyguard in some cases
+* Allowed round corner styles to affect more system elements
+* Introduced new preview for dark theme in display settings
+* Added back Oneplus Sans font overlay
+* ThemePicker: Fixed derped constraint layout setup on clock picker
+* Add option to hide FOD on doze
+* Some more things maybe I can't remember more :P
+
 08-11-21
 * Merge CAF tag 'LA.UM.9.3.r1-02800-sdm845.0' into ReX Kernel
 * Upstreamed ReX Kerbel to latest linux tag v4.9.278
@@ -107,6 +130,13 @@ Rom Changes:
 
 Device changes:
 ========================
+08-17-21
+* Ton of tree clean-ups
+* prop: Sync media props with stock
+* Remove unused pnscr configuration
+* init: Update fingerprint from redfin august
+* Update blobs from OOS 11.0.7.7
+* Enable Gboard side padding
 08-11-21
 * DeviceExtras: Improve FPS overlay
 * Update some more prebuilt apps
