@@ -1,51 +1,61 @@
 ROM
-[*] Merged July Security Patch (11.0.0_r39)
-[*] Fixed visual glitch with data usage QS footer when pulling the panel
-[*] Improved QS footer layout
-[*] Added toggle to hide QS Footer page indicator
-[*] Added notification header and clear all gravity customizations
-[*] Added animation to clear all button
-[*] Added Flashlight blink on incoming calls options
-[*] Added On-The-Go Mode to optional power menu user actions
-[*] Added On-The-Go QS Tile
-[*] Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
-[*] VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
-[*] Added per app volume row to all volume plugins
-[*] MiuiCompactPanel: Make the corners perfectly rounded
-[*] OctaviDigitalClock: Added font customization support
-[*] Switched to Hastebin for copying crash logs
-[*] Added Animated Spark FOD icon
-[*] BiometricPrompt: Automatically add padding to incorporate FOD
-[*] FODCircleView: Hide if fingerprint detection stops
-[*] Set clock text color based on wallpapers for Android S clock
-[*] Fixed some NPEs in Android S Clock
-[*] Attempt to align owner info on Android S clocks
-[*] Imported Screen lock and keypress sounds from OOS 11
-[*] Updated German translations
-[*] Switched to new default wallpaper (thanks to @pseudo_nerd)
-[*] Added back "bypass lockscreen after face unlock" preference
-[*] Added Wake on plug switch
-[*] Redesigned Media Player view to Android S Style
-[*] Added switch to sensor block settings
-[*] Added FastCharge preference into Battery settings for capable devices
-[*] Display actual charge tech in battery settings
-[*] ShapeShiftPanel: Added alarm volume slider
-[*] ShapeShiftPanel: Redesigned output switcher UI
-[*] OOSPanel: Improved UI
-[*] Fixed volume panel permanently visible when changing the panel side while the panel is open
-[*] DataSwitchTile: Improved the code
-[*] Added Sammy 404 clock
-[*] ClockertinoClock: Added time refresh capabilities on AoD
-[*] Introduced experimental Accent color options for Custom lockscreen clocks
-[*] TypeClock: Added 24h format support
-[*] TypeClock: Added DE translations for 24h mode
-[*] Launcher3: Added show Date instead of Now Playing switch
-[*] QuickSpace: Made NowPlaying clickable
-[*] Quickspace: Added contextual messages/greetings event
-[*] Removed IORap props
-[*] Reversed an incorrect check in AutoRestrictionPreferenceController
+[*] Merged August security patch 
+[*] Added back option to replace media notification background with artwork
+[*] Added simple fade filter slider for media notification artwork
+[*] MediaCarouselController: Changes to update background when settings are changed
+[*] Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
+[*] Allowed to disable battery light when charging
+[*] Added Edge Music Control Gesture switch
+[*] AppLock: Fixed biometric prompt disapearing if app launched from resolver
+[*] Fixed massive requestLayout spam on lockscreen
+[*] Left aligned lock icon when required
+[*] Made sure to center align the lock icon while showing bouncer
+[*] Left aligned AOD notifications when required
+[*] Added Shapeshift A12 lockscreen clock
+[*] Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
+[*] Android S Clock: Fixed preview and some improvements
+[*] Android S DP3 Clock: Fixed IndexOutOfBoundsException
+[*] Android 12 Clock: Fixed IndexOutOfBoundsException
+[*] TypeClock: Fine tuned padding/margin and enabled date/weather info
+[*] Made user fonts affecting for more system elements
+[*] Fixed crash when system body font family is invalid
+[*] Added Comic sans font
+[*] Match NFC statusbar icon with QS one
+[*] Added optional OnePlus Camera support for maintainers
+[*] Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
+[*] Updated Security Settings drawables from Android 12
+[*] Compressed default wallpaper to avoid lag on low specs devices
+[*] FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael-user-11-RKQ1.200826.002
+[*] telephony: Show ICCID by default for all
+[*] telephony: Removed dead code from Telephony which uses wakelock
+[*] Launcher3: Retrieve the searchbar padding from device profile
+[*] Updater: Fixed OTA install problem on F2FS format type
+[*] display-intf: Silenced deprecation warnings
+[*] bluetooth_ext/jni: Resolved unused parameter warnings
+[*] bluetooth_ext/jni: Removed excess arguments not used by format strings
+[*] Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
+[*] GamingMode: Added option for customizing menu opacity 
+[*] GamingMode: A lot of visual improvements and fixes here and there
+[*] Removed one of the S clocks (the broken A12 one)
+[*] Improved S and DP3 clocks again and made DP3 following wall colors
+[*] Fixed null text on 12 clock after dismissing media
+[*] Added initial support for OmniWeather to S clocks
+[*] Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+[*] Hide lock icon while dozing
+[*] Don't centre lock icon on bouncer to avoid janky animation
+[*] Added screenshot quality setting
+[*] Added automated Sleep Mode to battery menu
+[*] Added DerpQuest QS tile
+[*] Pulse: Code improvements from Ido forward ported from derp 10
+[*] Fixed pulse showing vertical on keyguard in some cases
+[*] Allowed round corner styles to affect more system elements
+[*] Introduced new preview for dark theme in display settings
+[*] Added back Oneplus Sans font overlay
+[*] ThemePicker: Fixed derped constraint layout setup on clock picker
+[*] Some more things maybe I can't remember more :P
 
 Device
-[*] Miatoll: misc changes
-
-Note: If u want more PERF change to the separated Yuki kernel
+[*] Miatoll: Removed MIUI Cam
+[*] switch fp to walleye instead of redfin
+[*] Remove xiaomi vibrator feature
+[*] Remove optimizations
