@@ -1,22 +1,21 @@
-Source Changelog:
-- Removed all recently added fonts
-- Fixed default wall showing twice in wall picker
-- Fixed black screen crash with Divided lines clock
-- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
-- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
-- Override system fonts with user-selected overlays (this makes fonts affecting apps)
-- Improved derp launcher about section
-- Updated StitchImage prebuilts and enabled dexpreopt
-- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
-- Allow overlaying max system icons
-- RebootTile: Remember last mode
-- Graphics: Fixed NPE on GradientDrawable
-- Fixed another NPE on Volume panel plugins
-- Fixed logspam on charging when displaying keyguard
-- Rounded corners: Simplified adaptation for A11
-
-Device Changelog:
-- Updated a few blobs from latest OnePlus7ProOxygen_21.P.38_OTA_0380_all_2107172338_49e62
-- Latest Galts Inline
-- Update FOD overlay color
-- Vibrator service built from Source
+Source Changelog
+- Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
+- GamingMode: Added option for customizing menu opacity
+- GamingMode: A lot of visual improvements and fixes here and there
+- Removed one of the S clocks (the broken A12 one)
+- Improved S and DP3 clocks again and made DP3 following wall colors
+- Fixed null text on 12 clock after dismissing media
+- Added initial support for OmniWeather to S clocks
+- Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
+- Hide lock icon while dozing
+- Don't centre lock icon on bouncer to avoid janky animation
+- Added screenshot quality setting
+- Added automated Sleep Mode to battery menu
+- Added DerpQuest QS tile
+- Pulse: Code improvements from Ido forward ported from derp 10
+- Fixed pulse showing vertical on keyguard in some cases
+- Allowed round corner styles to affect more system elements
+- Introduced new preview for dark theme in display settings
+- Added back Oneplus Sans font overlay
+- ThemePicker: Fixed derped constraint layout setup on clock picker
+- Some more things maybe I can't remember more :P
