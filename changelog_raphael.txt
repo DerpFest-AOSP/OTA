@@ -1,12 +1,7 @@
-# Build Date - 19/07/2021
+# Build Date - 19/08/2021
 
 Device Changelog :
--Initial Official build
--Switched Skia rendering backend to OpenGL
--Updated graphics blobs from LA.UM.9.1.r1-10200-SMxxx0.0
--Updated blobs from MIUI 21.60.30 
--Added a switch for thermal profiles
--Nuked Dc Dimming and HBM (Better implementation in livedisplay)
--Nuked motodolby
--Nuked gboard rounded corners
+-Added scripts for the gaming mode performance control
+-Thermal hals updated to V2.0
+
 
