@@ -1,36 +1,30 @@
 Device:
-- Enabled burn-in protection and tuned for AOD
-- Enabled Refresh Rate options in Display settings
-- DeviceSettings: Added Refresh Rate QS tile
-- FOD: Set thread to high CFS priority
-- manifest: Labeled missed entry for vendor.oneplus.fingerprint.extension
-- Don't pin camera app in memory
-- Enabled face unlock option for swiping
-- Inverted SIMs for VoLTE/VoWifi icon
-- Updated odm_feature_list
-- Increased number of max system icons allowed to 9
-- Switched back to Google CarrierSettings (fixes VoWifi on my carrier)
+- Added keyboard padding props from stock
+- Cleaned up Pinner service for master changes
 
 ROM:
-- Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from exTHmUI
-- GamingMode: Added option for customizing menu opacity
-- GamingMode: A lot of visual improvements and fixes here and there
-- Removed one of the S clocks (the broken A12 one)
-- Improved S and DP3 clocks again and made DP3 following wall colors
-- Fixed null text on 12 clock after dismissing media
-- Added initial support for OmniWeather to S clocks
-- Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
-- Hide lock icon while dozing
-- Don't centre lock icon on bouncer to avoid janky animation
-- Added screenshot quality setting
-- Added automated Sleep Mode to battery menu
-- Added DerpQuest QS tile
-- Added option to allow hiding FOD on doze
-- FOD: Miscellaneous small fixes here and there
-- Pulse: Code improvements from Ido forward ported from derp 10
-- Fixed pulse showing vertical on keyguard in some cases
-- Allowed round corner styles to affect more system elements
-- Introduced new preview for dark theme in display settings
-- Added back Oneplus Sans font overlay
-- ThemePicker: Fixed derped constraint layout setup on clock picker
-- Some more things maybe I can't remember more
+- Out of beta yippie ya yeah!
+- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
+- Updated Inter font family
+- Added support for accented clock color on S Clocks
+- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
+- Pulse: Added Custom gravity and Center mirrored options
+- Added option to extend Pulse to QS Panel
+- Pulse: Added Vertical mirror option
+- Added options for iOS-like toast notification for clipboard access
+- Added moar prebuilt weather icon packs
+- Added some Anime custom headers
+- Show full default name for wifi and signal icon customization preferences
+- Disabled all-caps for smart reply button text
+- Removed sensors toggle from automated sleep mode
+- FODCircleView: Always update FODAnimation position
+- GamingMode: Moved RecordingService into main process
+- SystemUI: Halt LyricTicker after statusbar lyric disabled
+- Reduced NotificationHistoryDatabase logspam
+- Gestures: Fixed up footer string
+- P404Panel, ShapeShiftPanel: Don't show captions info tooltip
+- Launcher3: Fixed IntentFilter leak in QuickEventsController
+- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
+- Launcher3: Fixed Blur not being applied properly in some cases
+- Some optimizations from upstream
+- Updated German translations
