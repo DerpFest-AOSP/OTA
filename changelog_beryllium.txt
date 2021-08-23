@@ -1,27 +1,27 @@
-* Upstreamed ReX Kernel to latest linux tag v4.9.280
-* Updated display and adreno blobs from OnePlus6 R
-* Updated WFD blobs from OnePlus6 R
-* Updated OMX codecs and VPP from OnePlus6 R
-* Updated Configstore blobs from OnePlus6 R
-* Updated Power-Off alarm blobs from OnePlus6 R
-* Updated ESE, PerMgr and Time services blobs from OnePlus6 R
-* Updated IRQ balance blobs from OnePlus6 R
-* Removed crDroid's Gaming Mode in favor of new Gaming Mode from exTHmUI
-* GamingMode: Added option for customizing menu opacity 
-* GamingMode: A lot of visual improvements and fixes here and there
-* Removed one of the S clocks (the broken A12 one)
-* Improved S and DP3 clocks again and made DP3 following wall colors
-* Fixed null text on 12 clock after dismissing media
-* Added initial support for OmniWeather to S clocks
-* Removed Yaap's toggle to hide lock icon on lockscreen in favor of crDroid's implementation
-* Hide lock icon while dozing
-* Don't centre lock icon on bouncer to avoid janky animation
-* Added screenshot quality setting
-* Added automated Sleep Mode to battery menu
-* Added DerpQuest QS tile
-* Pulse: Code improvements from Ido forward ported from derp 10
-* Fixed pulse showing vertical on keyguard in some cases
-* Allowed round corner styles to affect more system elements
-* Introduced new preview for dark theme in display settings
-* Added back Oneplus Sans font overlay
-* ThemePicker: Fixed derped constraint layout setup on clock picker
+* Updated DuckDuckGo
+* Merged CAF Tag LA.UM.8.3.c25*03100*sdm845.0 into ReX Kernel
+* Out of beta yippie ya yeah!
+* Brought back Google CarrierSettings
+* Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
+* Updated Inter font family
+* Added support for accented clock color on S Clocks
+* Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
+* Pulse: Added Custom gravity and Center mirrored options
+* Added option to extend Pulse to QS Panel
+* Pulse: Added Vertical mirror option
+* Added options for iOS-like toast notification for clipboard access
+* Added moar prebuilt weather icon packs
+* Added some Anime custom headers
+* Show full default name for wifi and signal icon customization preferences
+* Disabled all-caps for smart reply button text
+* Removed sensors toggle from automated sleep mode
+* FODCircleView: Always update FODAnimation position
+* GamingMode: Moved RecordingService into main process
+* SystemUI: Halt LyricTicker after statusbar lyric disabled
+* Reduced NotificationHistoryDatabase logspam
+* Gestures: Fixed up footer string
+* P404Panel, ShapeShiftPanel: Don't show captions info tooltip
+* Launcher3: Fixed IntentFilter leak in QuickEventsController
+* Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
+* Launcher3: Fixed Blur not being applied properly in some cases
+* Some optimizations from upstream
