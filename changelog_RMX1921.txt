@@ -1,33 +1,41 @@
 Device changes:
 ========================
-* July security patch
+* We're STABLE now.
+* Aug security patch
 * Moved to User build for more safety
-* Kernel Upstream to 4.9.274
-* Kernel compiled with latest proton Clang 13.0.0
-* Updated Redfin's july fp
-* Updated Moto dolby
-* Fixed clock overlapping
+* Kernel Upstream to 4.9.280
+* Added New exTHmUI's GameMode
+* Added init script for exTHmUI's GameMode performance control
+* Updated Redfin's Aug fp
 * SafteyNet Pass without root as usual
+* Many sourceside improvements.
 * More improvements & bug fixes
 
 Rom Changes:
 ========================
 
-* Switched to Derp launcher and AOSP telephony stack
-* Replaced Gallery with Camera Roll prebuilt
-* Added three Android S style Clocks
-* Moved percentage to left of battery
-* OPQSFooter: Reduced action button size
-* Forced clock to disappear when keyguard is showing
-* BrightnessController: Tuned the slider animation duration
-* BrightnessSlider: Scale animation duration with defined BrightnessRampRate
-* BrightnessAnimator: Make ramp rate non-linear for very low values
-* Added a config for maintainers to show correct VoLTE/VoWiFi slot
-* DeskClock: Snooze: Mimic dismiss reveal
-* Kanged Battery progress card animation from Fluid project
-* Switched to Vivo VoLTE/VoWifi icons from SSOS
-* Added Android S Style Switches from SynthOS
-* Added option to switch between Daily/monthly wifi & mobile data usage on QS
-* Added a toggle for using LTE icon instead of 4G
-* FOD Improvements
-* Many more
+- Out of beta yippie ya yeah!
+- Brought back Google CarrierSettings
+- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
+- Updated Inter font family
+- Added support for accented clock color on S Clocks
+- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
+- Pulse: Added Custom gravity and Center mirrored options
+- Added option to extend Pulse to QS Panel
+- Pulse: Added Vertical mirror option
+- Added options for iOS-like toast notification for clipboard access
+- Added moar prebuilt weather icon packs
+- Added some Anime custom headers
+- Show full default name for wifi and signal icon customization preferences
+- Disabled all-caps for smart reply button text
+- Removed sensors toggle from automated sleep mode
+- FODCircleView: Always update FODAnimation position
+- GamingMode: Moved RecordingService into main process
+- SystemUI: Halt LyricTicker after statusbar lyric disabled
+- Reduced NotificationHistoryDatabase logspam
+- Gestures: Fixed up footer string - P404Panel, ShapeShiftPanel: Don't show captions info tooltip
+- Launcher3: Fixed IntentFilter leak in QuickEventsController
+- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
+- Launcher3: Fixed Blur not being applied properly in some cases
+- Some optimizations from upstream
+- Many more
