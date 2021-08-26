@@ -1,5 +1,32 @@
 Rom Changes:
 ========================
+08-26-21
+* Out of beta yippie ya yeah!
+* Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
+* Updated Inter font family
+* Added support for accented clock color on S Clocks
+* Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
+* Pulse: Added Custom gravity and Center mirrored options
+* Added option to extend Pulse to QS Panel
+* Pulse: Added Vertical mirror option
+* Added options for iOS-like toast notification for clipboard access
+* Added moar prebuilt weather icon packs
+* Added some Anime custom headers
+* Show full default name for wifi and signal icon customization preferences
+* Disabled all-caps for smart reply button text
+* Removed sensors toggle from automated sleep mode
+* FODCircleView: Always update FODAnimation position
+* GamingMode: Moved RecordingService into main process
+* SystemUI: Halt LyricTicker after statusbar lyric disabled
+* Reduced NotificationHistoryDatabase logspam
+* Gestures: Fixed up footer string
+* P404Panel, ShapeShiftPanel: Don't show captions info tooltip
+* Launcher3: Fixed IntentFilter leak in QuickEventsController
+* Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
+* Launcher3: Fixed Blur not being applied properly in some cases
+* Some optimizations from upstream
+* Updated German translations
+
 08-17-21
 * Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
 * GamingMode: Added option for customizing menu opacity 
@@ -130,6 +157,36 @@ Rom Changes:
 
 Device changes:
 ========================
+08-26-21
+* Sync ODM features list with OnePlus framework
+* Update ODM features list from OSS 11.2.7.7
+* Update ODM features list from OSS 11.2.8.8
+* Switched to qti vibrator
+* Vibrator: Add logic to detect QTI haptics device
+* Overlay: Update vibration pattern
+* Overlay: Use OnePlus infrared sensor for Pocket Judge
+* Overlay: Add missing burnInProtection overlays
+* Drop lineage powershare since 8t doesn't support wireless charging
+* Overlay: Update CarrierConfig
+* Manifest: Label missed entry for android.hardware.secure.Element
+* Sepolicy: Address init shell and hal perf denials
+* Sepolicy: Address various sepolicy denials
+* Fix namespace for landscape dimen
+* DeviceExtras: Doze: Get rid of aod pref
+* DeviceExtras: Doze: Get rid of compound button
+* DeviceExtras: Set default vibration to 2 and increase max vibration to 4
+* config_suspendWhenScreenOffDueToProximity_false
+* Biometrics: Revert "fpc: keep fpc in system-background"
+* Overlay: Enable tap to show ambient display by default
+* Tri-state-key: Refactor code
+* Tri-state-key: Add support for setting up initial state on boot
+* Props: Update display props
+* DeviceExtras: Fix up restoring vib strength on boot
+* Fix T-Mobile issues & added visible apns
+* Tree clean-ups
+* kebab: Update blobs from OOS 11.0.9.9
+* kebab: Update blobs×configs from OOS 11.0.10.10
+
 08-17-21
 * Ton of tree clean-ups
 * prop: Sync media props with stock
