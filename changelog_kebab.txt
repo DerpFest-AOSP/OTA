@@ -157,6 +157,11 @@ Rom Changes:
 
 Device changes:
 ========================
+08-28-21
+* fixed single tap ambient display not working
+* lockscreen swipe up bug has been fixed when swiping to enter passcode
+* Touchscreen gesture vibration feedback has been fixed so that should be working now
+
 08-26-21
 * Sync ODM features list with OnePlus framework
 * Update ODM features list from OSS 11.2.7.7
@@ -164,7 +169,6 @@ Device changes:
 * Switched to qti vibrator
 * Vibrator: Add logic to detect QTI haptics device
 * Overlay: Update vibration pattern
-* Overlay: Use OnePlus infrared sensor for Pocket Judge
 * Overlay: Add missing burnInProtection overlays
 * Drop lineage powershare since 8t doesn't support wireless charging
 * Overlay: Update CarrierConfig
@@ -175,7 +179,6 @@ Device changes:
 * DeviceExtras: Doze: Get rid of aod pref
 * DeviceExtras: Doze: Get rid of compound button
 * DeviceExtras: Set default vibration to 2 and increase max vibration to 4
-* config_suspendWhenScreenOffDueToProximity_false
 * Biometrics: Revert "fpc: keep fpc in system-background"
 * Overlay: Enable tap to show ambient display by default
 * Tri-state-key: Refactor code
