@@ -1,4 +1,41 @@
-Changelog (13-07-2021)
+Changelog (29-08-2021)
+ROM source side:
+- Out of beta yippie ya yeah!
+- Brought back Google CarrierSettings
+- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
+- Updated Inter font family
+- Added support for accented clock color on S Clocks
+- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
+- Pulse: Added Custom gravity and Center mirrored options
+- Added option to extend Pulse to QS Panel
+- Pulse: Added Vertical mirror option
+- Added options for iOS-like toast notification for clipboard access
+- Added moar prebuilt weather icon packs
+- Added some Anime custom headers
+- Show full default name for wifi and signal icon customization preferences
+- Disabled all-caps for smart reply button text
+- Removed sensors toggle from automated sleep mode
+- FODCircleView: Always update FODAnimation position
+- GamingMode: Moved RecordingService into main process
+- SystemUI: Halt LyricTicker after statusbar lyric disabled
+- Reduced NotificationHistoryDatabase logspam
+- Gestures: Fixed up footer string
+- P404Panel, ShapeShiftPanel: Don't show captions info tooltip
+- Launcher3: Fixed IntentFilter leak in QuickEventsController
+- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
+- Launcher3: Fixed Blur not being applied properly in some cases
+- Some optimizations from upstream
+
+Device side:
+- daisy: overlay: Disable Link Probing
+- daisy: Remove odex/oat files from pinner list
+- daisy: overlay: adjust qqs for notch
+- daisy: Pull fingerprint blobs from daisy V10.0.2.0.PDLMIFJ
+- moved to OSS biometrics
+- fixed fp gesture for fpc users
+- more underthehood optimizations
+
+Changelog (13-08-2021)
 ROM source side:
 - Merged August security patch
 - Added back option to replace media notification background with artwork

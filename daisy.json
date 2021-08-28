@@ -1,12 +1,12 @@
 {
   "response": [
     {
-     "datetime": 1628842010,
-     "filename": "DerpFest-11-Official-Beta-daisy-20210813.zip",
-     "id": "ce747539bebb7949b01292f450326505dc8935bdfb64dc8208475fe5d7a7b14c",
+     "datetime": 1630088748,
+     "filename": "DerpFest-11-Official-daisy-20210827.zip",
+     "id": "7cf322e3196ba414326ace09e1634f786af147fd432ae06f5df682b8210ee7ee",
      "romtype": "Official",
-     "size": 1316732000,
-     "url": "https://sourceforge.net/projects/derpfest/files/daisy/DerpFest-11-Official-Beta-daisy-20210813.zip/download",
+     "size": 1420507575,
+     "url": "https://sourceforge.net/projects/derpfest/files/daisy/DerpFest-11-Official-daisy-20210827.zip/download",
      "version": "11"
     }
   ]
