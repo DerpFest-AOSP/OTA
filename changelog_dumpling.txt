@@ -1,33 +1,29 @@
 Device:
-- Synced with latest Lineage changes
-- Enabled CPU Info QS tile
-- Enabled FPS info QS tile
-- Cleaned up Pinner service for master changes
+- Sync with latest Lineage changes
+- Enable freeform windows
 
 ROM:
-- Out of beta yippie ya yeah!
-- Brought back Google CarrierSettings
-- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
-- Updated Inter font family
-- Added support for accented clock color on S Clocks
-- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
-- Pulse: Added Custom gravity and Center mirrored options
-- Added option to extend Pulse to QS Panel
-- Pulse: Added Vertical mirror option
-- Added options for iOS-like toast notification for clipboard access
-- Added moar prebuilt weather icon packs
-- Added some Anime custom headers
-- Show full default name for wifi and signal icon customization preferences
-- Disabled all-caps for smart reply button text
-- Removed sensors toggle from automated sleep mode
-- FODCircleView: Always update FODAnimation position
-- GamingMode: Moved RecordingService into main process
-- SystemUI: Halt LyricTicker after statusbar lyric disabled
-- Reduced NotificationHistoryDatabase logspam
-- Gestures: Fixed up footer string
-- P404Panel, ShapeShiftPanel: Don't show captions info tooltip
-- Launcher3: Fixed IntentFilter leak in QuickEventsController
-- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
-- Launcher3: Fixed Blur not being applied properly in some cases
-- Some optimizations from upstream
-- Updated German translations
+- Allow unlocking fingerprint only on power button press
+- Make power button press fp unlock toggleable
+- Fix FOD icon appearing when screen turns off
+- Fix flicker effect with FOD enabled while putting phone to sleep from lockscreen
+- GamingMode: Hide floating button after periods of time
+- GamingMode: Hide danmaku container immediately when config is changed
+- DerpQuest: Don't show system-app on GamingMode app selector
+- Make A12 DP3 clock bigger
+- TwilightService: Save and use last fetched location
+- FPS Info: Make new formatting works with old kernel
+- Add delete action for partial screenshot notification
+- Small code improvements for one shot auto-brightness feature
+- reset_network: Give new life to reset buttons
+- Bring back sound tile for op devices
+- WallpaperPicker2: Merge lineage code review updates for race condition fix
+- Settings: notifications: Add title for Advanced settings
+- Settings: Bring back old dark mode preference design
+- Properly scale touch input window through resolution changes
+- Workaround update_engine failing on some devices for local installation
+- Some more optimizations from upstream
+- APN updates for various carriers
+- Add new armv8-2a-dotprod arch variant support from master
+- Improve Russian translation for typeclock
+- Improve German translations
