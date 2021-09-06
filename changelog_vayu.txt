@@ -1,30 +1,44 @@
  Device:
-- Added CPU info overlay
-- Enable fingerprint on power button overlay
-- Added support for FPS info QS tile
+- Added Notch Bar Killer overlay
+- Uprev btconfigstore to 2.0
+- Added missing libldacBT_bco.so
+- Cleanup and Sync init QCOM/QTI from LA.UM.9.1.r1-10900-SMxxx0.0 
+- Added some missing WFD blobs
+- Drop unused prebuilt 64bit audio HAL
+- Improved Swapiness
+- Set a zero value for config_defaultRefreshRate
+- parts: Introduce raise to wake gesture
+- Migrate to Xiaomi power AIDL HAL
+- Update sepolicy from sm8250-common
+- Sync some props from V12.5.4.0.RJUMIXM
+- Adjusting screen timeouts 
+- Enable idle_state mechanism
+- parts: Fix theme issues
+- parts: Fix "dirac_hifi_enable_title" string
+- Decrease Minimum screen brightness to 1/255
+- parts: Add summary for Clear speaker and Dirac
+- parts: Update translation pt-BR
+- overlay: NotchBarKillerVayu: Add values-pt-rBR
+- parts: Make HelpDialogFragment class public
 
 ROM:
-- Allow unlocking fingerprint only on power button press
-- Make power button press fp unlock toggleable
-- Fix FOD icon appearing when screen turns off
-- Fix flicker effect with FOD enabled while putting phone to sleep from lockscreen
-- GamingMode: Hide floating button after periods of time
-- GamingMode: Hide danmaku container immediately when config is changed
-- DerpQuest: Don't show system-app on GamingMode app selector
-- Make A12 DP3 clock bigger
-- TwilightService: Save and use last fetched location
-- FPS Info: Make new formatting works with old kernel
-- Add delete action for partial screenshot notification
-- Small code improvements for one shot auto-brightness feature
-- reset_network: Give new life to reset buttons
-- Bring back sound tile for op devices
-- WallpaperPicker2: Merge lineage code review updates for race condition fix
-- Settings: notifications: Add title for Advanced settings
-- Settings: Bring back old dark mode preference design
-- Properly scale touch input window through resolution changes
-- Workaround update_engine failing on some devices for local installation
-- Some more optimizations from upstream
-- APN updates for various carriers
-- Add new armv8-2a-dotprod arch variant support from master
-- Improve Russian translation for typeclock
-- Improve German translations
+- Remove power button press fp unlock toggle (it sometimes fails to unlock)
+- PixelPropUtils: Update apps and remove force build fingerprint
+- Don't spoof props in recovery mode
+- Add EROFS (Enhanced Read-Only File System) support for Android build system
+- Implement Clear All Icon Styles
+- Settings: Improve A12-styled Searchbar layout
+- Add Sensors Off QS Tile
+- GamingMode: Limit the button coordinate to the inside of screen only
+- LockscreenCharging: Show Celsius by default
+- Fix default value mismatch with derpquest in artwork media background
+- Clocks: Use correct thumbnail for Android S clock
+- MiuiCompactPanel: Set tap target size back to 46dip
+- Fix reading /proc/locks when lock is held by another process
+- Set device name to marketname if available
+- Enable USAP for all devices
+- OmniJaws: Update OpenWeatherMap API
+- Override host metadata to avoid leaking info
+- Fix wfd-legacy prop neverallow
+- Some optimizations from upstream
+- Include makefile with art definitions
