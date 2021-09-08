@@ -1,3 +1,55 @@
-20210625:
-* Initial OSS Vendor build
-(Notes: Don't upgrade via OTA for this build!)
+Device Changelog:
+- Added haptic strength control (settings -> sounds & vibrations)
+- Include prebuilt GCamGo
+- Optimize display props
+- drop thermal engine (we use mi_thermald)
+- Add script for exTHmUI's GameMode performance control and adjust to surya as well
+- set dalvik heap configuration conditionally
+- Switch Skia rendering backend to Vulkan
+- Parts: Add HBM & CABC
+- Parts: Add clear speaker
+- add missed props
+- label missed selinux denial
+- Disable CPU hotplug data parsing on mi_thermald
+- Update blobs from MIUI V12.5.2.0.RJGEUXM
+- Parts: Haptic strength Improvements
+- etc.
+
+Kernel Changelog:
+- Upstreamed to 4.14.246
+- Merged CAF Tag LA.UM.9.1.r1-11100-SMxxx0.0
+- Dropped most brickports
+- Fixed SOD for sure!
+- Add simple LMK
+- Hide some tunables to prevent userspace to modify
+- Switch to uclamp (also add uclamp assist as well)
+- Set default uclamp min tunables (i don't need modules anymore)
+- Disable HWRANDOM and switch to SRANDOM
+- Enable HID_PLAYSTATION
+- Disable several unnecessary config and modules
+- Add and enable UFS Features
+- etc.
+
+Rom Changelog:
+- Merged September security patch (11.0.0_r43)
+- Remove power button press fp unlock toggle (it sometimes fails to unlock)
+- PixelPropUtils: Update apps and remove force build fingerprint
+- Don't spoof props in recovery mode
+- Add EROFS (Enhanced Read-Only File System) support for Android build system
+- Implement Clear All Icon Styles
+- Settings: Improve A12-styled Searchbar layout
+- Add Sensors Off QS Tile
+- GamingMode: Limit the button coordinate to the inside of screen only
+- LockscreenCharging: Show Celsius by default
+- Fix default value mismatch with derpquest in artwork media background
+- Clocks: Use correct thumbnail for Android S clock
+- MiuiCompactPanel: Set tap target size back to 46dip
+- Fix reading /proc/locks when lock is held by another process
+- Set device name to marketname if available
+- Enable USAP for all devices
+- OmniJaws: Update OpenWeatherMap API
+- Override host metadata to avoid leaking info
+- Fix wfd-legacy prop neverallow
+- Some optimizations from upstream
+- Include makefile with art definitions
+
