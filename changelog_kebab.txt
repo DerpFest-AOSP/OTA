@@ -1,5 +1,28 @@
 Rom Changes:
 ========================
+09-08-21
+* Remove power button press fp unlock toggle (it sometimes fails to unlock)
+* PixelPropUtils: Update apps and remove force build fingerprint
+* Don't spoof props in recovery mode
+* Add EROFS (Enhanced Read-Only File System) support for Android build system
+* Implement Clear All Icon Styles
+* Settings: Improve A12-styled Searchbar layout
+* Add Sensors Off QS Tile
+* GamingMode: Limit the button coordinate to the inside of screen only
+* LockscreenCharging: Show Celsius by default
+* Fix default value mismatch with derpquest in artwork media background
+* Clocks: Use correct thumbnail for Android S clock
+* MiuiCompactPanel: Set tap target size back to 46dip
+* Fix reading /proc/locks when lock is held by another process
+* Set device name to marketname if available
+* Enable USAP for all devices
+* OmniJaws: Update OpenWeatherMap API
+* Override host metadata to avoid leaking info
+* Fix wfd-legacy prop neverallow
+* Some optimizations from upstream
+* Include makefile with art definitions
+* Merge September security patch (11.0.0_r43)
+
 08-26-21
 * Out of beta yippie ya yeah!
 * Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
@@ -157,6 +180,65 @@ Rom Changes:
 
 Device changes:
 ========================
+09-08-21
+* Drop MMS user agent overlays
+* Enable NR by default for SIM2 slot
+* Rootdir: Add back init.cust.rc
+* Rootdir: Force DSDS rather than SSSS
+* Add alipay fingerprint payment support
+* Sepolicy: Address a couple format warnings
+* Props: Explicitly enable IORap and IORapd prefetching
+* Including product partition into vbmeta_system.img
+* Don't pin camera app in memory
+* Don't pin launcher app in memory
+* Fixed Google Lens not showing up in ooscam
+* BoardConfig: Set flag TARGET_OTA_ASSERT_DEVICE
+* Vendor: Import IFAA blobs
+              Kernel Changes
+* Latest Neutrino Changes
+* input: touchscreen: add gestures haptic feedback control
+* net: import WireGuard version 1.0.20210219
+* qcacld-3.0: remove dmesg spam when not connected to WiFi
+* MSM_CVP: remove firmware logging / dmesg spam
+* drivers/bluetooth: reduce dmesg logspam
+* msm: bus_arb: disable debug logging
+* msm/sde: fix Oneplus's erronous code merge
+* msm/vidc: remove debug logging and logging decision
+* msm/cvp: remove debug logging and logging decision
+* binder: Fix log spam caused by interrupted waits
+* net/sched: Shut up
+* drivers/input: fix code errors caught by clang12
+* touchpanel_common_driver: Init game mode variable
+* touchpanel_common_driver: Restore game mode status after switching to…
+* touchpanel_common_driver: Fix game mode not restoring on wakeup
+* touchpanel_common_driver: Introduce force_game_switch_enable node for…
+* power: smb5-lib: reset level on removal
+* usb_bam: Disable logging
+* touchpanel_common_driver: Expose gaming status
+* dts: qcom: kona-camera: fix i2c and order clocks correctly
+* Fix-up build
+* selinuxfs: Avoid dynamic allocations in sel_write_access
+* walt: sched_avg: Nuke hysteresis feature
+* Disable CRC check
+* msm: bus_arb: Disable debug logging
+*fs/dcache: Set vfs_cache_pressure to 0
+* msm_adreno_tz: add adrenoboost parameter
+* adrenoboost: finetuning algorithm - scale it a bit down
+* adrenoboost: stats is now a pointer
+* boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+* boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+* boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+* boeffla_wakelock_blocker: don't block wakelocks by default
+* Add default wakelock block list for low drain
+* Revert "arm64: dts: sm8250: Optimize frequency tables and energy model"
+* defconfig: set frequenties back to stock
+* cpufreq: Don't WARN_ON on non-existent cpu
+* fs: default to noatime
+* block: core: gotta go fast
+* ARM64: dts: Allow Adreno 650 to nap
+* power: supply: Hardcode HZ=250 for charging drivers
+* ANDROID: sched: fair: balance for single core cluster
+
 08-28-21
 * fixed single tap ambient display not working
 * lockscreen swipe up bug has been fixed when swiping to enter passcode
