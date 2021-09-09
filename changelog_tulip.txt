@@ -1,25 +1,30 @@
 • Source Changelog
 
-- Merged August Security Patch (11.0.0_r40)
-- Removed all recently added fonts
-- Fixed default wall showing twice in wall picker
-- Fixed black screen crash with Divided lines clock
-- Properly align owner info to the 3 left aligned clocks (was removed few days back cause I wanted to try something)
-- SystemUI: Update clear-all notification button layout only when needed to fix annoying logspam
-- Override system fonts with user-selected overlays (this makes fonts affecting apps)
-- Improved derp launcher about section
-- Updated StitchImage prebuilts and enabled dexpreopt
-- Integrated In-call vibration haptics options into sound settings and synced preferences with AOSPA
-- Allow overlaying max system icons
-- RebootTile: Remember last mode
-- Graphics: Fixed NPE on GradientDrawable
-- Fixed another NPE on Volume panel plugins
-- Fixed logspam on charging when displaying keyguard
-- Rounded corners: Simplified adaptation for A11
+- Merged August Security Patch (11.0.0_r43)
+- Remove power button press fp unlock toggle (it sometimes fails to unlock)
+- PixelPropUtils: Update apps and remove force build fingerprint
+- Don't spoof props in recovery mode
+- Add EROFS (Enhanced Read-Only File System) support for Android build system
+- Implement Clear All Icon Styles
+- Settings: Improve A12-styled Searchbar layout
+- Add Sensors Off QS Tile
+- GamingMode: Limit the button coordinate to the inside of screen only
+- LockscreenCharging: Show Celsius by default
+- Fix default value mismatch with derpquest in artwork media background
+- Clocks: Use correct thumbnail for Android S clock
+- MiuiCompactPanel: Set tap target size back to 46dip
+- Fix reading /proc/locks when lock is held by another process
+- Set device name to marketname if available
+- Enable USAP for all devices
+- OmniJaws: Update OpenWeatherMap API
+- Override host metadata to avoid leaking info
+- Fix wfd-legacy prop neverallow
+- Some optimizations from upstream
+- Include makefile with art definitions
 
-• Device changelog (05-08-2021)
+• Device changelog (09-09-2021)
 
-- Mystic Kernel upstreamed to 4.4.278
+- Mystic Kernel upstreamed to 4.4.283
 - Compiled using proton clang
-- Redfin fp update to August
+- Redfin fp update to September
 - Source sync
