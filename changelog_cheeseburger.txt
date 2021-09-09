@@ -1,45 +1,11 @@
 Device:
-* Synced with latest Lineage changes
-* Fixed f linker error which caused bsod's (thanks to eneskaya)
-* JIO SMS issue fixed
+- Synced with latest Lineage changes
+- Fixed Google voice match
+
 ROM:
-* Added support to set volume for app
-* Added App volume row toggle
-* Added style options for settings dashboard icons
-* Added Octavi's lockscreen clock
-* Added Status bar rounded corner size preference
-* Added reTicker from Descendant
-* Added option to force custom doze brightness and pulse brightness configs
-* Added Fluid lock clock V2
-* Type (Alt) Clock: Fixed wrong salute messages and improved it further
-* Added Fluid Style Switches and removed AOSP style (can't figure out)
-* Added Compass QS tile
-* Screenrecord: Added an option to record for longer
-* Added support for global cleartext penalties
-* Added machine learning back gesture and TensorFlow Lite model from kdrag0n
-* Themes: Added themed icons for Google, Wellbeing and OP settings preference
-* Themes: Let about logo follow gradients in themes
-* Removed background tint from emergency tile
-* Allowed screen unpinning on devices without navbar
-* Fixed silent notification if screenshot is dismissed
-* VolumeDialogImpl: Don't show captions info tooltip (Until layout gets fixed)
-* VolumePluginManager: More fixes toggling panel
-* Fixed unreadable OOS 11 clock thumbnail
-* Made qs weather page follow system font setting
-* LiveDisplaySettings: Unlock Reading Mode whenever is possible
-* Fixed Device Config check for Ramping ringer
-* Settings: Added an option for FOD in FP location overlay
-* Fixed SBC Dual Channel (SBC HD Audio) support
-* Fixed media art with enabled face unlock
-* Fixed Gaming mode master switch
-* Reverted divided lines clock back to old state (accented and with weather looks ugly tbh)
-* Settings: Fixed drawables in Display settings
-* Removed now playing preference (was force disabled anyway)
-* Allowed selected camera apps to skip unconfigure
-* Fixed notification opacity for smart replies
-* Fixed moving home stack to front in freeform mode
-* Added kdrag0n's new blur improvements
-* Added support for blocking background data on all interfaces
-* Face unlock fixed
-* Made unlocking faster
-* Added Russian translations
+- Merge September Security Patch (android-11.0.0_r43)
+- PixelPropsUtils: Update redfin and crosshatch fingerprint to September 2021
+- GradientFireClock: Replace logo with Derped owl
+- GradientFireClock: Replace CJK Unified Ideograph-5BB6 with Owl unicode character
+- Launcher3: Add free memory view to recents
+- SystemUI: Ticker Improvements
