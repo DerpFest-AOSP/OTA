@@ -1,41 +1,57 @@
 Device changes:
 ========================
 * We're STABLE now.
-* Aug security patch
-* Moved to User build for more safety
-* Kernel Upstream to 4.9.280
-* Added New exTHmUI's GameMode
-* Added init script for exTHmUI's GameMode performance control
-* Updated Redfin's Aug fp
+* September security patch
+* Kernel Upstream to 4.9.282
+* Fixed FOD icon appearing when screen turns off
+* Implement Clear All Icon Styles
+* Updated Redfin's Sep fp
 * SafteyNet Pass without root as usual
-* Many sourceside improvements.
 * More improvements & bug fixes
 
 Rom Changes:
 ========================
 
-- Out of beta yippie ya yeah!
-- Brought back Google CarrierSettings
-- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
-- Updated Inter font family
-- Added support for accented clock color on S Clocks
-- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
-- Pulse: Added Custom gravity and Center mirrored options
-- Added option to extend Pulse to QS Panel
-- Pulse: Added Vertical mirror option
-- Added options for iOS-like toast notification for clipboard access
-- Added moar prebuilt weather icon packs
-- Added some Anime custom headers
-- Show full default name for wifi and signal icon customization preferences
-- Disabled all-caps for smart reply button text
-- Removed sensors toggle from automated sleep mode
-- FODCircleView: Always update FODAnimation position
-- GamingMode: Moved RecordingService into main process
-- SystemUI: Halt LyricTicker after statusbar lyric disabled
-- Reduced NotificationHistoryDatabase logspam
-- Gestures: Fixed up footer string - P404Panel, ShapeShiftPanel: Don't show captions info tooltip
-- Launcher3: Fixed IntentFilter leak in QuickEventsController
-- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
-- Launcher3: Fixed Blur not being applied properly in some cases
+- Remove power button press fp unlock toggle (it sometimes fails to unlock)
+- PixelPropUtils: Update apps and remove force build fingerprint
+- Don't spoof props in recovery mode
+- Add EROFS (Enhanced Read-Only File System) support for Android build system
+- Implement Clear All Icon Styles
+- Settings: Improve A12-styled Searchbar layout
+- Add Sensors Off QS Tile
+- GamingMode: Limit the button coordinate to the inside of screen only
+- LockscreenCharging: Show Celsius by default
+- Fix default value mismatch with derpquest in artwork media background
+- Clocks: Use correct thumbnail for Android S clock
+- MiuiCompactPanel: Set tap target size back to 46dip
+- Fix reading /proc/locks when lock is held by another process
+- Set device name to marketname if available
+- Enable USAP for all devices
+- OmniJaws: Update OpenWeatherMap API
+- Override host metadata to avoid leaking info
+- Fix wfd-legacy prop neverallow
 - Some optimizations from upstream
-- Many more
+- Include makefile with art definitions
+- Allow unlocking fingerprint only on power button press
+- Fix FOD icon appearing when screen turns off
+- Fix flicker effect with FOD enabled while putting phone to sleep from lockscreen
+- GamingMode: Hide floating button after periods of time
+- GamingMode: Hide danmaku container immediately when config is changed
+- DerpQuest: Don't show system-app on GamingMode app selector
+- Make A12 DP3 clock bigger
+- TwilightService: Save and use last fetched location
+- FPS Info: Make new formatting works with old kernel
+- Add delete action for partial screenshot notification
+- Small code improvements for one shot auto-brightness feature
+- reset_network: Give new life to reset buttons
+- Bring back sound tile for op devices
+- WallpaperPicker2: Merge lineage code review updates for race condition fix
+- Settings: notifications: Add title for Advanced settings
+- Settings: Bring back old dark mode preference design
+- Properly scale touch input window through resolution changes
+- Workaround update_engine failing on some devices for local installation
+- Some more optimizations from upstream
+- APN updates for various carriers
+- Add new armv8-2a-dotprod arch variant support from master
+- Improve Russian translation for typeclock
+- Improve German translations
