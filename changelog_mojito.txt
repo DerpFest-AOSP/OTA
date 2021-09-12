@@ -1,0 +1,27 @@
+Device Changelog:
+- Initial Official OSS Build
+- Updated Blobs to 10900
+- Pushed to September Security Patch
+- Users who is using zhantech's unofficial build needs cleanflash.
+
+ROM Source Changelog:
+- Remove power button press fp unlock toggle (it sometimes fails to unlock)
+- PixelPropUtils: Update apps and remove force build fingerprint
+- Don't spoof props in recovery mode
+- Add EROFS (Enhanced Read-Only File System) support for Android build system
+- Implement Clear All Icon Styles
+- Settings: Improve A12-styled Searchbar layout
+- Add Sensors Off QS Tile
+- GamingMode: Limit the button coordinate to the inside of screen only
+- LockscreenCharging: Show Celsius by default
+- Fix default value mismatch with derpquest in artwork media background
+- Clocks: Use correct thumbnail for Android S clock
+- MiuiCompactPanel: Set tap target size back to 46dip
+- Fix reading /proc/locks when lock is held by another process
+- Set device name to marketname if available
+- Enable USAP for all devices
+- OmniJaws: Update OpenWeatherMap API
+- Override host metadata to avoid leaking info
+- Fix wfd-legacy prop neverallow
+- Some optimizations from upstream
+- Include makefile with art definitions
