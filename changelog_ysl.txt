@@ -1,3 +1,40 @@
+# Build Date: 13/09/2021
+
+Device Changelog:
+- Update to September Redfin FP.
+- Reduce screenshot delay to 0.
+- Fixed Notification light while charging.
+- Add offline charging LED indicator.
+- Fixed APN.
+- Removed rounded corners.
+- Upstream kernel to latest tag.
+
+Source Changelog:
+- Merge September Security Patch (android-11.0.0_r43)
+- PixelPropsUtils: Update redfin and crosshatch fingerprint to September 2021
+- GradientFireClock: Replace logo with Derped owl
+- GradientFireClock: Replace CJK Unified Ideograph-5BB6 with Owl unicode character
+- GamingMode: Opt-out performance profile support
+- GamingMode: Add option to disable menu overlay
+GamingMode: Fix views obscuring other window that needs interaction
+- Fine tune signal and battery icon dimensions
+- FOD: Use sharper fod white and yellow pressed icons
+- FOD: Use A12 fingerprint icon by default
+- FOD: Make background transparent and remove unused res
+- SoftAPManager: Cleanup, organize and some visual improvements
+- Statusbar brightness control: Fix changes not applying
+- OmniWeather: Fix up changing weather icon pack
+- OmniWeather: Allow background execution on boot
+- OmniWeather: Add corner radius to widget background
+- OmniWeather: Do not disable service on enabling custom location
+- DerpLauncher: Make double tap to sleep gesture optional
+- DerpLauncher: Add alternate Quickspace layout
+- DerpLauncher: Add toggle for free memory view to recents
+- DerpLauncher: QuickEvents: Clean up unused functions and fixes
+- Limit Keyguard charging stats updates
+- GamingMode: Update Russian translations
+- Update German translations
+
 # Build Date - 09/07/2021
 
 Device Changelog:
