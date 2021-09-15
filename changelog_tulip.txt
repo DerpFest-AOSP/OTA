@@ -22,9 +22,9 @@
 - Some optimizations from upstream
 - Include makefile with art definitions
 
-• Device changelog (09-09-2021)
+• Device changelog (15-09-2021)
 
-- Mystic Kernel upstreamed to 4.4.283
-- Compiled using proton clang
-- Redfin fp update to September
+- New DT reworked and using 4.19 kernel by default (thanks to @Muti605)
+- New 4.19 Atom-X kernel default (thanks to @OGIndian)
+- Kernel upstreamed to 4.19.206
 - Source sync
