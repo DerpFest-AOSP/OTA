@@ -1,7 +1,7 @@
-# Build Date - 19/08/2021
+# Build Date - 17/09/2021
 
 Device Changelog :
--Added scripts for the gaming mode performance control
--Thermal hals updated to V2.0
-
-
+- Some thermal changes 
+- Switched to perf kernel 
+- Charging LED's fixed 
+- More miscellaneous changes
