@@ -1,23 +1,26 @@
-- GamingMode: Opt-out performance profile support
-- GamingMode: Add option to disable menu overlay (to solve touchscreen issues in some games)
-- Fix overlays resetting on every reboot
-- Fine tune signal and battery icon dimensions
-- Add some margin below QS security footer
-- FOD: Use sharper fod white and yellow pressed icons
-- FOD: Use A12 fingerprint icon by default
-- FOD: Make background transparent and remove unused res
-- SoftAPManager: Cleanup, organize and some visual improvements
-- Apply theme by using notification context
-- Statusbar brightness control: Fix changes not applying
-- OmniWeather: Fix up changing weather icon pack
-- OmniWeather: Fix up style for all preferences
-- OmniWeather: Allow background execution on boot
-- OmniWeather: Add corner radius to widget background
-- OmniWeather: Do not disable service on enabling custom location
-- DerpLauncher: Make double tap to sleep gesture optional
-- DerpLauncher: Add alternate Quickspace layout
-- DerpLauncher: Add toggle for free memory view to recents
-- DerpLauncher: QuickEvents: Clean up unused functions and fixes
-- Limit Keyguard charging stats updates
-- GamingMode: Update Russian translations
-- Update German translations
+Device:
+- Synced with latest Lineage changes
+
+ROM:
+- PixelPropsUtils: Improve code
+- NFC SecureElement: Add support for OnePlus Wallet
+- Remove all previous made ramp rate modifications
+- Disable Zygote debugging
+- PulseControllerImpl: Fix pulse being drawn on the side of the lock screen when locking from a fullscreen playing video that continues playing audio on screen off
+- Pulse: Fix getting default accent color
+- Pulse: Fix potential FC when using players like Deezer
+- Fix A12 FOD icon not visible during initial setup on clean flash
+- Improve keypress sounds and add more UI sounds from OOS
+- Enable three icon switching within QS DND tile
+- SensorTile: Invert states
+- Add per app volume support to Shapeshift volume panel style
+- VolumePlugins: Fix icon layout  on app volume row
+- ShapeShiftPanel: Don't tint active volume bar with gradient
+- GamingMode: Fix danmaku container layoutParam on config changed
+- GestureNavigationSettings: Fix default values
+- Use a double click effect for charging if there is no amplitude control support
+- reticker: Add color for youtube in blacklist
+- Unblock gestural navigation on clearScreenshot()
+- TaskSnapshotController: Avoid NPE
+- Update lmkd diagnostics info
+- Get the most of the media artwork colors
