@@ -1,0 +1,29 @@
+[DEVICE]
+- Enforcing
+- NFC
+- More
+
+[SOURCE]
+- September patch
+- PixelPropsUtils: Improve code
+- NFC SecureElement: Add support for OnePlus Wallet
+- Remove all previous made ramp rate modifications
+- Disable Zygote debugging
+- PulseControllerImpl: Fix pulse being drawn on the side of the lock screen when locking from a fullscreen playing video that continues playing audio on screen off
+- Pulse: Fix getting default accent color
+- Pulse: Fix potential FC when using players like Deezer
+- Fix A12 FOD icon not visible during initial setup on clean flash
+- Improve keypress sounds and add more UI sounds from OOS
+- Enable three icon switching within QS DND tile
+- SensorTile: Invert states
+- Add per app volume support to Shapeshift volume panel style
+- VolumePlugins: Fix icon layout  on app volume row
+- ShapeShiftPanel: Don't tint active volume bar with gradient
+- GamingMode: Fix danmaku container layoutParam on config changed
+- GestureNavigationSettings: Fix default values
+- Use a double click effect for charging if there is no amplitude control support
+- reticker: Add color for youtube in blacklist
+- Unblock gestural navigation on clearScreenshot()
+- TaskSnapshotController: Avoid NPE
+- Update lmkd diagnostics info
+- More
