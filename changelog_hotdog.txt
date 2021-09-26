@@ -1,30 +1,33 @@
 Device:
-- Update blobs from OOS 11.0.3.1
-- DeviceSettings: Remove Refresh Rate filter validation
-- FOD: Switch to Android 12 icon drawable by default
-- Make NFC great again with SE hacks
-- Enable config_vibrateOnIconAnimation
+- Fix OP Cam portrait mode
+- Bump SE blobs to stock R
+- Fix left and right arrow gesture action
+- Revert the rework of color management and display modes
+- Fix OTA auto-flashing with encrypted f2fs
+- Sepolicy fixes for local installation with Derp Updater
+- DeviceSettings: Increase BootCompletedReceiver priority
+- DeviceSettings: Convert to blueprint and relocate to /system_ext
+- wifi: Disable TDLS offchannel feature
+- wifi: Relax WiFi re-association RSSI threshold
+- Change permissions for /dev/diag
+- Update MatchmakerPrebuilt
+- Compile Kernel with Clang 11 again
+- Revert undervolt of GPU
+- Set default fod pressed color to green (not sure yet whats best)
 
 ROM:
-- PixelPropsUtils: Improve code
-- NFC SecureElement: Add support for OnePlus Wallet
-- Remove all previous made ramp rate modifications
-- Disable Zygote debugging
-- PulseControllerImpl: Fix pulse being drawn on the side of the lock screen when locking from a fullscreen playing video that continues playing audio on screen off
-- Pulse: Fix getting default accent color
-- Pulse: Fix potential FC when using players like Deezer
-- Fix A12 FOD icon not visible during initial setup on clean flash
-- Improve keypress sounds and add more UI sounds from OOS
-- Enable three icon switching within QS DND tile
-- SensorTile: Invert states
-- Add per app volume support to Shapeshift volume panel style
-- VolumePlugins: Fix icon layout  on app volume row
-- ShapeShiftPanel: Don't tint active volume bar with gradient
-- GamingMode: Fix danmaku container layoutParam on config changed
-- GestureNavigationSettings: Fix default values
-- Use a double click effect for charging if there is no amplitude control support
-- reticker: Add color for youtube in blacklist
-- Unblock gestural navigation on clearScreenshot()
-- TaskSnapshotController: Avoid NPE
-- Update lmkd diagnostics info
-- Get the most of the media artwork colors
+- Add back Ambient Text Customizations
+- Make IME button space optional
+- FODCircleView: Update animation position on circle showing when dreaming
+- ScreenDecorations: Simplify rounded size selection
+- Ticker: Follow status bar padding
+- LyricTicker: Follow status bar padding
+- Add redwave FOD animation
+- Make Haptic feedback toggle for back gesture respect global haptic feedback settings
+- FOD: Use sharper fod green pressed icon
+- UI Fix for special runtime permissions
+- FaceUnlockService: Get corrrect camera ID
+- Fix ticker appearing for a split second on lockscreen
+- SamsungHighlightclock: Fix updating wallpaper color when wallpaper changes
+- PixelPropsUtils: Bring samsung accessory service to the list
+- MediaProvider: Fix off-by-one error in FUSE based redaction of sensitive data (fixes sharing a image to any messenger app)
