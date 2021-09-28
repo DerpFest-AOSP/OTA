@@ -1,340 +1,44 @@
-Rom Changes:
-========================
-09-08-21
-* Remove power button press fp unlock toggle (it sometimes fails to unlock)
-* PixelPropUtils: Update apps and remove force build fingerprint
-* Don't spoof props in recovery mode
-* Add EROFS (Enhanced Read-Only File System) support for Android build system
-* Implement Clear All Icon Styles
-* Settings: Improve A12-styled Searchbar layout
-* Add Sensors Off QS Tile
-* GamingMode: Limit the button coordinate to the inside of screen only
-* LockscreenCharging: Show Celsius by default
-* Fix default value mismatch with derpquest in artwork media background
-* Clocks: Use correct thumbnail for Android S clock
-* MiuiCompactPanel: Set tap target size back to 46dip
-* Fix reading /proc/locks when lock is held by another process
-* Set device name to marketname if available
-* Enable USAP for all devices
-* OmniJaws: Update OpenWeatherMap API
-* Override host metadata to avoid leaking info
-* Fix wfd-legacy prop neverallow
-* Some optimizations from upstream
-* Include makefile with art definitions
-* Merge September security patch (11.0.0_r43)
+ROM:
+- PixelPropsUtils: Improve code
+- NFC SecureElement: Add support for OnePlus Wallet
+- Remove all previous made ramp rate modifications
+- Disable Zygote debugging
+- PulseControllerImpl: Fix pulse being drawn on the side of the lock screen when locking from a fullscreen playing video that continues playing audio on screen off
+- Pulse: Fix getting default accent color
+- Pulse: Fix potential FC when using players like Deezer
+- Fix A12 FOD icon not visible during initial setup on clean flash
+- Improve keypress sounds and add more UI sounds from OOS
+- Enable three icon switching within QS DND tile
+- SensorTile: Invert states
+- Add per app volume support to Shapeshift volume panel style
+- VolumePlugins: Fix icon layout  on app volume row
+- ShapeShiftPanel: Don't tint active volume bar with gradient
+- GamingMode: Fix danmaku container layoutParam on config changed
+- GestureNavigationSettings: Fix default values
+- Use a double click effect for charging if there is no amplitude control support
+- reticker: Add color for youtube in blacklist
+- Unblock gestural navigation on clearScreenshot()
+- TaskSnapshotController: Avoid NPE
+- Update lmkd diagnostics info
+- Get the most of the media artwork colors
+- Add back Ambient Text Customizations
+- Make IME button space optional
+- FODCircleView: Update animation position on circle showing when dreaming
+- ScreenDecorations: Simplify rounded size selection
+- Ticker: Follow status bar padding
+- LyricTicker: Follow status bar padding
+- Add redwave FOD animation
+- Make Haptic feedback toggle for back gesture respect global haptic feedback settings
+- FOD: Use sharper fod green pressed icon
+- UI Fix for special runtime permissions
+- FaceUnlockService: Get corrrect camera ID
+- Fix ticker appearing for a split second on lockscreen
+- SamsungHighlightclock: Fix updating wallpaper color when wallpaper changes
+- PixelPropsUtils: Bring samsung accessory service to the list
+- MediaProvider: Fix off-by-one error in FUSE based redaction of sensitive data (fixes sharing a image to any messenger app)
 
-08-26-21
-* Out of beta yippie ya yeah!
-* Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
-* Updated Inter font family
-* Added support for accented clock color on S Clocks
-* Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
-* Pulse: Added Custom gravity and Center mirrored options
-* Added option to extend Pulse to QS Panel
-* Pulse: Added Vertical mirror option
-* Added options for iOS-like toast notification for clipboard access
-* Added moar prebuilt weather icon packs
-* Added some Anime custom headers
-* Show full default name for wifi and signal icon customization preferences
-* Disabled all-caps for smart reply button text
-* Removed sensors toggle from automated sleep mode
-* FODCircleView: Always update FODAnimation position
-* GamingMode: Moved RecordingService into main process
-* SystemUI: Halt LyricTicker after statusbar lyric disabled
-* Reduced NotificationHistoryDatabase logspam
-* Gestures: Fixed up footer string
-* P404Panel, ShapeShiftPanel: Don't show captions info tooltip
-* Launcher3: Fixed IntentFilter leak in QuickEventsController
-* Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
-* Launcher3: Fixed Blur not being applied properly in some cases
-* Some optimizations from upstream
-* Updated German translations
-
-08-17-21
-* Removed Crdroid's poor gaming mode in favor of new sexy Gaming Mode from our friends at exTHmUI
-* GamingMode: Added option for customizing menu opacity 
-* GamingMode: A lot of visual improvements and fixes here and there
-* Removed one of the S clocks (the broken A12 one)
-* Improved S and DP3 clocks again and made DP3 following wall colors
-* Fixed null text on 12 clock after dismissing media
-* Added initial support for OmniWeather to S clocks
-* Removed Yaap's toggle to hide lock icon on lockscreen in favor of Crdroid's implementation
-* Hide lock icon while dozing
-* Don't centre lock icon on bouncer to avoid janky animation
-* Added screenshot quality setting
-* Added automated Sleep Mode to battery menu
-* Added DerpQuest QS tile
-* Pulse: Code improvements from Ido forward ported from derp 10
-* Fixed pulse showing vertical on keyguard in some cases
-* Allowed round corner styles to affect more system elements
-* Introduced new preview for dark theme in display settings
-* Added back Oneplus Sans font overlay
-* ThemePicker: Fixed derped constraint layout setup on clock picker
-* Add option to hide FOD on doze
-* Some more things maybe I can't remember more :P
-
-08-11-21
-* Merge CAF tag 'LA.UM.9.3.r1-02800-sdm845.0' into ReX Kernel
-* Upstreamed ReX Kerbel to latest linux tag v4.9.278
-* Merged August security patch 
-* Added back option to replace media notification background with artwork
-* Added simple fade filter slider for media notification artwork
-* MediaCarouselController: Changes to update background when settings are changed
-* Removed Gvisual mod radius settings in favor of Crdroid's PebbleBerry Rounded Corner styles
-* Allowed to disable battery light when charging
-* Added Edge Music Control Gesture switch
-* AppLock: Fixed biometric prompt disapearing if app launched from resolver
-* Fixed massive requestLayout spam on lockscreen
-* Left aligned lock icon when required
-* Made sure to center align the lock icon while showing bouncer
-* Left aligned AOD notifications when required
-* Added Shapeshift A12 lockscreen clock
-* Android S Clock: Conditionally apply accent to inline with Beta 3 behaviour
-* Android S Clock: Fixed preview and some improvements
-* Android S DP3 Clock: Fixed IndexOutOfBoundsException
-* Android 12 Clock: Fixed IndexOutOfBoundsException
-* TypeClock: Fine tuned padding/margin and enabled date/weather info
-* Made user fonts affecting for more system elements
-* Fixed crash when system body font family is invalid
-* Added Comic sans font
-* Match NFC statusbar icon with QS one
-* Added optional OnePlus Camera support for maintainers
-* Moved theming options to DerpQuest and removed shapes/icon pack (better apply with theme picker to avoid issues)
-* Updated Security Settings drawables from Android 12
-* Compressed default wallpaper to avoid lag on low specs devices
-* FodAnimationResources: Updated MIUI Light and MIUI Pulse from raphael*user*11*RKQ1.200826.002
-* telephony: Show ICCID by default for all
-* telephony: Removed dead code from Telephony which uses wakelock
-* Launcher3: Retrieve the searchbar padding from device profile
-* Updater: Fixed OTA install problem on F2FS format type
-* display*intf: Silenced deprecation warnings
-* bluetooth_ext/jni: Resolved unused parameter warnings
-* bluetooth_ext/jni: Removed excess arguments not used by format strings
-
-07-30-21
-* Removed Google PSU support
-* Removed Google Network stack 
-* Switched to AOSP wallpaper picker
-* Integrated DerpWalls into wallpaper picker
-* Removed OOS volume panel style
-* Added statusbar NFC icon
-* Added Legacy WFD output video mode settings
-* Added Hotspot client manager
-* Added OnePlus Sans and Manrope font
-* Launcher3: Added option to control wallpaper zooming
-* Refresh QS page indicator layout when number of pages changes
-* Improved setting accent color on custom clocks and allowed it on more clocks (oos, btlg, fluid clocks)
-* Added time refresh capabilities for S clock controllers
-* FODCircleView/FODAnimation: Clean ups and improvements
-* MediaResume: Disabled it by default to avoid UI glitch
-
-07-23-21
-* Switched to new default wallpaper (thanks to @pseudo_nerd)
-* Added back "bypass lockscreen after face unlock" preference
-* Added Wake on plug switch
-* Redesigned Media Player view to Android S Style
-* Added switch to sensor block settings
-* Added FastCharge preference into Battery settings for capable devices
-* Display actual charge tech in battery settings
-* ShapeShiftPanel: Added alarm volume slider
-* ShapeShiftPanel: Redesigned output switcher UI
-* OOSPanel: Improved UI
-* Fixed volume panel permanently visible when changing the panel side while the panel is open
-* DataSwitchTile: Improved the code
-* Added Sammy 404 clock
-* ClockertinoClock: Added time refresh capabilities on AoD
-* Introduced experimental Accent color options for Custom lockscreen clocks
-* TypeClock: Added 24h format support
-* TypeClock: Added DE translations for 24h mode
-* Launcher3: Added show Date instead of Now Playing switch
-* QuickSpace: Made NowPlaying clickable
-* Quickspace: Added contextual messages/greetings event
-* Removed IORap props
-* Reversed an incorrect check in AutoRestrictionPreferenceController
-* Add missing NFC icon
-
-07-16-21
-* Merged July Security Patch (11.0.0_r39)
-* Fixed visual glitch with data usage QS footer when pulling the panel
-* Improved QS footer layout
-* Added toggle to hide QS Footer page indicator
-* Added notification header and clear all gravity customizations
-* Added animation to clear all button
-* Added Flashlight blink on incoming calls options
-* Added On-The-Go Mode to optional power menu user actions
-* Added On-The-Go QS Tile
-* Extend lyrics ticker to support apps with native FlymeOS lyrics support, so you can toggle it on in its menu
-* VolumePlugins: Added OOS, 404 and Shapeshift Vol Panel styles and removed redundant aosp panel
-* Added per app volume row to all volume plugins
-* MiuiCompactPanel: Make the corners perfectly rounded
-* OctaviDigitalClock: Added font customization support
-* Switched to Hastebin for copying crash logs
-* Added Animated Spark FOD icon
-* BiometricPrompt: Automatically add padding to incorporate FOD
-* FODCircleView: Hide if fingerprint detection stops
-* Set clock text color based on wallpapers for Android S clock
-* Fixed some NPEs in Android S Clock
-* Attempt to align owner info on Android S clocks
-* Imported Screen lock and keypress sounds from OOS 11
-* Updated German translations
-
-Device changes:
-========================
-09-08-21
-* Drop MMS user agent overlays
-* Enable NR by default for SIM2 slot
-* Rootdir: Add back init.cust.rc
-* Rootdir: Force DSDS rather than SSSS
-* Add alipay fingerprint payment support
-* Sepolicy: Address a couple format warnings
-* Props: Explicitly enable IORap and IORapd prefetching
-* Including product partition into vbmeta_system.img
-* Don't pin camera app in memory
-* Don't pin launcher app in memory
-* Fixed Google Lens not showing up in ooscam
-* BoardConfig: Set flag TARGET_OTA_ASSERT_DEVICE
-* Vendor: Import IFAA blobs
-              Kernel Changes
-* Latest Neutrino Changes
-* input: touchscreen: add gestures haptic feedback control
-* net: import WireGuard version 1.0.20210219
-* qcacld-3.0: remove dmesg spam when not connected to WiFi
-* MSM_CVP: remove firmware logging / dmesg spam
-* drivers/bluetooth: reduce dmesg logspam
-* msm: bus_arb: disable debug logging
-* msm/sde: fix Oneplus's erronous code merge
-* msm/vidc: remove debug logging and logging decision
-* msm/cvp: remove debug logging and logging decision
-* binder: Fix log spam caused by interrupted waits
-* net/sched: Shut up
-* drivers/input: fix code errors caught by clang12
-* touchpanel_common_driver: Init game mode variable
-* touchpanel_common_driver: Restore game mode status after switching to…
-* touchpanel_common_driver: Fix game mode not restoring on wakeup
-* touchpanel_common_driver: Introduce force_game_switch_enable node for…
-* power: smb5-lib: reset level on removal
-* usb_bam: Disable logging
-* touchpanel_common_driver: Expose gaming status
-* dts: qcom: kona-camera: fix i2c and order clocks correctly
-* Fix-up build
-* selinuxfs: Avoid dynamic allocations in sel_write_access
-* walt: sched_avg: Nuke hysteresis feature
-* Disable CRC check
-* msm: bus_arb: Disable debug logging
-*fs/dcache: Set vfs_cache_pressure to 0
-* msm_adreno_tz: add adrenoboost parameter
-* adrenoboost: finetuning algorithm - scale it a bit down
-* adrenoboost: stats is now a pointer
-* boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
-* boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
-* boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
-* boeffla_wakelock_blocker: don't block wakelocks by default
-* Add default wakelock block list for low drain
-* Revert "arm64: dts: sm8250: Optimize frequency tables and energy model"
-* defconfig: set frequenties back to stock
-* cpufreq: Don't WARN_ON on non-existent cpu
-* fs: default to noatime
-* block: core: gotta go fast
-* ARM64: dts: Allow Adreno 650 to nap
-* power: supply: Hardcode HZ=250 for charging drivers
-* ANDROID: sched: fair: balance for single core cluster
-
-08-28-21
-* fixed single tap ambient display not working
-* lockscreen swipe up bug has been fixed when swiping to enter passcode
-* Touchscreen gesture vibration feedback has been fixed so that should be working now
-
-08-26-21
-* Sync ODM features list with OnePlus framework
-* Update ODM features list from OSS 11.2.7.7
-* Update ODM features list from OSS 11.2.8.8
-* Switched to qti vibrator
-* Vibrator: Add logic to detect QTI haptics device
-* Overlay: Update vibration pattern
-* Overlay: Add missing burnInProtection overlays
-* Drop lineage powershare since 8t doesn't support wireless charging
-* Overlay: Update CarrierConfig
-* Manifest: Label missed entry for android.hardware.secure.Element
-* Sepolicy: Address init shell and hal perf denials
-* Sepolicy: Address various sepolicy denials
-* Fix namespace for landscape dimen
-* DeviceExtras: Doze: Get rid of aod pref
-* DeviceExtras: Doze: Get rid of compound button
-* DeviceExtras: Set default vibration to 2 and increase max vibration to 4
-* Biometrics: Revert "fpc: keep fpc in system-background"
-* Overlay: Enable tap to show ambient display by default
-* Tri-state-key: Refactor code
-* Tri-state-key: Add support for setting up initial state on boot
-* Props: Update display props
-* DeviceExtras: Fix up restoring vib strength on boot
-* Fix T-Mobile issues & added visible apns
-* Tree clean-ups
-* kebab: Update blobs from OOS 11.0.9.9
-* kebab: Update blobs×configs from OOS 11.0.10.10
-
-08-17-21
-* Ton of tree clean-ups
-* prop: Sync media props with stock
-* Remove unused pnscr configuration
-* init: Update fingerprint from redfin august
-* Update blobs from OOS 11.0.7.7
-* Enable Gboard side padding
-08-11-21
-* DeviceExtras: Improve FPS overlay
-* Update some more prebuilt apps
-* Enable TARGET_HAS_NO_CAMERA_SMOOTH_APIS
-* Kill snap
-* Disable NearbyMessagingService And DiscoveryService
-* Enable touch sensitivity toggle
-* prop tweaks
-* Rework dex flags again
-* Switch certain dexopt profiles to verify
-* Add selinux status to settings
-* Schedtune top-app & foreground tuning
-* System.prop: Enable pre-rendering
-* Sepolicy: Suppress netutils_wrapper logspam
-* Sepolicy: Regenerate sysfs_wakeup labels
-* Overlay: Add ScreenOffFOD
-* Fix Mismatching Model Names
-
-07/30-21
-* Switch to neturino
-* Switch to LLVM tools for kernel build
-* Fix namespace prefix in nfcee_access.xml
-* Sepolicy: Address denials for user build
-* Enable SMS authorization framework
-* Satisfy retarded drm info apps
-* Drop ozo soundfx
-* Add OnePlus specific permissions from stock
-* Match QVA static overlay configs for BT
-* Use proper device name for USB mount
-* Update Dimensions and Corners
-
-07-23-21
-* fixed portrait f/c and video f/c in 12/48 mp mode
-* Define debug.stagefright.ccodec property (fixes video f/c)
-* sepolicy: Label CFR_para2_OnePlus_EF017_UW_snapshot.bin
-* Add more OnePlus bits
-* Cleanup {rootdir, sepolicy} stuff
-* updates to statusbar dimensions
-* overlay: Import brightness config from cmi
-
-07-16-21
-*removed dolby for now since it doesn't work the best
-*fixed ooscam so everything should be working
-*small updates to dimension's
-*added proton clang
-*switch to krieg kernel
-*Fixed screen flicker when turn off screen with aod on
-*updated color mode & set display calibration
-*added more touchscreen gestures in DeviceExtras
-*dont ship recovery for users that wanna use twrp
-*moar fod changes
-*DeviceExtras: Add Game Mode toggle & QS
-*DeviceExtras: sm8250-common: DeviceExtras: Add USB 2.0 force FastCharge toggle & QS
-*Use prebuilt vendor libdisplayconfig.qti.so
-*Added the new cool slider
-*sm8250-common: sepolicy: Label RIL props
-*sm8250-common: Enable config_powerDecoupleInteractiveModeFromDisplay
-*sm8250-common: overlay: update carrierconfig overlay
-*sm8250-common: Add seccomp policy
+DEVICE:
+- DeviceExtras: Kcal, FPS text, color, & size,implemeted touchgestures, & some clean-ups
+- Overlay: status bar dimensions and corner radius improvements
+- rebased kebab trees for a cleaner tree look
+- touch: Update TouchGestures
