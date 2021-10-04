@@ -1,21 +1,13 @@
-Device:
-- Kernel compile with AOSP clang 13.0.2
-- Add back support for fps info tile
-- Sync some overlay from lineage tree
-
 ROM:
-- Add back Ambient Text Customizations
-- Make IME button space optional
-- FODCircleView: Update animation position on circle showing when dreaming
-- ScreenDecorations: Simplify rounded size selection
-- Ticker: Follow status bar padding
-- LyricTicker: Follow status bar padding
-- Add redwave FOD animation
-- Make Haptic feedback toggle for back gesture respect global haptic feedback settings
-- FOD: Use sharper fod green pressed icon
-- UI Fix for special runtime permissions
-- FaceUnlockService: Get corrrect camera ID
-- Fix ticker appearing for a split second on lockscreen
-- SamsungHighlightclock: Fix updating wallpaper color when wallpaper changes
-- PixelPropsUtils: Bring samsung accessory service to the list
-- MediaProvider: Fix off-by-one error in FUSE based redaction of sensitive data (fixes sharing a image to any messenger app)
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
