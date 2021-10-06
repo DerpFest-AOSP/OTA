@@ -1,50 +1,24 @@
-Rom Changelog:
+Rom Changelog (06/10/2021)
 
-- Remove power button press fp unlock toggle (it sometimes fails to unlock)
-- PixelPropUtils: Update apps and remove force build fingerprint
-- Don't spoof props in recovery mode
-- Add EROFS (Enhanced Read-Only File System) support for Android build system
-- Implement Clear All Icon Styles
-- Settings: Improve A12-styled Searchbar layout
-- Add Sensors Off QS Tile
-- GamingMode: Limit the button coordinate to the inside of screen only
-- LockscreenCharging: Show Celsius by default
-- Fix default value mismatch with derpquest in artwork media background
-- Clocks: Use correct thumbnail for Android S clock
-- MiuiCompactPanel: Set tap target size back to 46dip
-- Fix reading /proc/locks when lock is held by another process
-- Set device name to marketname if available
-- Enable USAP for all devices
-- OmniJaws: Update OpenWeatherMap API
-- Override host metadata to avoid leaking info
-- Fix wfd-legacy prop neverallow
-- Include makefile with art definitions
-- Allow unlocking fingerprint only on power button press
-- Fix FOD icon appearing when screen turns off
-- Fix flicker effect with FOD enabled while putting phone to sleep from lockscreen
-- GamingMode: Hide floating button after periods of time
-- GamingMode: Hide danmaku container immediately when config is changed
-- DerpQuest: Don't show system-app on GamingMode app selector
-- Make A12 DP3 clock bigger
-- TwilightService: Save and use last fetched location
-- FPS Info: Make new formatting works with old kernel
-- Add delete action for partial screenshot notification
-- Small code improvements for one shot auto-brightness feature
-- reset_network: Give new life to reset buttons
-- Bring back sound tile for op devices
-- WallpaperPicker2: Merge lineage code review updates for race condition fix
-- Settings: notifications: Add title for Advanced settings
-- Settings: Bring back old dark mode preference design
-- Properly scale touch input window through resolution changes
-- Workaround update_engine failing on some devices for local installation
-- Some more optimizations from upstream
-- APN updates for various carriers
-- Add new armv8-2a-dotprod arch variant support from master
-- Improve Russian translation for typeclock
-- Improve German translations
+- Merged October Security Patch 
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
 
-Device changelog (10/09/2021)
+Device changelog (06/10/2021)
 
-- Updated Blobs from ZUI 12.5.365
-- Kernel upstreamed to 4.14.246
-- More minor fixes and optimizations
+- Kernel based on latest CAF tag(THX @pasta_con_tonno)
+- Upstreamed everything to LA.UM.9.1.r1-11200-SMxxx0.0
+- Added GPU oC/Undervolt 
+- Added DDR boost
+- Added Simple Low Memory Killer
+- Added MSM Simple Thermal Solution
