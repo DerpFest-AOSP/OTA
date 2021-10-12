@@ -54,3 +54,36 @@ GamingMode: Fix views obscuring other window that needs interaction
 - Limit Keyguard charging stats updates
 - GamingMode: Update Russian translations
 - Update German translations
+
+Device side changelog:
+• Fully R blobs
+• Updated blobs from latest caf tag
+• Fixed issues related to camera
+• New tree based on zeelog mido R tree
+• Switched to aosp wfd
+• Switched to OSS Camera hal
+• fixed touchscreen issue
+• increased mic volume
+• Fixed vilte
+• fixed sepolicy neverallows
+• Addressed some denials
+• Enable zram-writeback job
+• Update ramdisk to R and refactor rootdir
+• Enabled blurs
+• Fixed logspams
+• Align device props from caf tag
+Many more!
+
+Source side changelog:-
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
