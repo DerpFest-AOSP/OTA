@@ -1,29 +1,41 @@
-Device changelog:
--Add Pocket Mode
-
 Latest Source Changelog:
-- Out of beta yippie ya yeah!
-- Brought back Google CarrierSettings
-- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
-- Updated Inter font family
-- Added support for accented clock color on S Clocks
-- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
-- Pulse: Added Custom gravity and Center mirrored options
-- Added option to extend Pulse to QS Panel
-- Pulse: Added Vertical mirror option
-- Added options for iOS-like toast notification for clipboard access
-- Added moar prebuilt weather icon packs
-- Added some Anime custom headers
-- Show full default name for wifi and signal icon customization preferences
-- Disabled all-caps for smart reply button text
-- Removed sensors toggle from automated sleep mode
-- FODCircleView: Always update FODAnimation position
-- GamingMode: Moved RecordingService into main process
-- SystemUI: Halt LyricTicker after statusbar lyric disabled
-- Reduced NotificationHistoryDatabase logspam
-- Gestures: Fixed up footer string
-- P404Panel, ShapeShiftPanel: Don't show captions info tooltip
-- Launcher3: Fixed IntentFilter leak in QuickEventsController
-- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
-- Launcher3: Fixed Blur not being applied properly in some cases
-- Some optimizations from upstream
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
+
+
+
+Device Changelog:
+- sm8250-common: Set max_frame_buffer_acquired_buffers 
+- sm8250-common: Set hal_native as default color profile 
+- sm8250-common: Set on smooth motion
+- sm8250-common: Bump vendor security patch to august for 12.5.3
+- sm8250-common: Add nqnfcinfo binary 
+- sm8250-common: Clean up rootdir and logs
+- sm8250-common: Stop cnss-diag spam
+- sm8250-common: Add custom one anx support
+- sm8250-common: Build libcamera2ndk_vendor 
+- sm8250-common: kona: Audio flags rework
+- sm8250-common: kona: Fix Dolby conflict
+- sm8250-common: gpt-utils: Add missed featenabler into partition swap list to allow featenabler to be OTA'd
+- sm8250-common: List missed touchfeature binary
+- sm8250-common: overlay: Unset config_intrusiveNotificationLed
+- sm8250-common: prop: Enable pre-rendering
+- sm8250-common: rootdir: Adapt for libperfmgr
+- sm8250-common:overlay-aex:Set config_battCurrentDivider
+- alioth:init: Update fp properties to september
+- alioth: Clean some camera libs prebuilts
+- alioth: Add some requested props by Anx
+- alioth: Adapt AUDIO_STREAM_MUSIC curve accorndly to what Moto Dolby allow us
+- alioth : Add perfomance tweaks for memory mangement
+
+
