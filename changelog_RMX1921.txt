@@ -1,57 +1,45 @@
 Device changes:
 ========================
-* We're STABLE now.
-* September security patch
-* Kernel Upstream to 4.9.282
-* Fixed FOD icon appearing when screen turns off
-* Implement Clear All Icon Styles
-* Updated Redfin's Sep fp
+
+* October security patch
+* Kernel Upstream to 4.9.287
+* Switched to Old BloodMoon Kernel(If you want you can flash New BloodMoon with features or any other custom kernels. Your choice!)
+* Merged latest CAF tag LA.UM.9.8.r1-04000-SDM710.0 into kernel
+* Updated qcacld-3.0, fw-api, qca-wifi-host-cmn wifi drivers from LA.UM.9.8.r1-04000-SDM710.0
+* Fixed battery drain, lagging & slow responds.
+* Updated Display & Graphics blobs from RUI 2.0 F03 stable update
+* Fixed MIRACAST(wifi display)
+* Updated Redfin's October fp
 * SafteyNet Pass without root as usual
 * More improvements & bug fixes
+
 
 Rom Changes:
 ========================
 
-- Remove power button press fp unlock toggle (it sometimes fails to unlock)
-- PixelPropUtils: Update apps and remove force build fingerprint
-- Don't spoof props in recovery mode
-- Add EROFS (Enhanced Read-Only File System) support for Android build system
-- Implement Clear All Icon Styles
-- Settings: Improve A12-styled Searchbar layout
-- Add Sensors Off QS Tile
-- GamingMode: Limit the button coordinate to the inside of screen only
-- LockscreenCharging: Show Celsius by default
-- Fix default value mismatch with derpquest in artwork media background
-- Clocks: Use correct thumbnail for Android S clock
-- MiuiCompactPanel: Set tap target size back to 46dip
-- Fix reading /proc/locks when lock is held by another process
-- Set device name to marketname if available
-- Enable USAP for all devices
-- OmniJaws: Update OpenWeatherMap API
-- Override host metadata to avoid leaking info
-- Fix wfd-legacy prop neverallow
-- Some optimizations from upstream
-- Include makefile with art definitions
-- Allow unlocking fingerprint only on power button press
-- Fix FOD icon appearing when screen turns off
-- Fix flicker effect with FOD enabled while putting phone to sleep from lockscreen
-- GamingMode: Hide floating button after periods of time
-- GamingMode: Hide danmaku container immediately when config is changed
-- DerpQuest: Don't show system-app on GamingMode app selector
-- Make A12 DP3 clock bigger
-- TwilightService: Save and use last fetched location
-- FPS Info: Make new formatting works with old kernel
-- Add delete action for partial screenshot notification
-- Small code improvements for one shot auto-brightness feature
-- reset_network: Give new life to reset buttons
-- Bring back sound tile for op devices
-- WallpaperPicker2: Merge lineage code review updates for race condition fix
-- Settings: notifications: Add title for Advanced settings
-- Settings: Bring back old dark mode preference design
-- Properly scale touch input window through resolution changes
-- Workaround update_engine failing on some devices for local installation
-- Some more optimizations from upstream
-- APN updates for various carriers
-- Add new armv8-2a-dotprod arch variant support from master
-- Improve Russian translation for typeclock
-- Improve German translations
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
+- Add Ambient Text Customizations
+- Make IME button space optional
+- FODCircleView: Update animation position on circle showing when dreaming
+- ScreenDecorations: Simplify rounded size selection
+- Ticker: Follow status bar padding
+- LyricTicker: Follow status bar padding
+- Add redwave FOD animation
+- Make Haptic feedback toggle for back gesture respect global haptic feedback settings
+- FOD: Use sharper fod green pressed icon
+- UI Fix for special runtime permissions
+- FaceUnlockService: Get corrrect camera ID
+- Fix ticker appearing for a split second on lockscreen
+- Many more
+
