@@ -1,13 +1,17 @@
+Device:
+- Updated blobs from miui Global 12.5.5
+- Import GPS stack from LA.UM.9.1.r1-07000-SMxxx0.0
+- Some Zram Fixes
+- Upstrem Mochi kernel with Fixes
+- Other upstream changes from ArrowOs tree.
+
 ROM:
+- Merge tag 11.0.0_r46 aka October patch
 - Add GamingMode QS Tile
-- Use effects for haptic feedback on back gesture
-- MSIM Changes that are needed to enable vendor telephony framework
-- Switch to Pixel APNs
-- init: Update the parameters of the iosched section
-- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
-- Fix volume dialog position on TV
-- Avoid Bluetooth gets turned on by itself
-- Improve the Android 11 easter egg in landscape mode
-- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
-- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
-- DerpQuest: Add missing default value for statusbar clock position on clean flash
+- Add support for FUSE passthrough mode
+- Add Hotspot WPA3 Settings
+- Add Wifi 6 type standards
+- SoftAPManager: Use TetheringManager for getting client info
+- FireWall: macAddressFirewall: drop fw_INPUT (to prevent blocked devices from connecting the gateway)
+- WifiManager: Add StaState API
+- WindowOrganizerController: fix a NPE
