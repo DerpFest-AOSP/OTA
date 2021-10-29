@@ -1,43 +1,14 @@
-# Build Date - 27/09/2021
+# Build Date - 29/10/2021
 
-Changelog: 
-- Out of beta yippie ya yeah!
-- Brought back Google CarrierSettings
-- Brought back toggle for A12 Searchbar style and fixed overlap with wifi settings
-- Updated Inter font family
-- Added support for accented clock color on S Clocks
-- Removed date/weather on TypeClock and Omni weather on S clocks until I figure out completely
-- Pulse: Added Custom gravity and Center mirrored options
-- Added option to extend Pulse to QS Panel
-- Pulse: Added Vertical mirror option
-- Added options for iOS-like toast notification for clipboard access
-- Added moar prebuilt weather icon packs
-- Added some Anime custom headers
-- Show full default name for wifi and signal icon customization preferences
-- Disabled all-caps for smart reply button text
-- Removed sensors toggle from automated sleep mode
-- FODCircleView: Always update FODAnimation position
-- GamingMode: Moved RecordingService into main process
-- SystemUI: Halt LyricTicker after statusbar lyric disabled
-- Reduced NotificationHistoryDatabase logspam
-- Gestures: Fixed up footer string
-- P404Panel, ShapeShiftPanel: Don't show captions info tooltip
-- Launcher3: Fixed IntentFilter leak in QuickEventsController
-- Launcher3: Cleaned up code for QuickEvents and QuickSpaceView
-- Launcher3: Fixed Blur not being applied properly in some cases
-- Some optimizations from upstream
-- Add Ambient Text Customizations
-- Make IME button space optional
-- FODCircleView: Update animation position on circle showing when dreaming
-- ScreenDecorations: Simplify rounded size selection
-- Ticker: Follow status bar padding
-- LyricTicker: Follow status bar padding
-- Add redwave FOD animation
-- Make Haptic feedback toggle for back gesture respect global haptic feedback settings
-- FOD: Use sharper fod green pressed icon
-- UI Fix for special runtime permissions
-- FaceUnlockService: Get corrrect camera ID
-- Fix ticker appearing for a split second on lockscreen
-- SamsungHighlightclock: Fix updating wallpaper color when wallpaper changes
-- PixelPropsUtils: Bring samsung accessory service to the list
-- MediaProvider: Fix off-by-one error in FUSE based redaction of sensitive data (fixes sharing a image to any messenger app)
+- Add GamingMode QS Tile
+- Use effects for haptic feedback on back gesture
+- MSIM Changes that are needed to enable vendor telephony framework
+- Switch to Pixel APNs
+- init: Update the parameters of the iosched section
+- LockPatternView: Fix a11y+BiometricPrompt related OOB exception
+- Fix volume dialog position on TV
+- Avoid Bluetooth gets turned on by itself
+- Improve the Android 11 easter egg in landscape mode
+- AppStandbyController: Remove the check for Turbo to actually enable doze/battery manager on user request
+- VolumeDialogImpl: Prevent Ringer Mode from changing by volume slider on OnePlus devices
+- DerpQuest: Add missing default value for statusbar clock position on clean flash
